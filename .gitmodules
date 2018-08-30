@@ -1,0 +1,21 @@
+[submodule "compunaut_bootstrap"]
+	path = compunaut_bootstrap
+	url = https://github.com/compunautics/compunaut_bootstrap.git
+[submodule "compunaut_openvpn"]
+	path = compunaut_openvpn
+	url = https://github.com/compunautics/compunaut_openvpn.git
+[submodule "compunaut_top"]
+	path = compunaut_top
+	url = https://github.com/compunautics/compunaut_top.git
+[submodule "compunaut_salt"]
+	path = compunaut_salt
+	url = https://github.com/compunautics/compunaut_salt.git
+[submodule "compunaut_keepalived"]
+	path = compunaut_keepalived
+	url = https://github.com/compunautics/compunaut_keepalived.git
+[submodule "compunaut_hypervisor"]
+	path = compunaut_hypervisor
+	url = https://github.com/compunautics/compunaut_hypervisor.git
+[submodule "compunaut_default"]
+	path = compunaut_default
+	url = https://github.com/compunautics/compunaut_default.git
