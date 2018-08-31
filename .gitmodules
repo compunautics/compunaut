@@ -1,6 +1,3 @@
-[submodule "compunaut_bootstrap"]
-	path = compunaut_bootstrap
-	url = https://github.com/compunautics/compunaut_bootstrap.git
 [submodule "compunaut_openvpn"]
 	path = compunaut_openvpn
 	url = https://github.com/compunautics/compunaut_openvpn.git
