@@ -16,3 +16,6 @@
 [submodule "compunaut_default"]
 	path = compunaut_default
 	url = https://github.com/compunautics/compunaut_default.git
+[submodule "compunaut_dnsmasq"]
+	path = compunaut_dnsmasq
+	url = https://github.com/compunautics/compunaut_dnsmasq.git
