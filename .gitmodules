@@ -19,3 +19,6 @@
 [submodule "compunaut_dnsmasq"]
 	path = compunaut_dnsmasq
 	url = https://github.com/compunautics/compunaut_dnsmasq.git
+[submodule "compunaut_consul"]
+	path = compunaut_consul
+	url = https://github.com/compunautics/compunaut_consul.git
