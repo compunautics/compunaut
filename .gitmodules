@@ -22,3 +22,6 @@
 [submodule "compunaut_consul"]
 	path = compunaut_consul
 	url = https://github.com/compunautics/compunaut_consul.git
+[submodule "compunaut_mysql"]
+	path = compunaut_mysql
+	url = https://github.com/compunautics/compunaut_mysql.git
