@@ -28,3 +28,18 @@
 [submodule "mysql-formula"]
 	path = mysql-formula
 	url = https://github.com/compunautics/mysql-formula.git
+[submodule "openvpn-formula"]
+	path = openvpn-formula
+	url = https://github.com/saltstack-formulas/openvpn-formula.git
+[submodule "dnsmasq-formula"]
+	path = dnsmasq-formula
+	url = https://github.com/saltstack-formulas/dnsmasq-formula.git
+[submodule "resolver-formula"]
+	path = resolver-formula
+	url = https://github.com/saltstack-formulas/resolver-formula.git
+[submodule "consul-formula"]
+	path = consul-formula
+	url = https://github.com/saltstack-formulas/consul-formula.git
+[submodule "keepalived-formula"]
+	path = keepalived-formula
+	url = https://github.com/saltstack-formulas/keepalived-formula.git
