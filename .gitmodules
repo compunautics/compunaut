@@ -46,3 +46,6 @@
 [submodule "haproxy-formula"]
 	path = haproxy-formula
 	url = https://github.com/saltstack-formulas/haproxy-formula.git
+[submodule "compunaut_haproxy"]
+	path = compunaut_haproxy
+	url = https://github.com/compunautics/compunaut_haproxy.git
