@@ -49,3 +49,6 @@
 [submodule "compunaut_haproxy"]
 	path = compunaut_haproxy
 	url = https://github.com/compunautics/compunaut_haproxy.git
+[submodule "rsyslog-formula"]
+	path = rsyslog-formula
+	url = https://github.com/saltstack-formulas/rsyslog-formula.git
