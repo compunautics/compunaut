@@ -43,3 +43,6 @@
 [submodule "keepalived-formula"]
 	path = keepalived-formula
 	url = https://github.com/saltstack-formulas/keepalived-formula.git
+[submodule "haproxy-formula"]
+	path = haproxy-formula
+	url = https://github.com/saltstack-formulas/haproxy-formula.git
