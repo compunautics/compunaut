@@ -52,3 +52,6 @@
 [submodule "rsyslog-formula"]
 	path = rsyslog-formula
 	url = https://github.com/saltstack-formulas/rsyslog-formula.git
+[submodule "compunaut_influxdb"]
+	path = compunaut_influxdb
+	url = https://github.com/compunautics/compunaut_influxdb.git
