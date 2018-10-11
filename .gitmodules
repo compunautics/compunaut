@@ -58,3 +58,6 @@
 [submodule "collectd-formula"]
 	path = collectd-formula
 	url = https://github.com/saltstack-formulas/collectd-formula.git
+[submodule "compunaut_collectd"]
+	path = compunaut_collectd
+	url = https://github.com/compunautics/compunaut_collectd.git
