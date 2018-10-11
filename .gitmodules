@@ -55,6 +55,3 @@
 [submodule "compunaut_influxdb"]
 	path = compunaut_influxdb
 	url = https://github.com/compunautics/compunaut_influxdb.git
-[submodule "influxdb-formula"]
-	path = influxdb-formula
-	url = https://github.com/compunautics/influxdb-formula.git
