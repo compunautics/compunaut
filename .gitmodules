@@ -61,3 +61,9 @@
 [submodule "compunaut_iptables"]
 	path = compunaut_iptables
 	url = https://github.com/compunautics/compunaut_iptables.git
+[submodule "telegraf-formula"]
+	path = telegraf-formula
+	url = https://github.com/compunautics/telegraf-formula.git
+[submodule "compunaut_telegraf"]
+	path = compunaut_telegraf
+	url = https://github.com/compunautics/compunaut_telegraf.git
