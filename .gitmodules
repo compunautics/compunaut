@@ -55,3 +55,9 @@
 [submodule "compunaut_influxdb"]
 	path = compunaut_influxdb
 	url = https://github.com/compunautics/compunaut_influxdb.git
+[submodule "iptables-formula"]
+	path = iptables-formula
+	url = https://github.com/saltstack-formulas/iptables-formula.git
+[submodule "compunaut_iptables"]
+	path = compunaut_iptables
+	url = https://github.com/compunautics/compunaut_iptables.git
