@@ -67,3 +67,9 @@
 [submodule "compunaut_telegraf"]
 	path = compunaut_telegraf
 	url = https://github.com/compunautics/compunaut_telegraf.git
+[submodule "grafana-formula"]
+	path = grafana-formula
+	url = https://github.com/compunautics/grafana-formula.git
+[submodule "compunaut_grafana"]
+	path = compunaut_grafana
+	url = https://github.com/compunautics/compunaut_grafana.git
