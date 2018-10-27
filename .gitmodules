@@ -73,3 +73,9 @@
 [submodule "compunaut_grafana"]
 	path = compunaut_grafana
 	url = https://github.com/compunautics/compunaut_grafana.git
+[submodule "openldap-formula"]
+	path = openldap-formula
+	url = https://github.com/saltstack-formulas/openldap-formula.git
+[submodule "compunaut_openldap"]
+	path = compunaut_openldap
+	url = https://github.com/compunautics/compunaut_openldap.git
