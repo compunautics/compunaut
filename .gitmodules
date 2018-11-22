@@ -79,3 +79,6 @@
 [submodule "compunaut_openldap"]
 	path = compunaut_openldap
 	url = https://github.com/compunautics/compunaut_openldap.git
+[submodule "pam-formula"]
+	path = pam-formula
+	url = https://github.com/saltstack-formulas/pam-formula.git
