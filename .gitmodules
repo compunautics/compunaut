@@ -79,9 +79,9 @@
 [submodule "compunaut_openldap"]
 	path = compunaut_openldap
 	url = https://github.com/compunautics/compunaut_openldap.git
-[submodule "salt-formula-sssd"]
-	path = salt-formula-sssd
-	url = https://github.com/compunautics/salt-formula-sssd.git
 [submodule "compunaut_sssd"]
 	path = compunaut_sssd
 	url = https://github.com/compunautics/compunaut_sssd.git
+[submodule "sssd-formula"]
+	path = sssd-formula
+	url = https://github.com/compunautics/sssd-formula.git
