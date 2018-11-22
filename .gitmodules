@@ -85,3 +85,6 @@
 [submodule "sssd-formula"]
 	path = sssd-formula
 	url = https://github.com/compunautics/sssd-formula.git
+[submodule "pam-formula"]
+	path = pam-formula
+	url = https://github.com/saltstack-formulas/pam-formula.git
