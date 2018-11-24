@@ -88,3 +88,9 @@
 [submodule "pam-formula"]
 	path = pam-formula
 	url = https://github.com/saltstack-formulas/pam-formula.git
+[submodule "gitlab-formula"]
+	path = gitlab-formula
+	url = https://github.com/saltstack-formulas/gitlab-formula.git
+[submodule "compunaut_gitlab"]
+	path = compunaut_gitlab
+	url = https://github.com/compunautics/compunaut_gitlab.git
