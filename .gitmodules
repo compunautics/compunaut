@@ -100,3 +100,6 @@
 [submodule "rundeck-formula"]
 	path = rundeck-formula
 	url = https://github.com/compunautics/rundeck-formula.git
+[submodule "compunaut_guacamole"]
+	path = compunaut_guacamole
+	url = https://github.com/compunautics/compunaut_guacamole.git
