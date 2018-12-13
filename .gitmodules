@@ -103,3 +103,6 @@
 [submodule "compunaut_guacamole"]
 	path = compunaut_guacamole
 	url = https://github.com/compunautics/compunaut_guacamole.git
+[submodule "compunaut_vnc"]
+	path = compunaut_vnc
+	url = https://github.com/compunautics/compunaut_vnc.git
