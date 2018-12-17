@@ -106,3 +106,6 @@
 [submodule "compunaut_vnc"]
 	path = compunaut_vnc
 	url = https://github.com/compunautics/compunaut_vnc.git
+[submodule "compunaut_piserver"]
+	path = compunaut_piserver
+	url = https://github.com/compunautics/compunaut_piserver.git
