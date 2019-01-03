@@ -109,3 +109,6 @@
 [submodule "compunaut_piserver"]
 	path = compunaut_piserver
 	url = https://github.com/compunautics/compunaut_piserver.git
+[submodule "compunaut_octoprint"]
+	path = compunaut_octoprint
+	url = https://github.com/compunautics/compunaut_octoprint.git
