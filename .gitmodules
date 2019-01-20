@@ -112,3 +112,6 @@
 [submodule "compunaut_octoprint"]
 	path = compunaut_octoprint
 	url = https://github.com/compunautics/compunaut_octoprint.git
+[submodule "uwsgi-formula"]
+	path = uwsgi-formula
+	url = https://github.com/saltstack-formulas/uwsgi-formula.git
