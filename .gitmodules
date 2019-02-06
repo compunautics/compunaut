@@ -115,3 +115,9 @@
 [submodule "uwsgi-formula"]
 	path = uwsgi-formula
 	url = https://github.com/saltstack-formulas/uwsgi-formula.git
+[submodule "apache-formula"]
+	path = apache-formula
+	url = https://github.com/saltstack-formulas/apache-formula.git
+[submodule "compunaut_mission_control"]
+	path = compunaut_mission_control
+	url = https://github.com/compunautics/compunaut_mission_control.git
