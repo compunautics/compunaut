@@ -121,3 +121,9 @@
 [submodule "compunaut_mission_control"]
 	path = compunaut_mission_control
 	url = https://github.com/compunautics/compunaut_mission_control.git
+[submodule "chrony-formula"]
+	path = chrony-formula
+	url = https://github.com/saltstack-formulas/chrony-formula.git
+[submodule "compunaut_chronyd"]
+	path = compunaut_chronyd
+	url = https://github.com/compunautics/compunaut_chronyd.git
