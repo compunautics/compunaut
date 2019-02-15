@@ -42,7 +42,7 @@ ssl-cert:
   {%- if pillar.compunaut_rundeck.enabled == True %}
 /var/lib/rundeck/.ssh/id_rsa:
   file.managed:
-    - source: salt://compunaut_rundeck/keys/rundeck-svc_id_rsa
+    - source: salt://compunaut_pki/keys/rundeck-svc_id_rsa
     - makedirs: True
     - user: rundeck
     - group: rundeck
@@ -51,7 +51,7 @@ ssl-cert:
 {%- else %}
 /home/rundeck-svc/.ssh/authorized_keys:
   file.managed:
-    - source: salt://compunaut_rundeck/keys/rundeck-svc_id_rsa.pub
+    - source: salt://compunaut_pki/keys/rundeck-svc_id_rsa.pub
     - makedirs: true
     - user: rundeck-svc
     - group: rundeck-svc
