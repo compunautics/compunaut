@@ -3,3 +3,4 @@ base:
     - compunaut_salt
   '*':
     - compunaut_default
+    - compunaut_iptables
