@@ -32,6 +32,10 @@ compunaut:
       guac_database_password: "{{ guac_database_password }}"
       guac_unencrypted_admin_password: "{{ guac_admin_password }}"
       guac_vnc_password: "{{ guac_vnc_password }}"
+    
+    keepalived:
+{%- set keepalived_auth_pass = salt['cmd.shell']('date +%s | sha256sum | cut -d- -f1') %}
+      keepalived_auth_pass: "{{ keepalived_auth_pass }}"
 
     octoprint:
 {%- set octoprint_api_key = salt['cmd.shell']('echo '+id|string+' | sha512sum | cut -d- -f1 | head -c33') %}

@@ -25,7 +25,14 @@ deploy_compunaut_pki:
     - tgt: 'compunaut_pki:enabled:True'
     - tgt_type: pillar
     - sls:
-      - compunaut_pki
+      - compunaut_pki.deploy
+
+install_keepalived:
+  salt.state:
+    - tgt: 'compunaut_keepalived:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_keepalived
 
 run_the_highstate:
   salt.state:
