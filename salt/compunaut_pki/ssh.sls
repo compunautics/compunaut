@@ -14,7 +14,7 @@ generate_new_compunaut_ssh_key:
 generate_new_rundeck_ssh_key:
   cmd.run:
     - name: ssh-keygen -q -N '' -f /home/rundeck-svc/.ssh/id_rsa
-    - runas: root
+    - runas: rundeck-svc
 
 /srv/salt/compunaut_pki/keys/id_rsa.pub:
   file.managed:
