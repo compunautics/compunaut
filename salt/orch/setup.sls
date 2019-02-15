@@ -26,3 +26,8 @@ deploy_compunaut_pki:
     - tgt_type: pillar
     - sls:
       - compunaut_pki
+
+run_the_highstate:
+  salt.state:
+    - tgt: '*'
+    - highstate: True
