@@ -1,0 +1,3 @@
+base:
+  '*':
+    - compunaut_default
