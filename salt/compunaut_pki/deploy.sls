@@ -1,3 +1,4 @@
+{%- set hostname = grains['id'] %}
 ssl-cert:
   group.present:
     - gid: 9003
