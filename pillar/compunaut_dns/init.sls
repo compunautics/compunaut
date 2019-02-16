@@ -10,3 +10,6 @@ include:
 {% else %}
   - compunaut_dnsmasq.client
 {% endif %}
+
+compunaut_dns:
+  enabled: True

@@ -1,4 +1,7 @@
 base:
+  'compunaut_dns:enabled:True':
+    - match: pillar
+    - compunaut_dns
   'compunaut_salt:enabled:True':
     - match: pillar
     - compunaut_pki
