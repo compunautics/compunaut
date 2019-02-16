@@ -1,14 +1,14 @@
 include:
-  - compunaut_dnsmasq.consul
+  - compunaut_dns.consul
 {% if 'salt' in grains['id'] %}
-  - compunaut_dnsmasq.salt
+  - compunaut_dns.kvm
 {% elif 'kvm' in grains['id'] %}
-  - compunaut_dnsmasq.salt
+  - compunaut_dns.kvm
 {% elif 'vpn' in grains['id'] %}
-  - compunaut_dnsmasq.server
-  - compunaut_dnsmasq.iptables
+  - compunaut_dns.server
+  - compunaut_dns.iptables
 {% else %}
-  - compunaut_dnsmasq.client
+  - compunaut_dns.client
 {% endif %}
 
 compunaut_dns:
