@@ -1,4 +1,4 @@
 include:
   - dnsmasq
-  - compunaut_dnsmasq.install
+  - compunaut_dns.install
   - resolver
