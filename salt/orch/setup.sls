@@ -114,6 +114,13 @@ install_keepalived:
     - sls:
       - compunaut_keepalived
 
+install_dns:
+  salt.state:
+    - tgt: 'compunaut_dns:server:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_dns
+
 run_the_highstate:
   salt.state:
     - tgt: '*'

@@ -64,3 +64,7 @@ resolver:
   nameservers:
     - 127.0.0.1
 {%- endfor %}
+
+compunaut_dns:
+  server:
+    enabled: True
