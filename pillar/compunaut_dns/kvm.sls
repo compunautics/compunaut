@@ -8,7 +8,6 @@ dnsmasq:
       - 209.244.0.4
       - 1.1.1.1
       - 1.0.0.1
-      - /{{ vars.domain }}/{{ vars.public_net }}.{{ vars.proxy_vip }}
       - /consul/127.0.0.1#8600
       - /private/{{ vars.public_net }}.{{ vars.proxy_vip }}
       - /prtr/{{ vars.public_net }}.{{ vars.proxy_vip }}
