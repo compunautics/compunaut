@@ -26,7 +26,7 @@ salt_vms:
     - tgt: 'compunaut_kvm:enabled:True'
     - tgt_type: pillar
     - sls:
-      - compunaut_kvm.salt_vms
+      - compunaut_kvm.salt
 
 wait_to_accept_salt_keys:
   salt.function:
