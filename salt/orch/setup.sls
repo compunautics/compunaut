@@ -18,7 +18,7 @@ create_vms:
     - tgt: 'compunaut_kvm:enabled:True'
     - tgt_type: pillar
     - sls:
-      - compunaut_hypervisor
+      - compunaut_kvm
       - compunaut_default.udev
 
 salt_vms:
@@ -26,7 +26,7 @@ salt_vms:
     - tgt: 'compunaut_kvm:enabled:True'
     - tgt_type: pillar
     - sls:
-      - compunaut_hypervisor.salt_vms
+      - compunaut_kvm.salt_vms
 
 wait_to_accept_salt_keys:
   salt.function:
