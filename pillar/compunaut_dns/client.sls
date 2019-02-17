@@ -4,7 +4,7 @@ dnsmasq:
   settings:
     port: 53
     server: 
-      - {{ vars.public_net }}.{{ vars.proxy_vip }}
+      - {{ vars.public_net }}.{{ vars.vpn_vip }}
       - /consul/127.0.0.1#8600
     no-resolv: True
     conf-dir: /etc/dnsmasq.d
