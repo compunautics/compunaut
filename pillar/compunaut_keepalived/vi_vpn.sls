@@ -14,5 +14,5 @@ keepalived:
         auth_pass: {{ secrets.keepalived_auth_pass }}
   {%- endfor %}
       virtual_ipaddress:
-        - {{ vars.public_net }}.{{ vars.proxy_vip }}
+        - {{ vars.public_net }}.{{ vars.vpn_vip }}
 {%- endfor %}
