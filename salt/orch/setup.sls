@@ -1,14 +1,14 @@
-update_grains:
+one_update_grains:
   salt.function:
     - name: saltutil.refresh_grains
     - tgt: '*'
 
-update_mine:
+one_update_mine:
   salt.function:
     - name: mine.update
     - tgt: '*'
 
-update_pillar:
+one_update_pillar:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
@@ -64,6 +64,32 @@ sync_all_custom_modules:
     - name: saltutil.sync_all
     - tgt: '*'
     - batch: 6
+
+two_update_grains:
+  salt.function:
+    - name: saltutil.refresh_grains
+    - tgt: '*'
+    - batch: 6
+
+two_update_mine:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
+two_update_pillar:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 6
+
+wait_to_generate_compunaut_pki:
+  salt.function:
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - sleep 30
 
 generate_compunaut_pki:
   salt.state:
