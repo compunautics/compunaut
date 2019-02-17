@@ -38,6 +38,14 @@ ssl-cert:
     - group: ssl-cert
     - mode: 0660
 
+/home/compunaut/.ssh/authorized_keys:
+  file.managed:
+    - source: salt://compunaut_pki/keys/id_rsa.pub
+    - makedirs: True
+    - user: compunaut
+    - group: compunaut
+    - mode: 0600
+
 {%- if pillar.compunaut_rundeck is defined %}
   {%- if pillar.compunaut_rundeck.enabled == True %}
 /var/lib/rundeck/.ssh/id_rsa:

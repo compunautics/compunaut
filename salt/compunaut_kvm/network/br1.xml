@@ -1,0 +1,28 @@
+<network>
+  <name>br1</name>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='br1' stp='on' delay='0'/>
+  <mtu size='8950'/>
+  <ip address="{{ pillar.compunaut.vars.private_net }}.1" netmask="255.255.255.0">
+    <dhcp>
+      <range start="{{ pillar.compunaut.vars.private_net }}.2" end="{{ pillar.compunaut.vars.private_net }}.100"/>
+{%- set local_minion = grains['id'] %}
+{%- for node, attrs in salt['pillar.get']('compunaut_kvm').items() %}
+  {%- if local_minion in node %}
+    {%- for attr, vals in attrs.items() %}
+      {%- if 'vms' in attr %}
+        {%- for vm, args in vals.items()|sort %}
+          {%- set vm_name = vm + "." + pillar.compunaut.vars.domain %}
+      <host mac="{{ args.private_mac }}" name="{{ vm_name }}" ip="{{ args.private_ip }}" />
+        {%- endfor %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+{%- endfor %}
+    </dhcp>
+  </ip>
+</network>

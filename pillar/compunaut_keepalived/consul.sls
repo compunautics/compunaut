@@ -1,10 +1,10 @@
 consul:
   register:
     - name: compunaut_keepalived
-{% if grains['ip4_interfaces']['ens2'] is defined %}
-  {% set address = grains['ip4_interfaces']['ens2'][0] %}
+{%- if grains['ip4_interfaces']['ens2'] is defined %}
+  {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
-{% endif %}
+{%- endif %}
       checks:
         - name: Compunaut Keepalived Process
           args:

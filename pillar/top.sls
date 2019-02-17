@@ -1,8 +1,11 @@
 base:
+  '*kvm*':
+    - compunaut_kvm
   '*proxy*':
     - compunaut_keepalived
   '*salt*':
     - compunaut_salt
+    - compunaut_kvm
   '*vpn*':
     - compunaut_keepalived
   '*':

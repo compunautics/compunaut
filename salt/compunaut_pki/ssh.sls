@@ -1,4 +1,4 @@
-remove_existing_ssh_keys:
+remove_existing_compunaut_ssh_keys:
   file.absent:
     - name: /root/.ssh
 

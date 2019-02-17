@@ -1,4 +1,4 @@
-{% for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
+{%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
 dnsmasq:
   dnsmasq_conf: salt://dnsmasq/files/dnsmasq.conf
   settings:
@@ -21,4 +21,4 @@ resolver:
   use_resolvconf: True
   nameservers:
     - 127.0.0.1
-{% endfor %}
+{%- endfor %}
