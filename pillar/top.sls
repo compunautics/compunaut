@@ -11,6 +11,7 @@ base:
     - compunaut_openvpn
   '*':
     - compunaut_chronyd
+    - compunaut_consul
     - compunaut_default
     - compunaut_dns
     - compunaut_iptables

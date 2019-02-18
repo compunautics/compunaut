@@ -4,4 +4,4 @@ include:
   {%- if pillar.compunaut_salt.enabled == True %}
   - compunaut_salt.master
   {%- endif %}
-{% endif %}
+{%- endif %}

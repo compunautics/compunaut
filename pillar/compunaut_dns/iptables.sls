@@ -6,5 +6,6 @@ firewall:
         - udp
       ips_allow:
         - {{ vars.private_net }}.0/24
+        - {{ vars.openvpn_net }}.0/24
         - {{ vars.public_net }}.0/16
 {%- endfor %}

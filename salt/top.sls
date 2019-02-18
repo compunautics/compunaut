@@ -18,6 +18,9 @@ base:
   'compunaut_openvpn:enabled:True':
     - match: pillar
     - compunaut_openvpn
+  'compunaut_consul:enabled:True':
+    - match: pillar
+    - compunaut_consul
   '*':
     - compunaut_chronyd
     - compunaut_default
