@@ -1,7 +1,8 @@
 base:
   'compunaut_kvm:enabled:True':
     - match: pillar
-    - compunaut_kvm,compunaut_openmanage
+    - compunaut_kvm
+    - compunaut_openmanage
   'compunaut_dns:enabled:True':
     - match: pillar
     - compunaut_dns
