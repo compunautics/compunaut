@@ -1,3 +1,4 @@
 salt/compunaut_pki/keys
 !salt/compunaut_pki/keys/.placeholder
-
+salt-images
+!salt-images/.placeholder
