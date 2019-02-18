@@ -8,6 +8,7 @@ base:
     - compunaut_kvm
   '*vpn*':
     - compunaut_keepalived
+    - compunaut_openvpn
   '*':
     - compunaut_chronyd
     - compunaut_default
