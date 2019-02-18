@@ -1,4 +1,8 @@
 base:
+  '*db*':
+    - compunaut_mysql
+  '*db01*':
+    - compunaut_mysql.master
   '*kvm*':
     - compunaut_kvm
   '*proxy*':
