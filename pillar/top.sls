@@ -5,8 +5,14 @@ base:
     - compunaut_mysql.master
   '*kvm*':
     - compunaut_kvm
+  '*monitor*':
+    - compunaut_grafana
+  '*netboot*':
+    - compunaut_guacamole
   '*proxy*':
     - compunaut_keepalived
+  '*rundeck*':
+    - compunaut_rundeck
   '*salt*':
     - compunaut_salt
     - compunaut_kvm
