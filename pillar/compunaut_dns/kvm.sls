@@ -9,11 +9,11 @@ dnsmasq:
       - 1.1.1.1
       - 1.0.0.1
       - /consul/127.0.0.1#8600
-      - /private/{{ vars.public_net }}.{{ vars.proxy_vip }}
-      - /prtr/{{ vars.public_net }}.{{ vars.proxy_vip }}
-      - /public/{{ vars.public_net }}.{{ vars.proxy_vip }}
-      - /real/{{ vars.public_net }}.{{ vars.proxy_vip }}
-      - /vpn/{{ vars.public_net }}.{{ vars.proxy_vip }}
+      - /private/{{ vars.public_net }}.{{ vars.vpn_vip }}
+      - /prtr/{{ vars.public_net }}.{{ vars.vpn_vip }}
+      - /public/{{ vars.public_net }}.{{ vars.vpn_vip }}
+      - /real/{{ vars.public_net }}.{{ vars.vpn_vip }}
+      - /vpn/{{ vars.public_net }}.{{ vars.vpn_vip }}
     no-resolv: True
     interface: lo
 resolver:
