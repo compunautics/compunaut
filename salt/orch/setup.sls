@@ -105,6 +105,7 @@ deploy_compunaut_pki:
     - tgt: 'compunaut_pki:enabled:True'
     - tgt_type: pillar
     - sls:
+      - compunaut_default.users
       - compunaut_pki.deploy
 
 install_keepalived:
