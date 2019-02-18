@@ -1,5 +1,5 @@
 {%- if salt['service.status']('mysql') == False %}
-  {%- if pillar.compunaut_mysql.master.enabled is defined %}
+  {%- if pillar.compunaut_mysql.master is defined %}
     {%- if pillar.compunaut_mysql.master.enabled == True %}
       {%- if salt['file.file_exists']('/var/lib/mysql/grastate.dat') %}
 
