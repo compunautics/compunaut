@@ -1,5 +1,6 @@
 include:
   - compunaut_consul.iptables
+  - compunaut_consul.secrets
   - compunaut_consul.telegraf
 {%- if 'consul' in grains['id'] %}
   - compunaut_consul.server

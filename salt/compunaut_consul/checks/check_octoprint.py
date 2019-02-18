@@ -5,7 +5,7 @@ import requests
 import json
 
 # define request
-headers={"X-Api-Key":"{{ pillar.compunaut.global_vars.octoprint_api_key }}","Content-Type":"application/json"}
+headers={"X-Api-Key":"{{ pillar.compunaut_consul.secrets.octoprint_api_key }}","Content-Type":"application/json"}
 url="http://127.0.0.1:5000/api/printer?exclude=temperature,sd"
 
 # make request and receive response
