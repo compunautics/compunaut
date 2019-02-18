@@ -122,7 +122,14 @@ install_dns:
     - sls:
       - compunaut_dns
 
-run_the_highstate:
+run_highstate_on_hypervisors:
   salt.state:
-    - tgt: '*'
+    - tgt: 'compunaut_kvm:enabled:True'
+    - tgt_type: pillar
+    - highstate: True
+
+run_highstate_on_vms:
+  salt.state:
+    - tgt: 'not I@compunaut_kvm:enabled:True'
+    - tgt_type: compound
     - highstate: True
