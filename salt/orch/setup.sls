@@ -1,14 +1,14 @@
-one_update_grains:
+first_grain_update:
   salt.function:
     - name: saltutil.refresh_grains
     - tgt: '*'
 
-one_update_mine:
+first_mine_update:
   salt.function:
     - name: mine.update
     - tgt: '*'
 
-one_update_pillar:
+first_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
@@ -65,19 +65,19 @@ sync_all_custom_modules:
     - tgt: '*'
     - batch: 6
 
-two_update_grains:
+second_grain_update:
   salt.function:
     - name: saltutil.refresh_grains
     - tgt: '*'
     - batch: 6
 
-two_update_mine:
+second_mine_update:
   salt.function:
     - name: mine.update
     - tgt: '*'
     - batch: 6
 
-two_update_pillar:
+second_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
@@ -128,6 +128,41 @@ install_consul:
     - sls:
       - compunaut_dns
       - compunaut_consul
+
+install_databases_one:
+  salt.state:
+    - tgt: 'compunaut_mysql:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_mysql.repo
+      - compunaut_mysql.mycnf
+      - mysql.server
+
+third_mine_update:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
+third_pillar_update:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 6
+
+install_databases_two:
+  salt.state:
+    - tgt: 'compunaut_mysql:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_mysql.galera
+
+install_databases_three:
+  salt.state:
+    - tgt: 'compunaut_mysql:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_mysql
 
 run_highstate_on_hypervisors:
   salt.state:
