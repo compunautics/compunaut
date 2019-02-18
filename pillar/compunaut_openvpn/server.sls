@@ -1,4 +1,3 @@
-{%- set hostname = grains['id'] %}
 {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
 openvpn:
   lookup:
@@ -6,8 +5,8 @@ openvpn:
   server:
     compunaut_vpn:
       ca: /etc/ssl/private/ca.crt
-      cert: /etc/ssl/private/{{ hostname }}.crt
-      key: /etc/ssl/private/{{ hostname }}.key
+      cert: /etc/ssl/private/compunaut_pki.crt
+      key: /etc/ssl/private/compunaut_pki.key
       dh: /etc/ssl/private/dhparams.pem
       server: "{{ vars.openvpn_net }}.0 255.255.255.0"
       proto: tcp-server
