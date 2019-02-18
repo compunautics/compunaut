@@ -122,6 +122,13 @@ install_dns:
     - sls:
       - compunaut_dns
 
+install_consul:
+  salt.state:
+    - tgt: '*'
+    - sls:
+      - compunaut_dns
+      - compunaut_consul
+
 run_highstate_on_hypervisors:
   salt.state:
     - tgt: 'compunaut_kvm:enabled:True'
