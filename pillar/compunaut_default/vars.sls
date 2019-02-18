@@ -1,6 +1,6 @@
 compunaut:
   vars:
-    domain: "compunaut.io"
+    domain: "compunaut.net"
     public_net: "192.168.0"
     private_net: "172.16.0"
     openvpn_net: "10.8.15"

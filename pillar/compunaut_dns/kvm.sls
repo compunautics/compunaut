@@ -9,6 +9,7 @@ dnsmasq:
       - 1.1.1.1
       - 1.0.0.1
       - /consul/127.0.0.1#8600
+      - /{{ vars.domain }}/{{ vars.public_net }}.{{ vars.vpn_vip }}
       - /private/{{ vars.public_net }}.{{ vars.vpn_vip }}
       - /prtr/{{ vars.public_net }}.{{ vars.vpn_vip }}
       - /public/{{ vars.public_net }}.{{ vars.vpn_vip }}
