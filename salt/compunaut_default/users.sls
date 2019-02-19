@@ -59,22 +59,22 @@ rundeck-svc:
 ### RUNDECK
 {%- if pillar.compunaut_rundeck is defined %}
   {%- if pillar.compunaut_rundeck.enabled == True %}
+rundeck_group:
+  group.present:
+    - name: rundeck
+    - gid: 9201
+
 rundeck:
   user.present:
     - shell: /bin/bash
     - home: /var/lib/rundeck
-    - uid: 9101
+    - uid: 9201
     - allow_uid_change: true
     - allow_gid_change: true
     - groups:
       - rundeck
       - adm
       - sudo
-
-rundeck_group:
-  group.present:
-    - name: rundeck
-    - gid: 9201
 
 /var/lib/rundeck:
   file.directory:
