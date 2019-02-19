@@ -4,7 +4,7 @@ mysql:
   user:
     compunaut_guacamole:
       host: {{ vars.public_net }}.%
-      password: {{ secrets.guacamole_database_password }}
+      password: {{ secrets.guac_database_password }}
       databases:
         - database: compunaut_guacamole
           grants: ['all privileges']
