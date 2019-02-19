@@ -49,7 +49,7 @@ mysql:
   dev:
     install: True
   database:
-{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_hypervisor:*', fun='get_mysql_configs', tgt_type='compound').items() | unique %}
+{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_kvm:*', fun='get_mysql_configs', tgt_type='compound').items() | unique %}
   {%- if configs is not none %}
     {%- for config, args in configs.items() %}
       {%- if 'database' in config %}
@@ -64,7 +64,7 @@ mysql:
   {%- endif %}
 {%- endfor %}
   user:
-{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_hypervisor:*', fun='get_mysql_configs', tgt_type='compound').items() | unique %}
+{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_kvm:*', fun='get_mysql_configs', tgt_type='compound').items() | unique %}
   {%- if configs is not none %}
     {%- for config, args in configs.items() %}
       {%- if 'user' in config %}
