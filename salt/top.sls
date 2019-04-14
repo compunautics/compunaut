@@ -24,6 +24,9 @@ base:
   'compunaut_mysql:enabled:True':
     - match: pillar
     - compunaut_mysql
+  'compunaut_haproxy:enabled:True':
+    - match: pillar
+    - compunaut_haproxy
   '*':
     - compunaut_chronyd
     - compunaut_default

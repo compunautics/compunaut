@@ -164,6 +164,13 @@ install_databases_three:
     - sls:
       - compunaut_mysql
 
+install_haproxy:
+  salt.state:
+    - tgt: 'compunaut_haproxy:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_haproxy
+
 run_highstate_on_hypervisors:
   salt.state:
     - tgt: 'compunaut_kvm:enabled:True'
