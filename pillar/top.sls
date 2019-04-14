@@ -10,6 +10,7 @@ base:
   '*netboot*':
     - compunaut_guacamole
   '*proxy*':
+    - compunaut_haproxy
     - compunaut_keepalived
   '*rundeck*':
     - compunaut_rundeck
