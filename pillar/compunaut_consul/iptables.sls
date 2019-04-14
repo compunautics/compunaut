@@ -11,13 +11,13 @@ firewall:
       protos:
         - tcp
       ips_allow:
-        - {{ vars.openvpn_net }}.0/24
+        - {{ vars.public_net }}.0/24
     8600:
       protos:
         - tcp
         - udp
       ips_allow:
-        - {{ vars.openvpn_net }}.0/24
+        - {{ vars.public_net }}.0/24
     8300:
       protos:
         - tcp
