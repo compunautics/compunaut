@@ -24,6 +24,12 @@ base:
   'compunaut_mysql:enabled:True':
     - match: pillar
     - compunaut_mysql
+  'compunaut_openldap:enabled:True':
+    - match: pillar
+    - compunaut_openldap
+  'not I@compunaut_openldap:enabled:True':
+    - match: compound
+    - compunaut_openldap
   'compunaut_haproxy:enabled:True':
     - match: pillar
     - compunaut_haproxy

@@ -138,6 +138,14 @@ install_databases_one:
       - compunaut_mysql.mycnf
       - mysql.server
 
+clear_cache_before_third:
+  salt.function:
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - rm -fv /var/cache/salt/master/pillar_cache/*
+
 third_mine_update:
   salt.function:
     - name: mine.update
@@ -163,6 +171,33 @@ install_databases_three:
     - tgt_type: pillar
     - sls:
       - compunaut_mysql
+
+install_openldap:
+  salt.state:
+    - tgt: 'compunaut_openldap:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_openldap
+
+clear_cache_before_fourth:
+  salt.function:
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - rm -fv /var/cache/salt/master/pillar_cache/*
+
+fourth_mine_update:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
+fourth_pillar_update:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 6
 
 install_haproxy:
   salt.state:

@@ -5,6 +5,8 @@ base:
     - compunaut_mysql.master
   '*kvm*':
     - compunaut_kvm
+  '*ldap*':
+    - compunaut_openldap
   '*monitor*':
     - compunaut_grafana
   '*netboot*':
@@ -26,4 +28,5 @@ base:
     - compunaut_default
     - compunaut_dns
     - compunaut_iptables
+    - compunaut_openldap.client
     - compunaut_pki
