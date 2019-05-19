@@ -1,3 +1,4 @@
+### UPDATE DATA
 first_grain_update:
   salt.function:
     - name: saltutil.refresh_grains
@@ -13,6 +14,7 @@ first_pillar_update:
     - name: saltutil.refresh_pillar
     - tgt: '*'
 
+### CREATE AND SALT VMS
 create_vms:
   salt.state:
     - tgt: 'compunaut_kvm:enabled:True'
@@ -20,12 +22,6 @@ create_vms:
     - sls:
       - compunaut_kvm
       - compunaut_default.udev
-
-salt_vms:
-  salt.state:
-    - tgt: 'compunaut_kvm:enabled:True'
-    - tgt_type: pillar
-    - sls:
       - compunaut_kvm.salt
 
 wait_to_accept_salt_keys:
@@ -65,6 +61,7 @@ sync_all_custom_modules:
     - tgt: '*'
     - batch: 6
 
+### UPDATE DATA
 second_grain_update:
   salt.function:
     - name: saltutil.refresh_grains
@@ -83,6 +80,7 @@ second_pillar_update:
     - tgt: '*'
     - batch: 6
 
+### GENERATE PKI
 wait_to_generate_compunaut_pki:
   salt.function:
     - name: cmd.run
@@ -108,6 +106,15 @@ deploy_compunaut_pki:
       - compunaut_default.users
       - compunaut_pki.deploy
 
+### APPLY DEFAULT ENVIRONMENT
+apply_default_environment:
+  salt.state:
+    - tgt: '*'
+    - sls:
+      - compunaut_default
+      - compunaut_iptables
+
+### INSTALL KEEPALIVED, DNS, AND CONSUL
 install_keepalived:
   salt.state:
     - tgt: 'compunaut_keepalived:enabled:True'
@@ -129,6 +136,7 @@ install_consul:
       - compunaut_dns
       - compunaut_consul
 
+### INSTALL MYSQL
 install_databases_one:
   salt.state:
     - tgt: 'compunaut_mysql:enabled:True'
@@ -138,6 +146,7 @@ install_databases_one:
       - compunaut_mysql.mycnf
       - mysql.server
 
+# update data for installing mysql
 clear_cache_before_third:
   salt.function:
     - name: cmd.run
@@ -172,6 +181,7 @@ install_databases_three:
     - sls:
       - compunaut_mysql
 
+### INSTALL OPENLDAP
 install_openldap:
   salt.state:
     - tgt: 'compunaut_openldap:enabled:True'
@@ -179,6 +189,7 @@ install_openldap:
     - sls:
       - compunaut_openldap
 
+### UPDATE DATA
 clear_cache_before_fourth:
   salt.function:
     - name: cmd.run
@@ -199,6 +210,7 @@ fourth_pillar_update:
     - tgt: '*'
     - batch: 6
 
+### INSTALL HAPROXY
 install_haproxy:
   salt.state:
     - tgt: 'compunaut_haproxy:enabled:True'
@@ -206,6 +218,7 @@ install_haproxy:
     - sls:
       - compunaut_haproxy
 
+### FINAL HIGHSTATE
 run_highstate_on_hypervisors:
   salt.state:
     - tgt: 'compunaut_kvm:enabled:True'
