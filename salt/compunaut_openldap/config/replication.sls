@@ -10,7 +10,7 @@ manage_repl_config:
       - 'cn=config':
         - default:
             olcServerID:
-{%- for minion, hostname in salt['mine.get']('compunaut_openldap:enabled:True', fun='network.get_hostname', 'pillar').iteritems()|sort %}
+{%- for minion, hostname in salt['mine.get']('compunaut_openldap:enabled:True', fun='network.get_hostname', tgt_type='pillar').iteritems()|sort %}
   {%- set id = loop.index %}
   {%- for minion, interfaces in salt['mine.get'](hostname, fun='network.interfaces').iteritems() %}
     {%- if interfaces['ens2'] is not defined %}
@@ -38,7 +38,7 @@ manage_repl_config:
         - default:
             olcLimits: dn.exact="{{ pillar.openldap.rootdn }}" time.soft=unlimited time.hard=unlimited size.soft=unlimited size.hard=unlimited
             olcSyncRepl:
-{%- for minion, hostname in salt['mine.get']('compunaut_openldap:enabled:True', fun='network.get_hostname', 'pillar').iteritems()|sort %}
+{%- for minion, hostname in salt['mine.get']('compunaut_openldap:enabled:True', fun='network.get_hostname', tgt_type='pillar').iteritems()|sort %}
   {%- set rid = loop.index %}
   {%- for minion, interfaces in salt['mine.get'](hostname, fun='network.interfaces').iteritems() %}
     {%- if interfaces['ens2'] is not defined %}
