@@ -1,9 +1,11 @@
 include:
   - openldap
-{%- if pillar.compunaut_openldap.enabled is defined %}
+{%- if pillar.compunaut_openldap is defined %}
+  {%- if pillar.compunaut_openldap.enabled == True %}
   - compunaut_openldap.config
   - compunaut_openldap.users
   - compunaut_openldap.groups
   - compunaut_openldap.restart
   - compunaut_openldap.phpldapadmin
+  {%- endif %}
 {%- endif %}

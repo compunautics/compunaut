@@ -41,8 +41,6 @@ source ./compunaut_functions
   time salt-run state.orch orch.update_data --state-output=mixed # update data
   time salt-run state.orch orch.highstate --state-output=mixed
 
-  time ./compunaut_ssh_keys_update.sh
-
 # Don't exit until all salt minions are answering
   minion_wait
   echo_blue "All minions are now responding. You may run salt commands against them now"
