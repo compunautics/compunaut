@@ -3,12 +3,9 @@ base:
     - match: pillar
     - compunaut_kvm
     - compunaut_openmanage
-  'compunaut_salt:enabled:True':
-    - match: pillar
-    - compunaut_pki
   'compunaut_pki:enabled:True':
     - match: pillar
-    - compunaut_pki
+    - compunaut_pki.deploy
   'compunaut_keepalived:enabled:True':
     - match: pillar
     - compunaut_keepalived
@@ -24,6 +21,9 @@ base:
   'compunaut_mysql:enabled:True':
     - match: pillar
     - compunaut_mysql
+  'compunaut_influxdb:enabled:True':
+    - match: pillar
+    - compunaut_influxdb
   'compunaut_openldap:enabled:True':
     - match: pillar
     - compunaut_openldap

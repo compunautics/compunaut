@@ -6,11 +6,9 @@ firewall:
         - tcp
       ips_allow:
         - {{ vars.public_net }}.0/16
-        - {{ vars.openvpn_net }}.0/24
     https:
       protos:
         - tcp
       ips_allow:
         - {{ vars.public_net }}.0/16
-        - {{ vars.openvpn_net }}.0/24
 {% endfor %}

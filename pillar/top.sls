@@ -1,6 +1,7 @@
 base:
   '*db*':
     - compunaut_mysql
+    - compunaut_influxdb
   '*db01*':
     - compunaut_mysql.master
   '*kvm*':
