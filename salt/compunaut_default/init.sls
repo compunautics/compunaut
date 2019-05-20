@@ -1,5 +1,6 @@
 include:
   - compunaut_default.udev
+  - compunaut_default.sysctl
   - compunaut_default.hostname
   - compunaut_default.apt
   - compunaut_default.sudo
