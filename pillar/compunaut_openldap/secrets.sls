@@ -2,7 +2,7 @@ openldap:
   secrets:
 {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_grafana_secrets', tgt_type='pillar').items() %}
     grafana_admin_user: "{{ secrets.grafana_admin_user }}"
-    grafana_admin_password: "{{ secrets.grafana_admin_password  }}"
+    grafana_admin_password: "{{ secrets.grafana_admin_password }}"
 {%- endfor %}
 {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_rundeck_secrets', tgt_type='pillar').items() %}
     rundeck_admin_user: "{{ secrets.rundeck_admin_user }}"
