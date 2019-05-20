@@ -1,5 +1,5 @@
 ### INSTALL MYSQL
-install_databases_one:
+install_mysql_one:
   salt.state:
     - tgt: 'compunaut_mysql:enabled:True'
     - tgt_type: pillar
@@ -29,17 +29,24 @@ pillar_update:
     - tgt: '*'
     - batch: 6
 
-install_databases_two:
+install_mysql_two:
   salt.state:
     - tgt: 'compunaut_mysql:enabled:True'
     - tgt_type: pillar
     - sls:
       - compunaut_mysql.galera
 
-install_databases_three:
+install_mysql_three:
   salt.state:
     - tgt: 'compunaut_mysql:enabled:True'
     - tgt_type: pillar
     - sls:
       - compunaut_mysql
 
+### INSTALL INFLUXDB
+install_influxdb:
+  salt.state:
+    - tgt: 'compunaut_influxdb:enabled:True'
+    - tgt_type: pillar
+    - sls:
+      - compunaut_influxdb
