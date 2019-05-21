@@ -1,4 +1,10 @@
 ### GENERATE PKI
+mine_update:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
 wait_to_generate_compunaut_pki:
   salt.function:
     - name: cmd.run

@@ -15,9 +15,6 @@ source ./compunaut_functions
 
   echo_red "SET UP DEFAULT ENVIRONMENT"
   time salt-run state.orch orch.update_data --state-output=mixed # update data
-  echo_green "Waiting 30 seconds"
-  sleep 30
-
   echo_blue "Generate and deploy PKI"
   time salt-run state.orch orch.generate_pki --state-output=mixed
   echo_blue "Install default environment, and apply iptables rules"
