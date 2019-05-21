@@ -1,4 +1,16 @@
 ### INSTALL MYSQL
+first_mine_update:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
+first_pillar_update:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 6
+
 install_mysql_one:
   salt.state:
     - tgt: 'compunaut_mysql:enabled:True'
@@ -17,13 +29,13 @@ clear_cache:
     - arg:
       - rm -fv /var/cache/salt/master/pillar_cache/*
 
-mine_update:
+second_mine_update:
   salt.function:
     - name: mine.update
     - tgt: '*'
     - batch: 6
 
-pillar_update:
+second_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
