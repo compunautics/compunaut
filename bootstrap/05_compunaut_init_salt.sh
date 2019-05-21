@@ -5,6 +5,7 @@ source ./compunaut_functions
 
 ### HYPERVISOR SETUP
   echo_red "SET UP HYPERVISORS"
+  time salt-run state.orch orch.update_data --state-output=mixed # update data
   echo_blue "Install KVM, boot, and salt VMs"
   time salt-run state.orch orch.create_and_salt_vms --state-output=mixed
 
