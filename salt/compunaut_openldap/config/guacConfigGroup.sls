@@ -1,5 +1,6 @@
 manage_guacConfigGroup:
   ldap.managed:
+    - unless: test -f /etc/ldap/slapd.d/cn\=config/cn\=schema/cn\=\{4\}guacconfiggroup.ldif
     - connect_spec:
         url: ldapi:///
         bind:
