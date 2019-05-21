@@ -8,6 +8,7 @@ source ./compunaut_functions
   time salt-run state.orch orch.update_data --state-output=mixed # update data
   echo_blue "Install KVM, boot, and salt VMs"
   time salt-run state.orch orch.create_and_salt_vms --state-output=mixed
+  time salt-run state.orch orch.update_data --state-output=mixed # update data
 
 ### DEPLOY COMPUNAUT
   minion_wait
@@ -24,7 +25,6 @@ source ./compunaut_functions
   echo_red "DEPLOY COMPUNAUT"
   echo_blue "Install Keepalived, DNS, and Consul"
   time salt-run state.orch orch.install_keepalived_dns_consul --state-output=mixed
-  time salt-run state.orch orch.update_data --state-output=mixed # update data
   time salt-run state.orch orch.update_data --state-output=mixed # update data
   echo_blue "Install MySQL and InfluxDB"
   time salt-run state.orch orch.install_dbs --state-output=mixed

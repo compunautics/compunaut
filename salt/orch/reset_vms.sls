@@ -28,7 +28,7 @@ delete_pki:
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - rm -fv /srv/compunaut_pki/keys/* 
+      - rm -fv /srv/salt/compunaut_pki/keys/* 
 
 reset_consul:
   salt.function:
