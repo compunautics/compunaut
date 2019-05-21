@@ -30,6 +30,9 @@ base:
   'not I@compunaut_openldap:enabled:True':
     - match: compound
     - compunaut_openldap
+  'compunaut_mission_control:enabled:True':
+    - match: pillar
+    - compunaut_mission_control
   'compunaut_haproxy:enabled:True':
     - match: pillar
     - compunaut_haproxy
