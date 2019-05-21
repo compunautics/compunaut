@@ -31,3 +31,4 @@ base:
     - compunaut_iptables
     - compunaut_openldap.client
     - compunaut_pki
+    - compunaut_telegraf
