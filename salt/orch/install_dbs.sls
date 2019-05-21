@@ -6,7 +6,7 @@ install_mysql_one:
     - sls:
       - compunaut_mysql.repo
       - compunaut_mysql.mycnf
-      - compunaut_mysql
+      - mysql.server
 
 # update data for installing mysql
 clear_cache:
