@@ -3,6 +3,11 @@
 cd "${0%/*}"
 source ./compunaut_functions
 
+### UPDATE REMOTES
+  echo_red "UPDATE REMOTES"
+  salt-run cache.clear_git_lock gitfs type=update
+  salt-run fileserver.update backend=gitfs
+
 ### HYPERVISOR SETUP
   echo_red "SET UP HYPERVISORS"
   time salt-run state.orch orch.update_data --state-output=mixed # update data
