@@ -17,13 +17,25 @@ clear_cache:
     - arg:
       - rm -fv /var/cache/salt/master/pillar_cache/*
 
-mine_update:
+mine_update_one:
   salt.function:
     - name: mine.update
     - tgt: '*'
     - batch: 6
 
-pillar_update:
+pillar_update_one:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 6
+
+mine_update_two:
+  salt.function:
+    - name: mine.update
+    - tgt: '*'
+    - batch: 6
+
+pillar_update_two:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
