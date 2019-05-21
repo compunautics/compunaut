@@ -37,4 +37,5 @@ base:
     - compunaut_chronyd
     - compunaut_default
     - compunaut_iptables
+    - compunaut_sssd
     - compunaut_telegraf
