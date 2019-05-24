@@ -31,10 +31,12 @@ source ./compunaut_functions
   echo_blue "Install Keepalived, DNS, and Consul"
   time salt-run state.orch orch.install_keepalived_dns_consul --state-output=mixed
   time salt-run state.orch orch.update_data --state-output=mixed # update data
-  echo_blue "Install MySQL and InfluxDB"
-  time salt-run state.orch orch.install_dbs --state-output=mixed
+  echo_blue "Install MySQL"
+  time salt-run state.orch orch.install_mysql --state-output=mixed
+  echo_blue "Install InfluxDB"
+  time salt-run state.orch orch.install_influxdb --state-output=mixed --async
   echo_blue "Install OpenLDAP"
-  time salt-run state.orch orch.install_openldap --state-output=mixed
+  time salt-run state.orch orch.install_openldap --state-output=mixed --async
 
   minion_wait
 
