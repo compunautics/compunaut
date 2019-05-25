@@ -1,0 +1,3760 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "description": "",
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 1,
+  "iteration": 1549426740518,
+  "links": [],
+  "panels": [
+    {
+      "bgColor": "#2f575e",
+      "clockType": "24 hour",
+      "countdownSettings": {
+        "customFormat": null,
+        "endCountdownTime": "2019-02-06T01:16:00.000Z",
+        "endText": "00:00:00"
+      },
+      "dateSettings": {
+        "dateFormat": "YYYY-MM-DD",
+        "fontSize": "20px",
+        "fontWeight": "normal",
+        "showDate": false
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 60,
+      "links": [],
+      "mode": "time",
+      "offsetFromUtc": null,
+      "offsetFromUtcMinutes": null,
+      "refreshSettings": {
+        "syncWithDashboard": false
+      },
+      "timeSettings": {
+        "customFormat": "HH:mm:ss",
+        "fontSize": "60px",
+        "fontWeight": "bold"
+      },
+      "title": "Current Time",
+      "type": "grafana-clock-panel"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 3
+      },
+      "id": 48,
+      "panels": [],
+      "title": "Disk Health",
+      "type": "row"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 4
+      },
+      "id": 38,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": "node",
+      "repeatDirection": "h",
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Disk State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#6ed0e0",
+              "state": 1,
+              "value": 1
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 2
+            },
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 4
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 8
+            },
+            {
+              "color": "#ff6700",
+              "state": 1,
+              "value": 32
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 4096
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2097152
+            },
+            {
+              "color": "#0a50a1",
+              "state": 0,
+              "value": 8388608
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 34359738368
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 274877906944
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 549755813888
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 9007199254740992
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm02",
+          "value": "kvm02"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Disk State - $tag_disk_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "disk_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "disk_id",
+              "operator": "=~",
+              "value": "/^$disk_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Disk State - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 4
+      },
+      "id": 121,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 38,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Disk State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#6ed0e0",
+              "state": 1,
+              "value": 1
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 2
+            },
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 4
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 8
+            },
+            {
+              "color": "#ff6700",
+              "state": 1,
+              "value": 32
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 4096
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2097152
+            },
+            {
+              "color": "#0a50a1",
+              "state": 0,
+              "value": 8388608
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 34359738368
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 274877906944
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 549755813888
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 9007199254740992
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm03",
+          "value": "kvm03"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Disk State - $tag_disk_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "disk_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "disk_id",
+              "operator": "=~",
+              "value": "/^$disk_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Disk State - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 4
+      },
+      "id": 122,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 38,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Disk State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#6ed0e0",
+              "state": 1,
+              "value": 1
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 2
+            },
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 4
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 8
+            },
+            {
+              "color": "#ff6700",
+              "state": 1,
+              "value": 32
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 4096
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2097152
+            },
+            {
+              "color": "#0a50a1",
+              "state": 0,
+              "value": 8388608
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 34359738368
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 274877906944
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 549755813888
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 9007199254740992
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "salt01",
+          "value": "salt01"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Disk State - $tag_disk_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "disk_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "disk_id",
+              "operator": "=~",
+              "value": "/^$disk_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Disk State - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 10
+      },
+      "id": 81,
+      "panels": [],
+      "title": "Memory Health",
+      "type": "row"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 11
+      },
+      "id": 69,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": "node",
+      "repeatDirection": "h",
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Memory Errors/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 0
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 1
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm02",
+          "value": "kvm02"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Memory Errors - $tag_memory_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "memory_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "error_count"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "memory_id",
+              "operator": "=~",
+              "value": "/^$memory_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Memory Errors - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 11
+      },
+      "id": 123,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 69,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Memory Errors/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 0
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 1
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm03",
+          "value": "kvm03"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Memory Errors - $tag_memory_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "memory_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "error_count"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "memory_id",
+              "operator": "=~",
+              "value": "/^$memory_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Memory Errors - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 11
+      },
+      "id": 124,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 69,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/Memory Errors/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 0
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 1
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "salt01",
+          "value": "salt01"
+        }
+      },
+      "targets": [
+        {
+          "alias": "Memory Errors - $tag_memory_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "memory_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "error_count"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "memory_id",
+              "operator": "=~",
+              "value": "/^$memory_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "Memory Errors - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 17
+      },
+      "id": 108,
+      "panels": [],
+      "title": "PowerSupply Health",
+      "type": "row"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 0,
+        "y": 18
+      },
+      "id": 98,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": "node",
+      "repeatDirection": "h",
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/PowerSupply State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 2
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        },
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 2",
+          "metricName": "Disk Status",
+          "operatorName": "avg",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2
+            },
+            {
+              "color": "#508642",
+              "state": 0,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm02",
+          "value": "kvm02"
+        }
+      },
+      "targets": [
+        {
+          "alias": "PowerSupply State - $tag_ps_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "ps_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "ps_state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "ps_id",
+              "operator": "=~",
+              "value": "/^$ps_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "PowerSupply Status - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 8,
+        "y": 18
+      },
+      "id": 125,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 98,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/PowerSupply State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 2
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        },
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 2",
+          "metricName": "Disk Status",
+          "operatorName": "avg",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2
+            },
+            {
+              "color": "#508642",
+              "state": 0,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm03",
+          "value": "kvm03"
+        }
+      },
+      "targets": [
+        {
+          "alias": "PowerSupply State - $tag_ps_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "ps_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "ps_state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "ps_id",
+              "operator": "=~",
+              "value": "/^$ps_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "PowerSupply Status - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "colors": [
+        "#299c46",
+        "rgba(237, 129, 40, 0.89)",
+        "#d44a3a"
+      ],
+      "gridPos": {
+        "h": 6,
+        "w": 8,
+        "x": 16,
+        "y": 18
+      },
+      "id": 126,
+      "links": [],
+      "minSpan": 5,
+      "polystat": {
+        "animationSpeed": 2500,
+        "columnAutoSize": true,
+        "columns": 3,
+        "defaultClickThrough": "",
+        "defaultClickThroughSanitize": true,
+        "displayLimit": 100,
+        "fontAutoScale": true,
+        "fontSize": 12,
+        "fontType": "Roboto",
+        "globalDecimals": 2,
+        "globalDisplayMode": "all",
+        "globalDisplayTextTriggeredEmpty": "OK",
+        "globalOperatorName": "current",
+        "globalUnitFormat": "short",
+        "gradientEnabled": false,
+        "hexagonSortByDirection": "asc",
+        "hexagonSortByField": "name",
+        "maxMetrics": 0,
+        "polygonBorderColor": "black",
+        "polygonBorderSize": 2,
+        "polygonGlobalFillColor": "#0a50a1",
+        "radius": "",
+        "radiusAutoSize": true,
+        "rowAutoSize": true,
+        "rows": 1,
+        "shape": "hexagon_pointed_top",
+        "tooltipDisplayMode": "all",
+        "tooltipDisplayTextTriggeredEmpty": "OK",
+        "tooltipFontSize": 12,
+        "tooltipFontType": "Roboto",
+        "tooltipPrimarySortDirection": "desc",
+        "tooltipPrimarySortField": "thresholdLevel",
+        "tooltipSecondarySortDirection": "desc",
+        "tooltipSecondarySortField": "value",
+        "tooltipTimestampEnabled": true
+      },
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 98,
+      "savedComposites": [],
+      "savedOverrides": [
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 1",
+          "metricName": "/PowerSupply State/",
+          "operatorName": "current",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#30d200",
+              "state": 0,
+              "value": 2
+            },
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        },
+        {
+          "clickThrough": "",
+          "colors": [
+            "#299c46",
+            "#e5ac0e",
+            "#bf1b00",
+            "#ffffff"
+          ],
+          "decimals": "",
+          "enabled": true,
+          "label": "OVERRIDE 2",
+          "metricName": "Disk Status",
+          "operatorName": "avg",
+          "prefix": "",
+          "sanitizeURLEnabled": true,
+          "scaledDecimals": null,
+          "suffix": "",
+          "thresholds": [
+            {
+              "color": "#e5ac0e",
+              "state": 1,
+              "value": 2
+            },
+            {
+              "color": "#508642",
+              "state": 0,
+              "value": 3
+            },
+            {
+              "color": "#bf1b00",
+              "state": 2,
+              "value": 4
+            }
+          ],
+          "unitFormat": "short"
+        }
+      ],
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "salt01",
+          "value": "salt01"
+        }
+      },
+      "targets": [
+        {
+          "alias": "PowerSupply State - $tag_ps_id",
+          "groupBy": [
+            {
+              "params": [
+                "30s"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "ps_id"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "omreport_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "ps_state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "ps_id",
+              "operator": "=~",
+              "value": "/^$ps_id$/"
+            }
+          ]
+        }
+      ],
+      "title": "PowerSupply Status - $node",
+      "type": "grafana-polystat-panel"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 24
+      },
+      "id": 6,
+      "panels": [],
+      "title": "CPU Temp",
+      "type": "row"
+    },
+    {
+      "aliasColors": {
+        "Crit Temp": "#bf1b00",
+        "Max Temp": "#e5ac0e"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 0,
+        "y": 25
+      },
+      "id": 2,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "minSpan": 5,
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "repeat": "node",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm02",
+          "value": "kvm02"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Max Temp",
+          "fill": 0
+        },
+        {
+          "alias": "Crit Temp",
+          "fill": 0
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "CPU Temp - $tag_chip",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "chip"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": false,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_input"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Max Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_max"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Crit Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_crit"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU Temp - $node",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "celsius",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Crit Temp": "#bf1b00",
+        "Max Temp": "#e5ac0e"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 8,
+        "y": 25
+      },
+      "id": 127,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "minSpan": 5,
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 2,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm03",
+          "value": "kvm03"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Max Temp",
+          "fill": 0
+        },
+        {
+          "alias": "Crit Temp",
+          "fill": 0
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "CPU Temp - $tag_chip",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "chip"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": false,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_input"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Max Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_max"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Crit Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_crit"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU Temp - $node",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "celsius",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Crit Temp": "#bf1b00",
+        "Max Temp": "#e5ac0e"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 8,
+        "x": 16,
+        "y": 25
+      },
+      "id": 128,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "minSpan": 5,
+      "nullPointMode": "connected",
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1549426740518,
+      "repeatPanelId": 2,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "salt01",
+          "value": "salt01"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Max Temp",
+          "fill": 0
+        },
+        {
+          "alias": "Crit Temp",
+          "fill": 0
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "CPU Temp - $tag_chip",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "chip"
+              ],
+              "type": "tag"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": false,
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_input"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Max Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_max"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        },
+        {
+          "alias": "Crit Temp",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "sensors",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp_crit"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "chip",
+              "operator": "=~",
+              "value": "/^$chip$/"
+            },
+            {
+              "condition": "AND",
+              "key": "feature",
+              "operator": "=~",
+              "value": "/^$feature$/"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU Temp - $node",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "celsius",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 33
+      },
+      "id": 16,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 0,
+            "y": 34
+          },
+          "id": 10,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": "node",
+          "repeatDirection": "h",
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm02",
+              "value": "kvm02"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Fan Speed - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "default",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$fan$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Fan Speed - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "rpm",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 8,
+            "y": 34
+          },
+          "id": 117,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1549328091033,
+          "repeatPanelId": 10,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm03",
+              "value": "kvm03"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Fan Speed - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "default",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$fan$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Fan Speed - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "rpm",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 16,
+            "y": 34
+          },
+          "id": 118,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1549328091033,
+          "repeatPanelId": 10,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "salt01",
+              "value": "salt01"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Fan Speed - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "default",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$fan$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Fan Speed - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "rpm",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Fan Speed",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 34
+      },
+      "id": 30,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 0,
+            "y": 35
+          },
+          "id": 22,
+          "legend": {
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": "node",
+          "repeatDirection": "h",
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm02",
+              "value": "kvm02"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Current - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$current$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Current - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "amp",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 8,
+            "y": 35
+          },
+          "id": 119,
+          "legend": {
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1549328091033,
+          "repeatPanelId": 22,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm03",
+              "value": "kvm03"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Current - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$current$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Current - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "amp",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 7,
+            "w": 8,
+            "x": 16,
+            "y": 35
+          },
+          "id": 120,
+          "legend": {
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "minSpan": 5,
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1549328091033,
+          "repeatPanelId": 22,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "salt01",
+              "value": "salt01"
+            }
+          },
+          "seriesOverrides": [],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Current - $tag_name",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "name"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "ipmi_sensor",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "value"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "name",
+                  "operator": "=~",
+                  "value": "/^$current$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "Current - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "amp",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "Electric Current",
+      "type": "row"
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 16,
+  "style": "dark",
+  "tags": [
+    "hardware"
+  ],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "tags": [],
+          "text": "All",
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM \"sensors\" WITH KEY = \"host\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Node",
+        "multi": true,
+        "name": "node",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM \"sensors\" WITH KEY = \"host\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM sensors WITH KEY = \"chip\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Chip",
+        "multi": true,
+        "name": "chip",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM sensors WITH KEY = \"chip\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM sensors WITH KEY = \"feature\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Feature",
+        "multi": true,
+        "name": "feature",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM sensors WITH KEY = \"feature\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM ipmi_sensor WITH KEY = \"name\" WHERE \"name\" =~ /fan.+rpm/",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Fan",
+        "multi": true,
+        "name": "fan",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM ipmi_sensor WITH KEY = \"name\" WHERE \"name\" =~ /fan.+rpm/",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM ipmi_sensor WITH KEY = \"name\" WHERE \"name\" =~ /^current/",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Current",
+        "multi": true,
+        "name": "current",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM ipmi_sensor WITH KEY = \"name\" WHERE \"name\" =~ /^current/",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"disk_id\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Disk ID",
+        "multi": true,
+        "name": "disk_id",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"disk_id\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": "$__all"
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"memory_id\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "Memory ID",
+        "multi": true,
+        "name": "memory_id",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"memory_id\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "All",
+          "value": [
+            "$__all"
+          ]
+        },
+        "datasource": "compunaut_influxdb",
+        "definition": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"ps_id\"",
+        "hide": 0,
+        "includeAll": true,
+        "label": "PowerSupply ID",
+        "multi": true,
+        "name": "ps_id",
+        "options": [],
+        "query": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"ps_id\"",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 1,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "timezone": "browser",
+  "title": "Hardware",
+  "uid": "xeU4F3_mz",
+  "version": 3
+}
