@@ -43,7 +43,9 @@ source ./compunaut_functions
   minion_wait
 
   echo_blue "Install Compunaut Applications"
-  time salt-run state.orch orch.install_grafana --async
+  echo_green "Install Grafana"
+  time salt-run state.orch orch.install_grafana --state-output=mixed
+  echo_green "Install Dashboard"
   time salt-run state.orch orch.install_dashboard --state-output=mixed
 
 # FINAL SETUP
