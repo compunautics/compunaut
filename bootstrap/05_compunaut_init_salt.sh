@@ -34,16 +34,17 @@ source ./compunaut_functions
   echo_blue "Install MySQL"
   time salt-run state.orch orch.install_mysql --state-output=mixed
   echo_blue "Install InfluxDB"
-  time salt-run state.orch orch.install_influxdb --state-output=mixed --async
+  time salt-run state.orch orch.install_influxdb --async
   echo_blue "Install OpenLDAP"
-  time salt-run state.orch orch.install_openldap --state-output=mixed --async
+  time salt-run state.orch orch.install_openldap --async
 
-  echo_green "Waiting 60 seconds"
-  sleep 60
+  echo_green "Waiting 120 seconds"
+  sleep 120
   minion_wait
 
   echo_blue "Install Compunaut Applications"
-  time salt-run state.orch orch.install_apps --state-output=mixed
+  time salt-run state.orch orch.install_grafana --async
+  time salt-run state.orch orch.install_dashboard --state-output=mixed
 
 # FINAL SETUP
   minion_wait

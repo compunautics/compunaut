@@ -1,4 +1,4 @@
-### INSTALL MISSION CONTROL:
+### INSTALL MISSION CONTROL
 install_mission_control:
   salt.state:
     - tgt: 'compunaut_mission_control:enabled:True'
