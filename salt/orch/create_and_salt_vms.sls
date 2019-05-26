@@ -30,7 +30,7 @@ wait_to_configure_salt_minions:
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - uname -n && sleep 60
+      - touch /root/.wait_to_configure_salt_minions && sleep 60
 
 configure_salt_minions:
   salt.state:
