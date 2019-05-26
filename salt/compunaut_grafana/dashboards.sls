@@ -1,7 +1,3 @@
-grafana_group:
-  group.present:
-    - name: grafana
-
 grafana_user:
   user.present:
     - name: grafana
