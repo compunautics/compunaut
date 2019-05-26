@@ -1,4 +1,4 @@
-ul:
+consul:
   register:
     - name: compunaut_haproxy
       port: 80
