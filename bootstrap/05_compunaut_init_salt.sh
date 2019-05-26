@@ -44,7 +44,7 @@ source ./compunaut_functions
 
   echo_blue "Install Compunaut Applications"
   echo_green "Install Grafana"
-  time salt-run state.orch orch.install_grafana --state-output=mixed
+  time salt-run state.orch orch.install_grafana --async
   echo_green "Install Dashboard"
   time salt-run state.orch orch.install_dashboard --state-output=mixed
 
