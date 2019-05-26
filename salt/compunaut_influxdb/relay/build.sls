@@ -27,7 +27,7 @@ influxdb_relay:
       - user
       - group
 
-'timeout 60s export GOPATH=/opt/influxdb_relay; /usr/lib/go-1.8/bin/go get -u github.com/vente-privee/influxdb-relay':
+'export GOPATH=/opt/influxdb_relay; timeout 60s /usr/lib/go-1.8/bin/go get -u github.com/vente-privee/influxdb-relay':
   cmd.run:
     - runas: influxdb_relay
     - unless: ls /opt/influxdb_relay/bin/influxdb-relay
