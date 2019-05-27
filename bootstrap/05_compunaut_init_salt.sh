@@ -43,6 +43,8 @@ source ./compunaut_functions
   minion_wait
 
   echo_blue "Install Compunaut Applications"
+  echo_green "Install Gitlab"
+  time salt-run state.orch orch.install_gitlab --async
   echo_green "Install Grafana"
   time salt-run state.orch orch.install_grafana --async
   echo_green "Install Dashboard"

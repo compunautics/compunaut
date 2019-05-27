@@ -4,6 +4,8 @@ base:
     - compunaut_influxdb
   '*db01*':
     - compunaut_mysql.master
+  '*gitlab*':
+    - compunaut_gitlab
   '*kvm*':
     - compunaut_kvm
   '*ldap*':
