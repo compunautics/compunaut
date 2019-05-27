@@ -1,5 +1,6 @@
 include:
   - compunaut_rundeck.sudo
+  - compunaut_rundeck.truststore
   - rundeck
   - uwsgi
   - compunaut_rundeck.uwsgi
