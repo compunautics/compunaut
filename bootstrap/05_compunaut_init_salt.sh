@@ -49,6 +49,8 @@ source ./compunaut_functions
   time salt-run state.orch orch.install_dashboard --state-output=mixed
 
 # FINAL SETUP
+  echo_green "Waiting 120 seconds"
+  sleep 120
   minion_wait
 
   echo_red "FINAL SETUP"
