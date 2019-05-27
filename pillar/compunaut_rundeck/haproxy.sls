@@ -12,7 +12,7 @@ haproxy:
       balance: roundrobin
       cookie: "CNAUT_RUND_ID insert indirect nocache"
       servers:
-  {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_rundeck:enabled:True', fun='network.interfaces', tgt_type='compound').items() %}
+  {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_rundeck:enabled:True', fun='network.interfaces', tgt_type='pillar').items() %}
     {%- if interfaces['ens2'] is not defined %}
       {%- set address = '127.0.0.1' %}
     {%- else %}

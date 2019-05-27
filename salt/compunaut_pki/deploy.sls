@@ -46,6 +46,24 @@ ssl-cert:
     - group: compunaut
     - mode: 0600
 
+{%- if pillar.compunaut_openldap is defined %}
+  {%- if pillar.compunaut_openldap.enabled == True %}
+/etc/ssl/private/openldap.crt:
+  file.managed:
+    - source: salt://compunaut_pki/keys/compunaut_openldap.service.consul.crt
+    - user: root
+    - group: ssl-cert
+    - mode: 0660
+  
+/etc/ssl/private/openldap.key:
+  file.managed:
+    - source: salt://compunaut_pki/keys/compunaut_openldap.service.consul.key
+    - user: root
+    - group: ssl-cert
+    - mode: 0660
+  {%- endif %}
+{%- endif %}
+
 {%- if pillar.compunaut_rundeck is defined %}
   {%- if pillar.compunaut_rundeck.enabled == True %}
 /var/lib/rundeck/.ssh/id_rsa:
