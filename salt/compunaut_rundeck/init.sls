@@ -1,5 +1,5 @@
 include:
-  - compunaut_rundeck.user
+  - compunaut_rundeck.sudo
   - rundeck
   - uwsgi
   - compunaut_rundeck.uwsgi
