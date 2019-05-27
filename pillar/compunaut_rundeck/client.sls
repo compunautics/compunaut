@@ -1,4 +1,4 @@
-{%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_gitlab_secrets', tgt_type='pillar').items() %}
+{%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_rundeck_secrets', tgt_type='pillar').items() %}
 rundeck:
   username: "{{ secrets.rundeck_admin_user }}"
   password: "{{ secrets.rundeck_admin_unencrypted_password }}"
