@@ -1,48 +1,56 @@
 consul:
   register:
-    - name: compunaut_openldap
+    - name: compunaut_rundeck
+      port: 4440
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
-      port: 389
       checks:
-        - name: Compunaut OpenLDAP Process
+        - name: Compunaut Rundeck Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a
-            - "/usr/sbin/slapd"
+            - "/var/lib/rundeck/bootstrap/rundeck"
             - -c
             - "1:"
           interval: 10s
-        - name: Compunaut OpenLDAP TCP Check
-          args:
-            - /usr/lib/nagios/plugins/check_tcp 
-            - -H 
-            - localhost 
-            - -p 
-            - "636" 
-            - -t 
-            - "3"
-          interval: 10s
-    - name: compunaut_phpldapadmin
-      address: {{ address }}
-      port: 80
-      checks:
-        - name: Compunaut phpLDAPAdmin Process
-          args:
-            - /usr/lib/nagios/plugins/check_procs
-            - -a
-            - "/usr/sbin/apache2"
-            - -c
-            - "1:"
-          interval: 10s
-        - name: Compunaut phpLDAPAdmin HTTP Check
+        - name: Compunaut Rundeck HTTP Check
           args:
             - /usr/lib/nagios/plugins/check_http 
             - -H 
             - localhost 
+            - -p 
+            - "4440" 
             - -u 
-            - /phpldapadmin/ 
+            - /user/login 
+            - -s 
+            - "Rundeck - Login" 
+            - -t 
+            - "3"
+          interval: 10s
+    - name: compunaut_rundeck_uwsgi
+      port: 8080
+      address: {{ address }}
+      checks:
+        - name: Compunaut Rundeck UWSGI Process
+          args: 
+            - /usr/lib/nagios/plugins/check_procs
+            - -a
+            - "/usr/bin/uwsgi"
+            - -c
+            - "1:"
+          interval: 10s
+        - name: Compunaut Rundeck UWSGI HTTP Check
+          args:
+            - /usr/lib/nagios/plugins/check_http 
+            - -H 
+            - localhost 
+            - -p 
+            - "8080" 
+            - -u 
+            - /hello.py 
+            - -s 
+            - "Hello world" 
             - -t 
             - "3"
           interval: 10s

@@ -24,6 +24,7 @@ gitlab:
       label: LDAP
       engine: ldap
       host: compunaut_openldap.service.consul
+  {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_openldap_secrets', tgt_type='pillar').items() %}
       base: {{ secrets.ldap_base }}
       port: 636
       uid: uid
@@ -32,4 +33,5 @@ gitlab:
       bind_dn: {{ secrets.ldap_rootdn }}
       password: {{ secrets.ldap_unencrypted_rootpw }}
       user_filter: 'memberOf=cn=gitlab_user,ou=Groups,{{ secrets.ldap_base }}'
+  {%- endfor %}
 {%- endfor %}

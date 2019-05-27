@@ -2,10 +2,10 @@ consul:
   register:
     - name: compunaut_telegraf
 # pretty sure that I'm going to need to put in logic to work with non-vm ifaces
-{% if grains['ip4_interfaces']['ens2'] is defined %}
-  {% set address = grains['ip4_interfaces']['ens2'][0] %}
+{%- if grains['ip4_interfaces']['ens2'] is defined %}
+  {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
-{% endif %}
+{%- endif %}
       check:
         - name: Compunaut Telegraf
           args:

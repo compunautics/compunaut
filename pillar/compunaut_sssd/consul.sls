@@ -1,11 +1,10 @@
 consul:
   register:
     - name: compunaut_sssd
-# will need to figure out how to handle non-vm ifaces here
-{% if grains['ip4_interfaces']['ens2'] is defined %}
-  {% set address = grains['ip4_interfaces']['ens2'][0] %}
+{%- if grains['ip4_interfaces']['ens2'] is defined %}
+  {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
-{% endif %}
+{%- endif %}
       check:
         - name: Compunaut SSSD
           args:

@@ -36,6 +36,9 @@ base:
   'compunaut_grafana:enabled:True':
     - match: pillar
     - compunaut_grafana
+  'compunaut_rundeck:enabled:True':
+    - match: pillar
+    - compunaut_rundeck
   'compunaut_mission_control:enabled:True':
     - match: pillar
     - compunaut_mission_control
