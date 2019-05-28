@@ -10,11 +10,11 @@ create_vms:
 
 wait_to_accept_salt_keys:
   salt.function:
-    - name: cmd.run
+    - name: test.sleep
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - sleep 15
+      - 15
 
 accept_salt_keys:
   salt.function:
@@ -26,11 +26,11 @@ accept_salt_keys:
 
 wait_to_configure_salt_minions:
   salt.function:
-    - name: cmd.run
+    - name: test.sleep
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - touch /root/.wait_to_configure_salt_minions && sleep 15 && ls /root/.wait_to_configure_salt_minions && sleep 15 && ls /root/.wait_to_configure_salt_minions && sleep 15 && ls /root/.wait_to_configure_salt_minions && sleep 15
+      - 60
 
 configure_salt_minions:
   salt.state:
