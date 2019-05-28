@@ -35,7 +35,7 @@
 /srv/salt/compunaut_pki/keys/compunaut_openldap.service.consul.csr:
   x509.csr_managed:
     - private_key: /srv/salt/compunaut_pki/keys/compunaut_openldap.service.consul.key
-    - CN: compunaut_openldap.service.consul
+    - CN: compunaut-openldap.service.consul
     - C: US
     - ST: Texas
     - L: Austin
@@ -51,7 +51,7 @@
     - extendedKeyUsage: 'TLS Web Server Authentication,TLS Web Client Authentication'
     - days_valid: 3650
     - days_remaining: 0
-    - CN: compunaut_openldap.service.consul 
+    - CN: compunaut-openldap.service.consul 
     - C: US
     - ST: Texas
     - L: Austin
