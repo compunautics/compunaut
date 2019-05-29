@@ -4,7 +4,7 @@ rundeck:
   server:
     root_dir: '/var'
   profile:
-    RDECK_JVM_OPTS: '-Djava.net.preferIPv4Stack=true'
+    RDECK_JVM_OPTS: '-Djava.net.preferIPv4Stack=true -Djavax.net.ssl.trustStore=/etc/rundeck/ssl/truststore'
   config:
   {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
     server_url: http://rundeck.{{ vars.domain }}
