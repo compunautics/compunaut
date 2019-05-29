@@ -26,11 +26,11 @@ accept_salt_keys:
 
 wait_to_configure_salt_minions:
   salt.function:
-    - name: test.sleep
+    - name: cmd.run
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - 60
+      - touch /root/.wait_to_configure_salt_minions.1 && sleep 15 && touch /root/.wait_to_configure_salt_minions.2 && sleep 15 && touch /root/.wait_to_configure_salt_minions.3 && sleep 15 && touch /root/.wait_to_configure_salt_minions.4 && sleep 15
 
 configure_salt_minions:
   salt.state:
@@ -44,3 +44,11 @@ sync_all_custom_modules:
     - name: saltutil.sync_all
     - tgt: '*'
     - batch: 6
+
+remove_touched_files:
+  salt.function:
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - rm -fv /root/.wait_to_configure_salt_minions*
