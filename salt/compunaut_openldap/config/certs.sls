@@ -32,6 +32,6 @@ manage_certificates:
       - 'cn=config':
         - replace:
             olcTLSCACertificateFile: /etc/ssl/private/ca.crt
-            olcTLSCertificateFile: /etc/ssl/private/compunaut_pki.crt
-            olcTLSCertificateKeyFile: /etc/ssl/private/compunaut_pki.key
+            olcTLSCertificateFile: /etc/ssl/private/compunaut_openldap.service.consul.crt
+            olcTLSCertificateKeyFile: /etc/ssl/private/compunaut_openldap.service.consul.key
             olcTLSDHParamFile: /etc/ssl/private/dhparams.pem
