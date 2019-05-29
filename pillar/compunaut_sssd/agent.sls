@@ -25,7 +25,7 @@ sssd:
         auth_provider: ldap
         chpass_provider: none
 {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_openldap_secrets', tgt_type='pillar').items() %}
-        ldap_uri: 'ldaps://compunaut_openldap.service.consul'
+        ldap_uri: 'ldaps://compunaut-openldap.service.consul'
         ldap_search_base: '{{ secrets.ldap_base }}'
         ldap_tls_reqcert: allow
         ldap_default_bind_dn: '{{ secrets.ldap_rootdn }}'

@@ -19,7 +19,7 @@ grafana:
     auth:
       ldap:
         enabled: true
-        host: 'compunaut_openldap.service.consul'
+        host: 'compunaut-openldap.service.consul'
         port: 636
         use_ssl: 'true'
         bind_dn: "{{ secrets.ldap_rootdn }}"

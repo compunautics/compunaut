@@ -2785,7 +2785,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_openldap"
+              "value": "compunaut-openldap"
             }
           ]
         }

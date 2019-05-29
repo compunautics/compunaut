@@ -23,7 +23,7 @@ gitlab:
     identity:
       label: LDAP
       engine: ldap
-      host: compunaut_openldap.service.consul
+      host: compunaut-openldap.service.consul
   {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_openldap_secrets', tgt_type='pillar').items() %}
       base: {{ secrets.ldap_base }}
       port: 636

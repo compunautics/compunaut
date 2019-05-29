@@ -40,7 +40,7 @@ rundeck:
     ldap:
       flag: 'required'
       context_factory: 'com.sun.jndi.ldap.LdapCtxFactory'
-      provider_url: "ldaps://compunaut_openldap.service.consul"
+      provider_url: "ldaps://compunaut-openldap.service.consul"
       authentication_method: 'simple'
       force_binding_login: True
       force_binding_login_use_root_context_for_roles: True
