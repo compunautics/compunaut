@@ -36,6 +36,9 @@ ssl-cert:
     - sources:
       - salt://compunaut_pki/keys/{{ hostname }}.crt
       - salt://compunaut_pki/keys/{{ hostname }}.key
+
+correct_ownership_for_compunaut_pki.pem:
+  file.managed:
     - user: root
     - group: ssl-cert
     - mode: 0660
