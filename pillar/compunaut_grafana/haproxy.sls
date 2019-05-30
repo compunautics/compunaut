@@ -6,6 +6,11 @@ haproxy:
         - host_grafana hdr(host) -i grafana.{{ vars.domain }}
       use_backends:
         - compunaut_grafana if host_grafana
+    compunaut_https:
+      acls:
+        - host_grafana hdr(host) -i grafana.{{ vars.domain }}
+      use_backends:
+        - compunaut_grafana if host_grafana
   backends:
     compunaut_grafana:
       mode: http

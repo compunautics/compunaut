@@ -6,6 +6,11 @@ haproxy:
         - host_rundeck hdr(host) -i rundeck.{{ vars.domain }}
       use_backends:
         - compunaut_rundeck if host_rundeck
+    compunaut_https:
+      acls:
+        - host_rundeck hdr(host) -i rundeck.{{ vars.domain }}
+      use_backends:
+        - compunaut_rundeck if host_rundeck
   backends:
     compunaut_rundeck:
       mode: http

@@ -63,6 +63,8 @@ haproxy:
     compunaut_http:
       bind: "0.0.0.0:80"
       mode: http
+      redirects:
+        - scheme https code 301 if !{ ssl_fc }
       reqadds:
         - X-Forwarded-Proto:\ http
       options:

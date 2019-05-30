@@ -6,6 +6,11 @@ haproxy:
         - host_gitlab hdr(host) -i gitlab.{{ vars.domain }}
       use_backends:
         - compunaut_gitlab if host_gitlab
+    compunaut_https:
+      acls:
+        - host_gitlab hdr(host) -i gitlab.{{ vars.domain }}
+      use_backends:
+        - compunaut_gitlab if host_gitlab
   backends:
     compunaut_gitlab:
       mode: http
