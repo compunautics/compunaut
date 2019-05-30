@@ -8,9 +8,9 @@ haproxy:
         - compunaut_rundeck if host_rundeck
     compunaut_https:
       acls:
-        - host_rundeck hdr(host) -i rundeck.{{ vars.domain }}
+        - host_rundeck_ssl hdr(host) -i rundeck.{{ vars.domain }}
       use_backends:
-        - compunaut_rundeck if host_rundeck
+        - compunaut_rundeck if host_rundeck_ssl
   backends:
     compunaut_rundeck:
       mode: http

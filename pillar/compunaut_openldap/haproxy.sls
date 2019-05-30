@@ -8,9 +8,9 @@ haproxy:
         - compunaut_ldap if host_ldap
     compunaut_https:
       acls:
-        - host_ldap hdr(host) -i ldap.{{ vars.domain }}
+        - host_ldap_ssl hdr(host) -i ldap.{{ vars.domain }}
       use_backends:
-        - compunaut_ldap if host_ldap
+        - compunaut_ldap if host_ldap_ssl
   backends:
     compunaut_ldap:
       mode: http
