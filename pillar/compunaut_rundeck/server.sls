@@ -4,10 +4,10 @@ rundeck:
   server:
     root_dir: '/var'
   profile:
-    RDECK_JVM_OPTS: '-Djava.net.preferIPv4Stack=true -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts'
+    RDECK_JVM_OPTS: '-Djava.net.preferIPv4Stack=true -Djavax.net.ssl.trustStore=/etc/ssl/certs/java/cacerts -Drundeck.jetty.connector.forwarded=true'
   config:
   {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
-    server_url: http://rundeck.{{ vars.domain }}
+    server_url: https://rundeck.{{ vars.domain }}
     datasource:
       dbcreate: 'update'
       driverClassName: 'com.mysql.jdbc.Driver'
@@ -31,7 +31,7 @@ rundeck:
     server_name: 'localhost'
     server_hostname: 'localhost'
     server_port: '4440'
-    server_url: "http://rundeck.{{ vars.domain }}"
+    server_url: "https://rundeck.{{ vars.domain }}"
   {%- endfor %}
     server_uuid: "{{ secrets.rundeck_uuid }}"
     rundeck_disable_ref_stats: 'true'
