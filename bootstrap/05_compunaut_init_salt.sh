@@ -13,6 +13,11 @@ source ./compunaut_functions
   time salt-run state.orch orch.update_data --state-output=mixed # update data
   echo_blue "Install KVM, boot, and salt VMs"
   time salt-run state.orch orch.create_and_salt_vms --state-output=mixed
+
+  echo_green "Waiting 60 seconds"
+  sleep 60
+
+  time salt-run state.orch orch.configure_minions --state-output=mixed
   time salt-run state.orch orch.update_data --state-output=mixed # update data
 
 ### DEPLOY COMPUNAUT
