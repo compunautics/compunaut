@@ -13,6 +13,12 @@ grain_update:
     - tgt: '*'
     - batch: 4
 
+pillar_update:
+  salt.function:
+    - name: saltutil.refresh_pillar
+    - tgt: '*'
+    - batch: 4
+
 mine_update:
   salt.function:
     - name: mine.update
