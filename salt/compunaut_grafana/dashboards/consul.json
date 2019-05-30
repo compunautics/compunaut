@@ -2920,7 +2920,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_openldap"
+              "value": "compunaut-openldap"
             }
           ]
         }
@@ -18918,14 +18918,14 @@
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_openldap/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-openldap/",
         "hide": 0,
         "includeAll": true,
         "label": "LDAP Node",
         "multi": true,
         "name": "ldap_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_openldap/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-openldap/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
