@@ -70,6 +70,48 @@ haproxy:
         - http-ignore-probes
         - forwardfor
         - http-keep-alive
+      acls:
+{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_haproxy:enabled:True', fun='get_haproxy_configs', tgt_type='compound').items() | unique %}
+  {%- if configs is not none %}
+    {%- for config, args in configs.items() %}
+      {%- if 'frontend' in config %}
+        {%- if args is not none %}
+          {%- for key, values in args.items() %}
+            {%- if values.acls is not none %}
+              {%- for acl in values.acls %}
+                {%- if acl not in existing_acls %}
+        - {{ acl }}
+                  {%- do existing_acls.append(acl)%}
+                {%- endif %}
+              {%- endfor %}
+            {%- endif %}
+          {%- endfor %}
+        {%- endif %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+{%- endfor %}
+      use_backends:
+{%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_haproxy:enabled:True', fun='get_haproxy_configs', tgt_type='compound').items() | unique %}
+  {%- if configs is not none %}
+    {%- for config, args in configs.items() %}
+      {%- if 'frontend' in config %}
+        {%- if args is not none %}
+          {%- for key, values in args.items() %}
+            {%- if values.use_backends is not none %}
+              {%- for use_backend in values.use_backends %}
+                {%- if use_backend not in existing_use_backends %}
+        - {{ use_backend }}
+                  {%- do existing_use_backends.append(use_backend)%}
+                {%- endif %}
+              {%- endfor %}
+            {%- endif %}
+          {%- endfor %}
+        {%- endif %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endif %}
+{%- endfor %}
     compunaut_https:
       bind: "0.0.0.0:443 ssl crt /etc/ssl/private/compunaut_pki.pem"
       mode: http
