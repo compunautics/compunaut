@@ -6,6 +6,11 @@ haproxy:
         - host_consul hdr(host) -i consul.{{ vars.domain }}
       use_backends:
         - compunaut_consul if host_consul
+    compunaut_https:
+      acls:
+        - host_consul hdr(host) -i consul.{{ vars.domain }}
+      use_backends:
+        - compunaut_consul if host_consul
   backends:
     compunaut_consul:
       mode: http
