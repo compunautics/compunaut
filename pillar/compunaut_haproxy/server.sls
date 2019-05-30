@@ -1,6 +1,8 @@
 {% set existing_backends = [] %}
-{% set existing_acls = [] %}
-{% set existing_use_backends = [] %}
+{% set existing_acls_http = [] %}
+{% set existing_acls_https = [] %}
+{% set existing_use_backends_http = [] %}
+{% set existing_use_backends_https = [] %}
 haproxy:
   global:
     daemon: True
@@ -78,14 +80,16 @@ haproxy:
     {%- for config, args in configs.items() %}
       {%- if 'frontend' in config %}
         {%- if args is not none %}
-          {%- for key, values in args.items() %}
-            {%- if values.acls is not none %}
-              {%- for acl in values.acls %}
-                {%- if acl not in existing_acls %}
+          {%- for frontend, values in args.items() %}
+            {%- if 'https' not in frontend %}
+              {%- if values.acls is not none %}
+                {%- for acl in values.acls %}
+                  {%- if acl not in existing_acls_http %}
         - {{ acl }}
-                  {%- do existing_acls.append(acl)%}
-                {%- endif %}
-              {%- endfor %}
+                    {%- do existing_acls_http.append(acl)%}
+                  {%- endif %}
+                {%- endfor %}
+              {%- endif %}
             {%- endif %}
           {%- endfor %}
         {%- endif %}
@@ -99,14 +103,16 @@ haproxy:
     {%- for config, args in configs.items() %}
       {%- if 'frontend' in config %}
         {%- if args is not none %}
-          {%- for key, values in args.items() %}
-            {%- if values.use_backends is not none %}
-              {%- for use_backend in values.use_backends %}
-                {%- if use_backend not in existing_use_backends %}
+          {%- for frontend, values in args.items() %}
+            {%- if 'https' not in frontend %}
+              {%- if values.use_backends is not none %}
+                {%- for use_backend in values.use_backends %}
+                  {%- if use_backend not in existing_use_backends_http %}
         - {{ use_backend }}
-                  {%- do existing_use_backends.append(use_backend)%}
-                {%- endif %}
-              {%- endfor %}
+                    {%- do existing_use_backends_http.append(use_backend)%}
+                  {%- endif %}
+                {%- endfor %}
+              {%- endif %}
             {%- endif %}
           {%- endfor %}
         {%- endif %}
@@ -130,14 +136,16 @@ haproxy:
     {%- for config, args in configs.items() %}
       {%- if 'frontend' in config %}
         {%- if args is not none %}
-          {%- for key, values in args.items() %}
-            {%- if values.acls is not none %}
-              {%- for acl in values.acls %}
-                {%- if acl not in existing_acls %}
+          {%- for frontend, values in args.items() %}
+            {%- if 'https' in frontend %}
+              {%- if values.acls is not none %}
+                {%- for acl in values.acls %}
+                  {%- if acl not in existing_acls_https %}
         - {{ acl }}
-                  {%- do existing_acls.append(acl)%}
-                {%- endif %}
-              {%- endfor %}
+                    {%- do existing_acls_https.append(acl)%}
+                  {%- endif %}
+                {%- endfor %}
+              {%- endif %}
             {%- endif %}
           {%- endfor %}
         {%- endif %}
@@ -151,14 +159,16 @@ haproxy:
     {%- for config, args in configs.items() %}
       {%- if 'frontend' in config %}
         {%- if args is not none %}
-          {%- for key, values in args.items() %}
-            {%- if values.use_backends is not none %}
-              {%- for use_backend in values.use_backends %}
-                {%- if use_backend not in existing_use_backends %}
+          {%- for frontend, values in args.items() %}
+            {%- if 'https' in frontend %}
+              {%- if values.use_backends is not none %}
+                {%- for use_backend in values.use_backends %}
+                  {%- if use_backend not in existing_use_backends_https %}
         - {{ use_backend }}
-                  {%- do existing_use_backends.append(use_backend)%}
-                {%- endif %}
-              {%- endfor %}
+                    {%- do existing_use_backends_https.append(use_backend) %}
+                  {%- endif %}
+                {%- endfor %}
+              {%- endif %}
             {%- endif %}
           {%- endfor %}
         {%- endif %}
