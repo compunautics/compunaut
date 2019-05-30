@@ -13,7 +13,7 @@ grain_update:
     - tgt: '*'
     - batch: 4
 
-pillar_update:
+first_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
@@ -25,7 +25,7 @@ mine_update:
     - tgt: '*'
     - batch: 4
 
-pillar_update:
+second_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
