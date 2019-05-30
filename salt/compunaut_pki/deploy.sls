@@ -31,6 +31,15 @@ ssl-cert:
     - group: ssl-cert
     - mode: 0660
 
+/etc/ssl/private/compunaut_pki.pem:
+  file.append:
+    - sources:
+      - salt://compunaut_pki/keys/{{ hostname }}.crt
+      - salt://compunaut_pki/keys/{{ hostname }}.key
+    - user: root
+    - group: ssl-cert
+    - mode: 0660
+
 /etc/ssl/private/dhparams.pem:
   file.managed:
     - source: salt://compunaut_pki/keys/dhparams.pem

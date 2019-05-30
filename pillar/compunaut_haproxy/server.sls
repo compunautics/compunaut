@@ -70,6 +70,16 @@ haproxy:
         - http-ignore-probes
         - forwardfor
         - http-keep-alive
+    compunaut_https:
+      bind: "0.0.0.0:443 ssl crt /etc/ssl/private/compunaut_pki.pem"
+      mode: http
+      reqadds:
+        - X-Forwarded-Proto:\ https
+      options:
+        - httplog
+        - http-ignore-probes
+        - forwardfor
+        - http-keep-alive
       acls:
 {%- for minion, configs in salt.saltutil.runner('mine.get', tgt='not I@compunaut_haproxy:enabled:True', fun='get_haproxy_configs', tgt_type='compound').items() | unique %}
   {%- if configs is not none %}
