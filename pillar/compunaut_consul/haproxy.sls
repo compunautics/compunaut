@@ -24,7 +24,7 @@ haproxy:
     {%- endif %}
         {{ minion }}:
           host: {{ address }}
-          port: 8500
+          port: 443
   {%- endfor %}
       options:
         - httplog

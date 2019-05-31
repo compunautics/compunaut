@@ -3,8 +3,9 @@ include:
   - compunaut_consul.secrets
   - compunaut_consul.telegraf
 {%- if 'consul' in grains['id'] %}
-  - compunaut_consul.server
+  - compunaut_consul.apache
   - compunaut_consul.haproxy
+  - compunaut_consul.server
 {%- else %}
   - compunaut_consul.agent
 {%- endif %}
