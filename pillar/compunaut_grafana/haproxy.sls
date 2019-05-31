@@ -25,8 +25,8 @@ haproxy:
   {%- endif %}
         {{ minion }}:
           host: {{ address }}
-          port: 3000
-          check: cookie {{ minion }}
+          port: 443
+          check: ssl verify none fall 3 rise 2 cookie {{ minion }}
 {%- endfor %}
       options:
         - httplog

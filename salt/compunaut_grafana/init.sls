@@ -3,3 +3,4 @@ include:
   - compunaut_grafana.dashboards
   - grafana
   - compunaut_grafana.datasource
+  - compunaut_grafana.apache

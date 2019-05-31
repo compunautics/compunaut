@@ -1,4 +1,5 @@
 include:
+  - compunaut_grafana.apache
   - compunaut_grafana.client
   - compunaut_grafana.consul
   - compunaut_grafana.haproxy

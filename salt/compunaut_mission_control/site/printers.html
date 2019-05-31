@@ -30,7 +30,7 @@
     </header>
 
 {%- for minion, short_host in salt['mine.get']('I@compunaut_octoprint:*', 'get_minion_short_host', 'compound').iteritems()|sort %}
-    <a class="printer" href="http://{{ short_host }}.{{ pillar.compunaut.global_vars.domain }}/"><h1>{{ short_host }}</h1></a>
+    <a class="printer" href="https://{{ short_host }}.{{ pillar.compunaut.global_vars.domain }}/"><h1>{{ short_host }}</h1></a>
 {%- endfor %}
     <footer>
         <img src="img/crest.svg" />

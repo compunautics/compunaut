@@ -12,3 +12,4 @@ include:
   - compunaut_rundeck.config
   - compunaut_rundeck.acl
   - compunaut_rundeck.resources
+  - compunaut_rundeck.apache
