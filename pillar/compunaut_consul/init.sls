@@ -4,6 +4,7 @@ include:
   - compunaut_consul.telegraf
 {%- if 'consul' in grains['id'] %}
   - compunaut_consul.apache
+  - compunaut_consul.consul
   - compunaut_consul.haproxy
   - compunaut_consul.server
 {%- else %}

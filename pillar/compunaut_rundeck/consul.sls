@@ -54,4 +54,16 @@ consul:
             - -t 
             - "3"
           interval: 10s
+    - name: compunaut_rundeck_apache
+      port: 443
+      address: {{ address }}
+      checks:
+        - name: Compunaut Rundeck Apache Process
+          args:
+            - /usr/lib/nagios/plugins/check_procs
+            - -a
+            - "/usr/sbin/apache2"
+            - -c
+            - "1:"
+          interval: 10s
 {%- endif %}

@@ -5,7 +5,6 @@ consul:
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
-{%- endif %}
       checks:
         - name: Compunaut Grafana Process
           args:
@@ -29,3 +28,17 @@ consul:
             - -t
             - "5"
           interval: 10s
+    - name: compunaut_grafana_apache
+      port: 443
+      address: {{ address }}
+{%- endif %}
+      checks:
+        - name: Compunaut Grafana Apache Process
+          args:
+            - /usr/lib/nagios/plugins/check_procs
+            - -a
+            - "/usr/sbin/apache2"
+            - -c
+            - "1:"
+          interval: 10s
+
