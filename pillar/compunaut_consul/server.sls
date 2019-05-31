@@ -7,7 +7,7 @@ consul:
   service: True
   user: consul
   group: consul
-  version: 1.4.2
+  version: 1.5.1
   download_host: releases.hashicorp.com
   config:
     node_name: {{ hostname }}
