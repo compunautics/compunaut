@@ -1,4 +1,5 @@
 include:
+  - compunaut_gitlab.apache
   - compunaut_gitlab.client
   - compunaut_gitlab.consul
   - compunaut_gitlab.haproxy

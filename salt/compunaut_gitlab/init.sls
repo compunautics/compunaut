@@ -4,3 +4,4 @@ include:
   - gitlab.server
   - compunaut_gitlab.config
   - gitlab.client
+  - compunaut_gitlab.apache
