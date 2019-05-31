@@ -25,6 +25,7 @@ haproxy:
         {{ minion }}:
           host: {{ address }}
           port: 443
+          check: ssl verify none fall 3 rise 2
   {%- endfor %}
       options:
         - httplog
