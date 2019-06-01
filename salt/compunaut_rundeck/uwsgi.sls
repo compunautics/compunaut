@@ -7,6 +7,7 @@ install_cgi_plugin_deps:
 'curl http://uwsgi.it/install | bash -s cgi /usr/bin/uwsgi':
   cmd.run:
     - runas: root
+    - unless: test -f /root/uwsgi_latest_from_installer/plugins/stats_pusher_socket/plugin.o
     - require: 
       - pkg: install_cgi_plugin_deps
 
