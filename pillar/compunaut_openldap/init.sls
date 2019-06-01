@@ -1,4 +1,5 @@
 include:
+  - compunaut_openldap.apache
   - compunaut_openldap.consul
   - compunaut_openldap.haproxy
   - compunaut_openldap.iptables
