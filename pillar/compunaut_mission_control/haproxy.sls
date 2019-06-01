@@ -25,10 +25,12 @@ haproxy:
         {{ minion }}:
           host: {{ address }}
           port: 8080
+          check: fall 3 rise 2
 {% endfor %}
       options:
         - httplog
         - forwardfor
         - tcp-check
         - http-ignore-probes
+        - redispatch
 {% endfor %}

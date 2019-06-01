@@ -26,11 +26,12 @@ haproxy:
         {{ minion }}:
           host: {{ address }}
           port: 80
-          check: cookie {{ minion }}
+          check: ssl verify none fall 3 rise 2 cookie {{ minion }}
 {%- endfor %}
       options:
         - httplog
         - forwardfor
         - tcp-check
         - http-ignore-probes
+        - redispatch
 {%- endfor %}

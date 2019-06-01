@@ -36,12 +36,17 @@ source ./compunaut_functions
   echo_blue "Install Keepalived, DNS, and Consul"
   time salt-run state.orch orch.install_keepalived_dns_consul --state-output=mixed
   time salt-run state.orch orch.update_data --state-output=mixed # update data
+
+  echo_blue "Install Piserver"
+  #salt-run state.orch orch.install_piserver --async
+  time salt-run state.orch orch.install_piserver --state-output=mixed
+
   echo_blue "Install MySQL"
   time salt-run state.orch orch.install_mysql --state-output=mixed
   echo_blue "Install InfluxDB"
-  time salt-run state.orch orch.install_influxdb --async
+  salt-run state.orch orch.install_influxdb --async
   echo_blue "Install OpenLDAP"
-  time salt-run state.orch orch.install_openldap --async
+  salt-run state.orch orch.install_openldap --async
 
   echo_green "Waiting 120 seconds"
   sleep 120
@@ -49,11 +54,14 @@ source ./compunaut_functions
 
   echo_blue "Install Compunaut Applications"
   echo_green "Install Dashboard"
-  time salt-run state.orch orch.install_dashboard --async
+  salt-run state.orch orch.install_dashboard --async
   echo_green "Install Gitlab"
-  time salt-run state.orch orch.install_gitlab --async
+  salt-run state.orch orch.install_gitlab --async
+  echo_green "Install Guacamole"
+  #salt-run state.orch orch.install_guacamole --async
+  time salt-run state.orch orch.install_guacamole --state-output=mixed
   echo_green "Install Grafana"
-  time salt-run state.orch orch.install_grafana --async
+  salt-run state.orch orch.install_grafana --async
   echo_green "Install Rundeck"
   time salt-run state.orch orch.install_rundeck --state-output=mixed
 

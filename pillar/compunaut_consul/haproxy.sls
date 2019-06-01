@@ -32,4 +32,5 @@ haproxy:
         - forwardfor
         - tcp-check
         - http-ignore-probes
+        - redispatch
 {%- endfor %}
