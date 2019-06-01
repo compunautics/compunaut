@@ -30,6 +30,9 @@ base:
   'not I@compunaut_openldap:enabled:True':
     - match: compound
     - compunaut_openldap
+  'compunaut_guacamole:enabled:True':
+    - match: pillar
+    - compunaut_guacamole
   'compunaut_gitlab:enabled:True':
     - match: pillar
     - compunaut_gitlab
