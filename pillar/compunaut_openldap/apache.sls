@@ -2,6 +2,9 @@
 apache:
   manage_service_states: True
   sites:
+    80-phpldapadmin:
+      interface: '*'
+      port: '80'
     443-ldap.{{ vars.domain }}:
       enabled: True
       template_file: salt://apache/vhosts/proxy.tmpl
