@@ -14,6 +14,7 @@ base:
     - compunaut_grafana
   '*netboot*':
     - compunaut_guacamole
+    - compunaut_piserver
   '*proxy*':
     - compunaut_haproxy
     - compunaut_keepalived

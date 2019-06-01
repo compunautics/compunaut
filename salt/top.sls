@@ -33,6 +33,9 @@ base:
   'compunaut_guacamole:enabled:True':
     - match: pillar
     - compunaut_guacamole
+  'compunaut_piserver:enabled:True':
+    - match: pillar
+    - compunaut_piserver
   'compunaut_gitlab:enabled:True':
     - match: pillar
     - compunaut_gitlab

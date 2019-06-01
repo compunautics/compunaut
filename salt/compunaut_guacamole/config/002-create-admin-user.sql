@@ -19,18 +19,18 @@
 
 -- Create default user "guacadmin" with password "guacadmin"
 INSERT INTO guacamole_user (username, password_date)
-VALUES ('{{ pillar.compunaut.global_vars.guac_admin_user }}', NOW())
+VALUES ('{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}', NOW())
 ON DUPLICATE KEY UPDATE password_date = NOW();
 
 -- Grant this user all system permissions
 INSERT INTO guacamole_system_permission
 SELECT user_id, permission
 FROM (
-          SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}'  AS username, 'CREATE_CONNECTION'       AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}'  AS username, 'CREATE_CONNECTION_GROUP' AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}'  AS username, 'CREATE_SHARING_PROFILE'  AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}'  AS username, 'CREATE_USER'             AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}'  AS username, 'ADMINISTER'              AS permission
+          SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_CONNECTION'       AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_CONNECTION_GROUP' AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_SHARING_PROFILE'  AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_USER'             AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'ADMINISTER'              AS permission
 ) permissions
 JOIN guacamole_user ON permissions.username = guacamole_user.username;
 
@@ -38,9 +38,9 @@ JOIN guacamole_user ON permissions.username = guacamole_user.username;
 INSERT INTO guacamole_user_permission
 SELECT guacamole_user.user_id, affected.user_id, permission
 FROM (
-          SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS username, '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS affected_username, 'READ'       AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS username, '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS affected_username, 'UPDATE'     AS permission
-    UNION SELECT '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS username, '{{ pillar.compunaut.global_vars.guac_admin_user }}' AS affected_username, 'ADMINISTER' AS permission
+          SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'READ'       AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'UPDATE'     AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'ADMINISTER' AS permission
 ) permissions
 JOIN guacamole_user          ON permissions.username = guacamole_user.username
 JOIN guacamole_user affected ON permissions.affected_username = affected.username;
