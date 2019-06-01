@@ -1,11 +1,11 @@
 include:
+  - compunaut_rundeck.truststore
   - compunaut_rundeck.sudo
   - rundeck.repo
   - rundeck.install
   - rundeck.config
   - rundeck.plugins
   - rundeck.service
-  - compunaut_rundeck.truststore
   - rundeck
   - uwsgi
   - compunaut_rundeck.uwsgi
