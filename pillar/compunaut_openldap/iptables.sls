@@ -7,7 +7,7 @@ firewall:
     636:
       ips_allow:
         - {{ vars.public_net }}.0/24
-    80:
+    443:
       ips_allow:
         - {{ vars.public_net }}.0/24
 {%- endfor %}

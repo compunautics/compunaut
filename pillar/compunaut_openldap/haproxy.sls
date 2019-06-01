@@ -25,7 +25,7 @@ haproxy:
   {%- endif %}
         {{ minion }}:
           host: {{ address }}
-          port: 80
+          port: 443
           check: ssl verify none fall 3 rise 2 cookie {{ minion }}
 {%- endfor %}
       options:

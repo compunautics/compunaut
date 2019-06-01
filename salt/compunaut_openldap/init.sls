@@ -7,5 +7,6 @@ include:
   - compunaut_openldap.groups
   - compunaut_openldap.restart
   - compunaut_openldap.phpldapadmin
+  - compunaut_openldap.apache
   {%- endif %}
 {%- endif %}
