@@ -5,6 +5,7 @@ include:
   - compunaut_openldap.config
   - compunaut_openldap.users
   - compunaut_openldap.groups
+  - compunaut_openldap.connections
   - compunaut_openldap.restart
   - compunaut_openldap.phpldapadmin
   - compunaut_openldap.apache
