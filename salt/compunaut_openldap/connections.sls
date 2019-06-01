@@ -6,7 +6,7 @@ manage_compunaut_guacamole_groups:
           dn: "{{ pillar.openldap.rootdn }}"
           password: "{{ pillar.openldap.unencrypted_rootpw }}"
     - entries:
-{%- for minion, interfaces in salt['mine.get']('compunaut_vnc:enabled:True', fun='network.interfaces', tgt_type='pillar').iteritems() %}
+{%- for minion, interfaces in salt['mine.get']('compunaut_piserver:enabled:True', fun='network.interfaces', tgt_type='pillar').iteritems() %}
   {%- if interfaces['ens2'] is not defined %}
     {%- set address = '127.0.0.1' %}
   {%- else %}
