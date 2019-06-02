@@ -8,6 +8,7 @@ include:
   - compunaut_openldap.connections
   - compunaut_openldap.restart
   - compunaut_openldap.phpldapadmin
+  - compunaut_openldap.self_service_password
   - compunaut_openldap.apache
   {%- endif %}
 {%- endif %}
