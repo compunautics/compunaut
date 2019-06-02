@@ -238,7 +238,8 @@ $max_attempts = 3;
 # Encryption, decryption keyphrase, required if $crypt_tokens = true
 # Please change it to anything long, random and complicated, you do not have to remember it
 # Changing it will also invalidate all previous tokens and SMS codes
-{% set keyphrase = salt['cmd.shell']('echo '+id|string+' | sha384sum | cut -d- -f1') %}
+{%- set id = grains['server_id'] %}
+{%- set keyphrase = salt['cmd.shell']('echo '+id|string+' | sha384sum | cut -d- -f1') %}
 $keyphrase = "{{ keyphrase }}";
 
 # Reset URL (if behind a reverse proxy)
