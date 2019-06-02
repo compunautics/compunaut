@@ -19,6 +19,7 @@ dnsmasq:
     grafana.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
     guacamole.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
     ldap.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
+    password.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
     rundeck.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
 
 ### VM ADDRESSES
