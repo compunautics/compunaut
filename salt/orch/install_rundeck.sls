@@ -6,4 +6,16 @@ install_rundeck:
     - batch: 1
     - batch-wait: 15
     - sls:
-      - compunaut_rundeck
+      - compunaut_rundeck.truststore
+      - compunaut_rundeck.sudo
+      - rundeck.repo
+      - rundeck.install
+      - rundeck.config
+      - rundeck.plugins
+      - rundeck.service
+      - uwsgi
+      - compunaut_rundeck.uwsgi
+      - compunaut_rundeck.config
+      - compunaut_rundeck.acl
+      - compunaut_rundeck.resources
+      - compunaut_rundeck.apache
