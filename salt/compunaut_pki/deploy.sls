@@ -17,6 +17,13 @@ ssl-cert:
     - group: ssl-cert
     - mode: 0660
 
+/etc/ssl/certs/ca.crt:
+  file.managed:
+    - source: salt://compunaut_pki/keys/ca.crt
+    - user: root
+    - group: root
+    - mode: 0644
+
 /etc/ssl/private/compunaut_pki.crt:
   file.managed:
     - source: salt://compunaut_pki/keys/{{ hostname }}.crt
