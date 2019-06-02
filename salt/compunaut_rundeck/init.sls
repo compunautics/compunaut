@@ -7,8 +7,9 @@ include:
   - rundeck.plugins
   - rundeck.service
   - rundeck
-  - uwsgi
   - compunaut_rundeck.uwsgi
+  - uwsgi.service
+  - uwsgi.applications
   - compunaut_rundeck.config
   - compunaut_rundeck.acl
   - compunaut_rundeck.resources
