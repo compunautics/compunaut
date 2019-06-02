@@ -3,6 +3,7 @@ openldap:
   rootdn: '{{ secrets.ldap_rootdn }}'
   unencrypted_rootpw: '{{ secrets.ldap_unencrypted_rootpw }}'
   rootpw: '{{ secrets.ldap_rootpw }}'
+  ldap_crypt_salt: '{{ secrets.ldap_crypt_salt }}'
   base: '{{ secrets.ldap_base }}'
   uri: 'ldap://localhost:389'
   user: 'openldap'

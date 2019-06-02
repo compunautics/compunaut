@@ -46,6 +46,7 @@ compunaut:
 {%- set ldap_crypt_salt = salt['cmd.shell']("head /dev/urandom | tr -dc A-Za-z0-9 | head -c4") %}
 {%- set ldap_crypt_rootpw = salt['cmd.shell']("openssl passwd -1 -salt "+ldap_crypt_salt+" "+ldap_rootpw+" 2> /dev/null") %}
       ldap_base: "dc=compunaut,dc=net"
+      ldap_crypt_salt: "{{ ldap_crypt_salt }}"
       ldap_rootdn: "cn=compunaut,dc=compunaut,dc=net"
       ldap_rootpw: "{CRYPT}{{ ldap_crypt_rootpw }}"
       ldap_unencrypted_rootpw: "{{ ldap_rootpw }}"
