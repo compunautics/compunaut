@@ -252,10 +252,10 @@ $servers->setValue('server','name','Compunaut OpenLDAP');
    'ldaps://ldap.example.com/',
    'ldapi://%2fusr%local%2fvar%2frun%2fldapi'
            (Unix socket at /usr/local/var/run/ldap) */
-$servers->setValue('server','host','compunaut-openldap.service.consul');
+$servers->setValue('server','host','ldaps://compunaut-openldap.service.consul');
 
 /* The port your LDAP server listens on (no quotes). 389 is standard. */
-$servers->setValue('server','port',636);
+// $servers->setValue('server','port',636);
 
 /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin
    auto-detect it for you. */
@@ -294,7 +294,7 @@ $servers->setValue('login','bind_id','');
 #  $servers->setValue('login','bind_pass','secret');
 
 /* Use TLS (Transport Layer Security) to connect to the LDAP server. */
-$servers->setValue('server','tls',true);
+// $servers->setValue('server','tls',false);
 
 /************************************
  *      SASL Authentication         *
