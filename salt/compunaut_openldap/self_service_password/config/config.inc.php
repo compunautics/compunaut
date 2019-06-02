@@ -152,7 +152,7 @@ $notify_on_sshkey_change = false;
 # Use questions/answers?
 # true (default)
 # false
-$use_questions = true;
+$use_questions = false;
 
 # Answer attribute should be hidden to users!
 $answer_objectClass = "extensibleObject";
