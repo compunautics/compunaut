@@ -35,7 +35,7 @@ $debug = false;
 
 # LDAP
 $ldap_url = "ldaps://compunaut-openldap.service.consul";
-$ldap_starttls = true;
+$ldap_starttls = false;
 $ldap_binddn = "{{ pillar.openldap.rootdn }}";
 $ldap_bindpw = "{{ pillar.openldap.unencrypted_rootpw }}";
 $ldap_base = "{{ pillar.openldap.base }}";
