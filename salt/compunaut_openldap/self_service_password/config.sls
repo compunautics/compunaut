@@ -3,5 +3,5 @@
     - source: salt://compunaut_openldap/self_service_password/config/config.inc.php
     - template: jinja
     - user: root
-    - group: root
+    - group: www-data
     - mode: 0640
