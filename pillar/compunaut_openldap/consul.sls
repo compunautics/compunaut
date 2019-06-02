@@ -46,4 +46,28 @@ consul:
             - -t 
             - "3"
           interval: 10s
+    - name: compunaut_ssp
+      address: {{ address }}
+      port: 443
+      checks:
+        - name: Compunaut Self Service Password Process
+          args:
+            - /usr/lib/nagios/plugins/check_procs
+            - -a
+            - "/usr/sbin/apache2"
+            - -c
+            - "1:"
+          interval: 10s
+        - name: Compunaut Self Service Password HTTP Check
+          args:
+            - /usr/lib/nagios/plugins/check_http
+            - -H
+            - localhost
+            - -p
+            - "443"
+            - -u
+            - /index.php
+            - -t
+            - "3"
+          interval: 10s
 {%- endif %}
