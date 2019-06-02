@@ -255,7 +255,7 @@ $servers->setValue('server','name','Compunaut OpenLDAP');
 $servers->setValue('server','host','compunaut-openldap.service.consul');
 
 /* The port your LDAP server listens on (no quotes). 389 is standard. */
-// $servers->setValue('server','port',389);
+$servers->setValue('server','port',636);
 
 /* Array of base DNs of your LDAP server. Leave this blank to have phpLDAPadmin
    auto-detect it for you. */
@@ -294,7 +294,7 @@ $servers->setValue('login','bind_id','');
 #  $servers->setValue('login','bind_pass','secret');
 
 /* Use TLS (Transport Layer Security) to connect to the LDAP server. */
-// $servers->setValue('server','tls',false);
+$servers->setValue('server','tls',true);
 
 /************************************
  *      SASL Authentication         *
@@ -304,8 +304,6 @@ $servers->setValue('login','bind_id','');
    configured with --with-ldap-sasl=DIR. If this option is disabled (ie, set to
    false), then all other sasl options are ignored. */
 // $servers->setValue('login','auth_type','sasl');
-
-/* SASL auth mechanism */
 // $servers->setValue('sasl','mech','GSSAPI');
 
 /* SASL authentication realm name */
