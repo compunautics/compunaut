@@ -6,7 +6,6 @@ include:
   - rundeck.config
   - rundeck.plugins
   - rundeck.service
-  - rundeck
   - compunaut_rundeck.uwsgi
   - uwsgi.service
   - uwsgi.applications
@@ -14,3 +13,4 @@ include:
   - compunaut_rundeck.acl
   - compunaut_rundeck.resources
   - compunaut_rundeck.apache
+  - rundeck.client
