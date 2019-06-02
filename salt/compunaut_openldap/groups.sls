@@ -1,3 +1,4 @@
+{%- set existing_groups = [] %}
 manage_compunaut_login_groups:
   ldap.managed:
     - connect_spec:
@@ -83,6 +84,7 @@ manage_compunaut_login_groups:
 {%- for minion, projects in salt['mine.get']('compunaut_rundeck:enabled:True', fun='get_rundeck_projects', tgt_type='pillar').iteritems()|unique %}
   {%- if projects is defined %}
     {%- for project, args in projects.items() %}
+      {%- if project not in existing_groups %}
       - 'cn=rundeck_{{ project|lower }},ou=Groups,{{ pillar.openldap.base }}':
         - add:
             cn: 
@@ -94,6 +96,8 @@ manage_compunaut_login_groups:
               - cn={{ pillar.openldap.secrets.rundeck_admin_user }},ou=Users,{{ pillar.openldap.base }}
             description:
               - Group for access to the {{ project }} project
+        {% do existing_groups.append(project) %}
+      {%- endif %}
     {%- endfor %}
   {%- endif %}
 {%- endfor %}
