@@ -61,12 +61,13 @@ consul:
         - name: Compunaut Self Service Password HTTP Check
           args:
             - /usr/lib/nagios/plugins/check_http
+            - -I
+            - 127.0.0.1
             - -H
-            - localhost
-            - -p
-            - "443"
-            - -u
-            - /index.php
+{%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
+            - password.{{ vars.domain }}
+{%- endfor %}
+            - -S
             - -t
             - "3"
           interval: 10s
