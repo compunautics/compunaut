@@ -81,7 +81,7 @@ manage_compunaut_login_groups:
               - cn={{ pillar.openldap.secrets.rundeck_admin_user }},ou=Users,{{ pillar.openldap.base }}
             description:
               - Group for Rundeck Admins
-{%- for minion, projects in salt['mine.get']('compunaut_rundeck:enabled:True', fun='get_rundeck_projects', tgt_type='pillar').iteritems()|unique %}
+{%- for minion, projects in salt['mine.get']('compunaut_rundeck:enabled:True', fun='get_rundeck_projects', tgt_type='pillar').iteritems() %}
   {%- if projects is defined %}
     {%- for project, args in projects.items() %}
       {%- if project not in existing_groups %}
