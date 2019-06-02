@@ -38,8 +38,7 @@ source ./compunaut_functions
   time salt-run state.orch orch.update_data --state-output=mixed # update data
 
   echo_blue "Install Piserver"
-  #salt-run state.orch orch.install_piserver --async
-  time salt-run state.orch orch.install_piserver --state-output=mixed
+  salt-run state.orch orch.install_piserver --async
 
   echo_blue "Install MySQL"
   time salt-run state.orch orch.install_mysql --state-output=mixed
@@ -58,8 +57,7 @@ source ./compunaut_functions
   echo_green "Install Gitlab"
   salt-run state.orch orch.install_gitlab --async
   echo_green "Install Guacamole"
-  #salt-run state.orch orch.install_guacamole --async
-  time salt-run state.orch orch.install_guacamole --state-output=mixed
+  salt-run state.orch orch.install_guacamole --async
   echo_green "Install Grafana"
   salt-run state.orch orch.install_grafana --async
   echo_green "Install Rundeck"
