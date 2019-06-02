@@ -5,6 +5,25 @@ apache:
     80-phpldapadmin:
       interface: '*'
       port: '80'
+
+    443-self-service-password:
+      enabled: True
+      template_file: salt://apache/vhosts/standard.tmpl
+      ServerName: password.{{ vars.domain }}
+      ServerAlias: password.{{ vars.domain }}
+      interface: '*'
+      port: '443'
+      SSLCertificateFile: /etc/ssl/private/compunaut_pki.pem
+      DocumentRoot: /usr/share/self-service-password
+      DirectoryIndex: index.php
+      Directory:
+        default:
+          AllowOverride: None
+          Require: all granted
+        /usr/share/self-service-password/scripts:
+          AllowOverride: None
+          Require: all denied
+      
     443-ldap.{{ vars.domain }}:
       enabled: True
       template_file: salt://apache/vhosts/proxy.tmpl

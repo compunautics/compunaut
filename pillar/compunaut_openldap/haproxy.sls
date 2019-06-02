@@ -4,13 +4,17 @@ haproxy:
     compunaut_http:
       acls:
         - host_ldap hdr(host) -i ldap.{{ vars.domain }}
+        - host_password hdr(host) -i password.{{ vars.domain }}
       use_backends:
         - compunaut_ldap if host_ldap
+        - compunaut_ldap if host_password
     compunaut_https:
       acls:
         - host_ldap hdr(host) -i ldap.{{ vars.domain }}
+        - host_password hdr(host) -i password.{{ vars.domain }}
       use_backends:
         - compunaut_ldap if host_ldap
+        - compunaut_ldap if host_password
   backends:
     compunaut_ldap:
       mode: http
