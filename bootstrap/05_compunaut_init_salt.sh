@@ -54,18 +54,18 @@ source ./compunaut_functions
   echo_blue "Install Compunaut Applications"
   echo_green "Install Dashboard"
   salt-run state.orch orch.install_dashboard --async
-  echo_green "Install Gitlab"
-  salt-run state.orch orch.install_gitlab --async
-  echo_green "Install Guacamole"
-  salt-run state.orch orch.install_guacamole --async
   echo_green "Install Grafana"
   salt-run state.orch orch.install_grafana --async
   echo_green "Install Rundeck"
-  time salt-run state.orch orch.install_rundeck --state-output=mixed
+  salt-run state.orch orch.install_rundeck --async
+  echo_green "Install Gitlab"
+  salt-run state.orch orch.install_gitlab --async
+  echo_green "Install Guacamole"
+  time salt-run state.orch orch.install_guacamole --state-output=mixed
 
 # FINAL SETUP
-  echo_green "Waiting 120 seconds"
-  sleep 120
+  echo_green "Waiting 180 seconds"
+  sleep 180
   minion_wait
 
   echo_red "FINAL SETUP"
