@@ -11,6 +11,7 @@ dnsmasq:
       - 1.0.0.1
       - /consul/127.0.0.1#8600
     no-resolv: True
+    no-hosts: True
   addresses:
 ### SYSTEM ADDRESSES
     consul.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
