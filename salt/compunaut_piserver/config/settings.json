@@ -1,0 +1,9 @@
+{
+    "installed": 1,
+    "interface": "ens2",
+    "ldapServerType": "ldap",
+    "ldapUri": "ldaps://compunaut-openldap.service.consul",
+    "ldapDN": "{{ pillar.compunaut_piserver.secrets.ldap_base }}",
+    "ldapUser": "{{ pillar.compunaut_piserver.secrets.ldap_rootdn }}",
+    "ldapPassword": "{{ pillar.compunaut_piserver.secrets.ldap_unencrypted_rootpw }}"
+}

@@ -1,0 +1,36 @@
+# The PKI module will generate openvpn keys for remote engineers who work on the system.
+# This file contains an example client configuration that can be referred to when 
+# installing and configuring openvpn on remote engineer work stations.
+
+; Networking
+proto tcp-client
+port ${ put server port here } # ex: 1194
+tun-mtu 8950
+remote ${ put server ip address here } # ex: 192.168.0.105
+
+; Operating system
+dev tun
+user nobody
+group nogroup
+persist-key
+persist-tun
+
+; Data transfer
+
+; Logging / Debugging
+verb 3
+
+; Cryptographic parameters
+ca ${ put path to ca cert here } # ex: /etc/ssl/private/ca.crt
+cert ${ put path to ssl cert here } # ex: /etc/ssl/private/openvpn.crt
+key ${ put path to ssl private key here } # ex: /etc/ssl/private/openvpn.key
+
+; check with https://bettercrypto.org/static/applied-crypto-hardening.pdf
+; Certificate verification
+; (Anti MITM)
+
+; Up/Down Scripts
+pull
+tls-client
+resolv-retry infinite
+nobind

@@ -1,0 +1,10 @@
+KERNEL=="vnet[0-9]*", RUN+="/sbin/ip link set %k mtu 8950"
+KERNEL=="vnet[0-9]*", RUN+="/sbin/ip link set %k txqueuelen 15000"
+{%- if pillar.compunaut_piserver is defined %}
+  {%- if pillar.compunaut_piserver.enabled == True %}
+KERNEL=="ens[0-9]*", RUN+="/sbin/ip link set %k txqueuelen 15000"
+  {%- endif %}
+{%- else %}
+KERNEL=="ens[0-9]*", RUN+="/sbin/ip link set %k mtu 8950"
+KERNEL=="ens[0-9]*", RUN+="/sbin/ip link set %k txqueuelen 15000"
+{%- endif %}

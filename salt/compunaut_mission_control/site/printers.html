@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- ================ BEGIN HEAD ================ -->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="description" content="CompuNAUT Fleet Controller, MISSION CONTROL PANEL" />
+<meta name="keywords" content="CompuNAUT,3D Printing" />
+<meta name="author" content="Calyo Delphi" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compunaut Fleet Controller: Printers</title>
+<link rel="icon" type="image/jpeg" href="img/200pix.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<base target="_blank" />
+
+</head>
+<!-- ================ END HEAD ================ -->
+
+<!-- ================ BEGIN BODY ================ -->
+<body>
+
+<main>
+    <header>
+        <a id="homepage" href="index.html" target="_self"><img id="logo" src="img/460azzy.png" /></a>
+        <h1 id="Compunaut">Compunaut Fleet Controller</h1>
+        <h1 id="MissionCtrl">PRINTERS</h1>
+    </header>
+
+{%- for minion, short_host in salt['mine.get']('compunaut_octoprint:enabled:True', 'get_minion_short_host', 'pillar').iteritems()|sort %}
+    <a class="printer" href="https://{{ short_host }}.{{ pillar.compunaut.vars.domain }}/"><h1>{{ short_host }}</h1></a>
+{%- endfor %}
+    <footer>
+        <img src="img/crest.svg" />
+        <p>Panel Design &copy;2019 Calyo Delphi (dragon&#x2011;architect)</p>
+    </footer>
+</main>
+
+</body>
+<!-- ================ END BODY ================ -->
+
+<!-- If the browser has scripts disabled/blocked, the background image will just scroll with the document as graceful degradation. Tiling will look kinda eh, but it's better than there just being black around the bg image. -->
+<script src="parallax.js"></script>
+
+</html>

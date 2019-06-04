@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- ================ BEGIN HEAD ================ -->
+<head>
+
+<meta charset="UTF-8" />
+<meta name="description" content="CompuNAUT Fleet Controller, MISSION CONTROL PANEL" />
+<meta name="keywords" content="CompuNAUT,3D Printing" />
+<meta name="author" content="Calyo Delphi" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Compunaut Fleet Controller: Mission Control</title>
+<link rel="icon" type="image/jpeg" href="img/200pix.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+
+<base target="_blank" />
+
+</head>
+<!-- ================ END HEAD ================ -->
+
+<!-- ================ BEGIN BODY ================ -->
+<body>
+
+<main>
+    <header>
+        <!-- MAIN LOGO NEEDS TO BE A LINK BACK TO THE INDEX.HTML PAGE -->
+        <a id="homepage" href="index.html" target="_self"><img id="logo" src="img/460azzy.png" /></a>
+        <h1 id="Compunaut">Compunaut Fleet Controller</h1>
+        <h1 id="MissionCtrl">MISSION CONTROL</h1>
+    </header>
+    
+    <div class="two links">
+        <a id="rundeck" class="left" href="https://rundeck.{{ pillar.compunaut.vars.domain }}/menu/home">
+            <img class="logo-wide" src="img/rundeck-wide.jpg" />
+            <img class="logo-square" src="img/rundeck-square.png" />
+        </a>
+        <a id="guacamole" class="right" href="https://guacamole.{{ pillar.compunaut.vars.domain }}/guacamole/">
+            <img class="logo-wide" src="img/guac-wide.png" />
+            <img class="logo-square" src="img/guac-square.png" />
+        </a>
+    </div>
+    
+    <div class="two links">
+        <a id="grafana" class="left" href="https://grafana.{{ pillar.compunaut.vars.domain }}/">
+            <img class="logo-wide" src="img/grafana-wide.png" />
+            <img class="logo-square" src="img/grafana-square.png" />
+        </a>
+        <a id="consul" class="right" href="https://consul.{{ pillar.compunaut.vars.domain }}/ui/compunaut/nodes">
+            <img class="logo-wide" src="img/consul-wide.png" />
+            <img class="logo-square" src="img/consul-square.png" />
+        </a>
+    </div>
+    
+    <div class="one link">
+        <a id="phpldap" class="solo" href="https://ldap.{{ pillar.compunaut.vars.domain }}/phpldapadmin/index.php">
+            <img class="logo-wide" src="img/phpldap-wide.png" />
+            <img class="logo-square" src="img/phpldap-square.png" />
+        </a>
+    </div>
+    <div class="one link">
+        <a id="gitlab" class="solo" href="https://gitlab.{{ pillar.compunaut.vars.domain }}/">
+            <img class="logo-wide" src="img/gitlab-wide.png" />
+            <img class="logo-square" src="img/gitlab-square.png" />
+        </a>
+    </div>
+    
+    <a id="printers" class="solo" href="printers.html" target="_self">
+        <h1 id="print-wide">P R I N T E R S</h1>
+        <h1 id="print-narrow">PRINTERS</h1>
+    </a>
+    
+    <footer>
+        <img src="img/crest.svg" />
+        <p>Panel Design &copy;2019 Calyo Delphi (dragon&#x2011;architect)</p>
+    </footer>
+</main>
+
+</body>
+<!-- ================ END BODY ================ -->
+
+<!-- If the browser has scripts disabled/blocked, the background image will just scroll with the document as graceful degradation. Tiling will look kinda eh, but it's better than there just being black around the bg image. -->
+<script src="parallax.js"></script>
+
+</html>

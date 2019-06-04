@@ -1,0 +1,15 @@
+[Unit]
+Description=InfluxDB Relay is used to proxy incoming messages to multiple backend influxdb instances
+Documentation=https://github.com/influxdata/influxdb-relay
+After=network-online.target
+
+[Service]
+User=influxdb_relay
+Group=influxdb_relay
+LimitNOFILE=65536
+ExecStart=/opt/influxdb_relay/bin/influxdb-relay -config /etc/influxdb-relay/influxdb-relay.conf
+KillMode=control-group
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
