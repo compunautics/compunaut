@@ -11,8 +11,9 @@ install_rundeck:
       - rundeck.config
       - rundeck.plugins
       - rundeck.service
-      - uwsgi
       - compunaut_rundeck.uwsgi
+      - uwsgi.service
+      - uwsgi.applications
       - compunaut_rundeck.config
       - compunaut_rundeck.acl
       - compunaut_rundeck.resources

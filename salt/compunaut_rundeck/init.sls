@@ -1,5 +1,4 @@
 include:
-  - compunaut_rundeck.truststore
   - compunaut_rundeck.sudo
   - rundeck.repo
   - rundeck.install
