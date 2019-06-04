@@ -19,6 +19,8 @@ base:
     - compunaut_haproxy
     - compunaut_keepalived
     - compunaut_mission_control
+  '*prtr*':
+    - compunaut_octoprint
   '*rundeck*':
     - compunaut_rundeck
   '*salt*':

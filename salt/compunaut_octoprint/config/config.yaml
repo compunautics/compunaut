@@ -1,0 +1,50 @@
+accessControl:
+  groups: compunaut_octoprint
+  ldap_search_base: {{ pillar.compunaut_octoprint.secrets.ldap_base }}
+  ldap_uri: ldap://compunaut-openldap.service.consul
+api:
+  key: {{ pillar.compunaut_octoprint.secrets.octoprint_api_key }}
+plugins:
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1545132000
+      _important:
+        read_until: 1521111600
+      _octopi:
+        read_until: 1527588900
+      _plugins:
+        read_until: 1546387200
+      _releases:
+        read_until: 1544449800
+  discovery:
+    upnpUuid: 0e4abc71-58a6-4e0b-8240-bc1c80f8dcfd
+  softwareupdate:
+    _config_version: 6
+  tracking:
+    enabled: false
+  cura:
+    cura_engine: /usr/bin/CuraEngine
+printerProfiles:
+  default: _default
+serial:
+  port: /dev/ttyUSB0
+  autoconnect: true
+server:
+  commands:
+    serverRestartCommand: sudo /etc/init.d/octoprint restart
+    systemRestartCommand: sudo shutdown -r now
+    systemShutdownCommand: sudo shutdown -h now
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  seenWizards:
+    corewizard: 3
+    cura: null
+    tracking: null
+{%- set short_local_minion = grains['host'] %}
+webcam:
+  stream: http://webcam.{{ short_local_minion }}.{{ pillar.compunaut.vars.domain }}

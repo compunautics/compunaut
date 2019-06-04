@@ -51,6 +51,9 @@ base:
   'compunaut_haproxy:enabled:True':
     - match: pillar
     - compunaut_haproxy
+  'compunaut_octoprint:enabled:True':
+    - match: pillar
+    - compunaut_octoprint
   '*':
     - compunaut_chronyd
     - compunaut_default

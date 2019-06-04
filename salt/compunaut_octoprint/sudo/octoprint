@@ -1,0 +1,1 @@
+octoprint ALL=(root) NOPASSWD: /etc/init.d/octoprint, /sbin/shutdown
