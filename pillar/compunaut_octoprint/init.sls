@@ -5,3 +5,6 @@ include:
   - compunaut_octoprint.haproxy
   - compunaut_octoprint.secrets
   - compunaut_octoprint.telegraf
+
+compunaut_octoprint:
+  enabled:True
