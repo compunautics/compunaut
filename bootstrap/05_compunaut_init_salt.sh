@@ -47,8 +47,8 @@ source ./compunaut_functions
   echo_blue "Install OpenLDAP"
   salt-run state.orch orch.install_openldap --async
 
-  echo_green "Waiting 120 seconds"
-  sleep 120
+  echo_green "Waiting 180 seconds"
+  sleep 180
   minion_wait
 
   echo_blue "Install Compunaut Applications"
