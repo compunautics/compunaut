@@ -43,13 +43,13 @@ dnsmasq:
   {%- endfor %}
 
 ### PRINTER ADDRESSES
-  {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_octoprint:enable:True', fun='network.interfaces', tgt_type='pillar').items() %}
+  {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_octoprint:enabled:True', fun='network.interfaces', tgt_type='pillar').items() %}
     {%- if interfaces['eth0'] is defined %}
       {%- set eth0_addr = interfaces['eth0']['inet'][0]['address'] %}
     {{ minion }}: {{ eth0_addr }}
     {%- endif %}
   {%- endfor %}
-  {%- for minion, args in salt.saltutil.runner('mine.get', tgt='compunaut_octoprint:enable:True', fun='grains.items', tgt_type='pillar').items() %}
+  {%- for minion, args in salt.saltutil.runner('mine.get', tgt='compunaut_octoprint:enabled:True', fun='grains.items', tgt_type='pillar').items() %}
     {%- set public_hostname = args['host'] %}
     {{ public_hostname }}.{{ vars.domain }}: {{ vars.public_net }}.{{ vars.proxy_vip }}
   {%- endfor %}
