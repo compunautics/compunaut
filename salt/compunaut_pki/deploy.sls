@@ -94,7 +94,7 @@ correct_ownership_for_compunaut_pki.pem:
     - group: rundeck
     - mode: 0600
   {%- endif %}
-{%- else %}
+{%- endif %}
 /home/rundeck-svc/.ssh/authorized_keys:
   file.managed:
     - source: salt://compunaut_pki/keys/rundeck-svc_id_rsa.pub
@@ -102,4 +102,3 @@ correct_ownership_for_compunaut_pki.pem:
     - user: rundeck-svc
     - group: rundeck-svc
     - mode: 0600
-{%- endif %}
