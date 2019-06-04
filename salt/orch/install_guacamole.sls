@@ -6,4 +6,9 @@ install_guacamole:
     - batch: 1
     - batch-wait: 15
     - sls:
-      - compunaut_guacamole.mysql,compunaut_guacamole
+      - compunaut_guacamole.mysql
+      - compunaut_guacamole.truststore
+      - compunaut_guacamole.install
+      - compunaut_guacamole.config
+      - compunaut_guacamole.restart
+      - compunaut_guacamole.apache
