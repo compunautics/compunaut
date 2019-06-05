@@ -3,7 +3,7 @@ rundeck:
   username: "{{ secrets.rundeck_admin_user }}"
   password: "{{ secrets.rundeck_admin_unencrypted_password }}"
   {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
-  url: 'https://rundeck.{{ vars.domain }}'
+  url: 'http://localhost:4440/'
   {%- endfor %}
   client:
     enabled: True
