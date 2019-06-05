@@ -20,4 +20,10 @@ openldap:
       TLSCertificateFile /etc/ssl/private/compunaut_pki.crt
       TLSCertificateKeyFile /etc/ssl/private/compunaut_pki.key
       TLSDHParamFile  /etc/ssl/private/dhparams.pem
+    acl.conf: |
+      access to dn.children="{{ secrets.ldap_base }}"
+        by self write
+        by group.exact="cn=compunaut_ldap_administrators,ou=Groups,{{ secrets.ldap_base }}" write
+        by users read
+        by * auth
 {%- endfor %}
