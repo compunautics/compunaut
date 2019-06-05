@@ -46,6 +46,8 @@ source ./compunaut_functions
   salt-run state.orch orch.install_influxdb --async
   echo_blue "Install OpenLDAP"
   salt-run state.orch orch.install_openldap --async
+  echo_blue "Install NFS"
+  salt-run state.orch orch.install_nfs --async
 
   echo_green "Waiting 180 seconds"
   sleep 180
