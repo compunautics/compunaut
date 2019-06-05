@@ -367,7 +367,7 @@ $servers->setValue('login','attr','uid');
    the ldap administrator wants to log in with his root-dn, that does not
    necessarily have the uid attribute.
    When using this feature, login_class is ignored. */
-// $servers->setValue('login','fallback_dn',false);
+$servers->setValue('login','fallback_dn',true);
 
 /* Specify true If you want phpLDAPadmin to not display or permit any
    modification to the LDAP server. */
