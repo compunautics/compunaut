@@ -20,7 +20,7 @@ delete_prtr_keys:
     - tgt: 'compunaut_salt:enabled:True'
     - tgt_type: pillar
     - arg:
-      - salt-key -d '*-prtr*' -y
+      - salt-key -d '*prtr*' -y
 
 delete_pki:
   salt.function:
