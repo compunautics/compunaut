@@ -91,7 +91,7 @@ br0:
     - unless: virsh net-list | grep br1
 
 # Restart the private network when settings change
-'virsh net-destroy br1 && virsh net-start br1':
+'virsh net-destroy br1 && virsh net-undefine br1 && virsh net-define /srv/salt-images/br1.xml && virsh net-start br1':
   cmd.run:
     - onchanges:
       - file: /srv/salt-images/br1.xml
