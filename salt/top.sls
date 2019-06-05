@@ -27,6 +27,9 @@ base:
   'compunaut_openldap:enabled:True':
     - match: pillar
     - compunaut_openldap
+  'compunaut_nfs:enabled:True':
+    - match: pillar
+    - compunaut_nfs
   'not I@compunaut_openldap:enabled:True':
     - match: compound
     - compunaut_openldap

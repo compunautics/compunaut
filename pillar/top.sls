@@ -15,6 +15,8 @@ base:
   '*netboot*':
     - compunaut_guacamole
     - compunaut_piserver
+  '*nfs*':
+    - compunaut_nfs
   '*proxy*':
     - compunaut_haproxy
     - compunaut_keepalived

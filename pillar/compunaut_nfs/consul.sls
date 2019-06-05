@@ -4,8 +4,9 @@ consul:
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
+{%- endif %}
       checks:
-        - name: Piserver Rpcbind Process
+        - name: Compunaut Rpcbind Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a
@@ -13,7 +14,7 @@ consul:
             - -c
             - "1:"
           interval: 10s
-        - name: Piserver Rpc Mountd Process
+        - name: Compunaut Rpc Mountd Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a
@@ -21,7 +22,7 @@ consul:
             - -c
             - "1:"
           interval: 10s
-        - name: Piserver NFSD Process
+        - name: Compunaut NFSD Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a
@@ -29,31 +30,7 @@ consul:
             - -c
             - "1:"
           interval: 10s
-        - name: Piserver NFS Health Check
+        - name: Compunaut NFS Health Check
           args:
             - /etc/consul.d/checks/check_nfs_health.sh
           interval: 20s
-    - name: compunaut_vnc
-      port: 5901
-      address: {{ address }}
-{%- endif %}
-      checks:
-        - name: Compunaut VNC Process
-          args:
-            - /usr/lib/nagios/plugins/check_procs
-            - -a
-            - "Xtightvnc"
-            - -c
-            - "1:"
-          interval: 10s
-        - name: Compunaut VNC TCP Check
-          args:
-            - /usr/lib/nagios/plugins/check_tcp 
-            - -H 
-            - localhost 
-            - -p 
-            - "5901"
-            - -t 
-            - "3"
-          interval: 10s
-
