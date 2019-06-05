@@ -22,8 +22,8 @@ grafana:
         host: 'compunaut-openldap.service.consul'
         port: 636
         use_ssl: 'true'
-        bind_dn: "{{ secrets.ldap_rootdn }}"
-        bind_password: "{{ secrets.ldap_unencrypted_rootpw }}"
+        bind_dn: ""
+        bind_password: ""
         user_search_filter: "(uid=%s)"
         user_search_base_dns: 
           - "{{ secrets.ldap_base }}"

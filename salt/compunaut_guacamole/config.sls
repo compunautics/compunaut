@@ -40,9 +40,9 @@ include:
     - source: salt://compunaut_guacamole/config/guacamole.properties
     - template: jinja
     - makedirs: True
-    - user: root
+    - user: tomcat8
     - group: tomcat8
-    - mode: 0660
+    - mode: 0600
 
 /var/lib/tomcat8/.guacamole:
   file.symlink:

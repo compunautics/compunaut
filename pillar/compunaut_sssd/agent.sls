@@ -28,9 +28,7 @@ sssd:
         ldap_uri: 'ldaps://compunaut-openldap.service.consul'
         ldap_search_base: '{{ secrets.ldap_base }}'
         ldap_tls_reqcert: allow
-        ldap_default_bind_dn: '{{ secrets.ldap_rootdn }}'
         ldap_default_authtok_type: password
-        ldap_default_authtok: '{{ secrets.ldap_unencrypted_rootpw }}'
         ldap_access_filter: '(memberOf=cn=compunaut_linux,ou=Groups,{{ secrets.ldap_base }})'
   {%- endfor %}
 {%- endfor %}

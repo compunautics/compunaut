@@ -5,7 +5,7 @@
     - makedirs: True
     - user: root
     - group: root
-    - mode: 0640
+    - mode: 0600
 
 /home/netboot/Desktop/PiServer.desktop:
   file.managed:
