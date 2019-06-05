@@ -12,4 +12,9 @@ gitlab:
     repository:
       compunaut/compunaut:
         enabled: True
+      compunaut/compunaut_rundeck_jobs:
+        enabled: True
+        import_url: https://github.com/compunautics/compunaut_rundeck_jobs.git
+      compunaut/compunaut_bootstrap:
+        enabled: True
 {%- endfor %}
