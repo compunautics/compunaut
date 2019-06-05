@@ -436,7 +436,7 @@ $servers->setValue('login','bind_id','');
 /* This is the time out value in minutes for the server. After as many minutes
    of inactivity you will be automatically logged out. If not set, the default
    value will be ( session_cache_expire()-1 ) */
-#  $servers->setValue('login','timeout',30);
+$servers->setValue('login','timeout',15);
 
 /* Set this if you want phpldapadmin to perform rename operation on entry which
    has children. Certain servers are known to allow it, certain are not. */
