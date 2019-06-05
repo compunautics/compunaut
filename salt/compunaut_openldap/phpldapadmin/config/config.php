@@ -348,7 +348,7 @@ $servers->setValue('login','bind_id','');
    Leave blank or specify 'dn' to use full DN for logging in. Note also that if
    your LDAP server requires you to login to perform searches, you can enter the
    DN to use when searching in 'bind_id' and 'bind_pass' above. */
-// $servers->setValue('login','attr','dn');
+$servers->setValue('login','attr','uid');
 
 /* Base DNs to used for logins. If this value is not set, then the LDAP server
    Base DNs are used. */
