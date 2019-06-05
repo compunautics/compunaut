@@ -13,10 +13,10 @@ manage_compunaut_login_groups:
               - Groups
             objectClass:
               - organizationalUnit
-      - 'cn=compunaut_ldap_administrators,ou=Groups,{{ pillar.openldap.base }}':
+      - 'cn=compunaut_ldap_admin,ou=Groups,{{ pillar.openldap.base }}':
         - add:
             cn:
-              - compunaut_ldap_administrators
+              - compunaut_ldap_admin
             objectClass:
               - top
               - groupOfNames
