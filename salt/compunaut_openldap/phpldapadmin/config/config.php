@@ -277,7 +277,7 @@ $servers->setValue('server','base',array('{{ pillar.openldap.base }}'));
    your situation. If you choose 'cookie', your cookie contents will be
    encrypted using blowfish and the secret your specify above as
    session['blowfish']. */
-$servers->setValue('login','auth_type','cookie');
+$servers->setValue('login','auth_type','session');
 
 /* The DN of the user for phpLDAPadmin to bind with. For anonymous binds or
    'cookie','session' or 'sasl' auth_types, LEAVE THE LOGIN_DN AND LOGIN_PASS
