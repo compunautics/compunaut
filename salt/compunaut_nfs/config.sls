@@ -1,3 +1,9 @@
+/srv/rundeck_execution_logs:
+  file.directory:
+    - user: root
+    - group: root
+    - makedirs: True
+
 /etc/sysctl.d/60-nfs-tune.conf:
   file.managed:
     - source: salt://compunaut_nfs/config/60-nfs-tune.conf
