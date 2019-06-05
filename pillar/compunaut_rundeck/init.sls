@@ -5,6 +5,7 @@ include:
   - compunaut_rundeck.haproxy
   - compunaut_rundeck.iptables
   - compunaut_rundeck.mysql
+  - compunaut_rundeck.nfs
   - compunaut_rundeck.server
   - compunaut_rundeck.uwsgi
 

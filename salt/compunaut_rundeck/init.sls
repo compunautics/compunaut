@@ -1,4 +1,6 @@
 include:
+  - compunaut_rundeck.nfs
+  - nfs
   - compunaut_rundeck.sudo
   - rundeck.repo
   - rundeck.install

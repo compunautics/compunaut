@@ -2,6 +2,7 @@
   file.directory:
     - user: root
     - group: root
+    - mode: 0750
     - makedirs: True
 
 /etc/sysctl.d/60-nfs-tune.conf:
