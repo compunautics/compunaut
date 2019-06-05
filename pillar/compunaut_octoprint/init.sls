@@ -7,4 +7,4 @@ include:
   - compunaut_octoprint.telegraf
 
 compunaut_octoprint:
-  enabled:True
+  enabled: True
