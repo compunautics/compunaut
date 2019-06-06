@@ -8,7 +8,7 @@ compunaut_consul:
         enabled: true
         cluster-name: "Compunaut"
         username: "Compunaut Alerts"
-        channel: "#placeholder"
+        channel: "@placeholder"
         url: https://placeholder
       email:
         enabled: true
