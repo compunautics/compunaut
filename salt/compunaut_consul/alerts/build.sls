@@ -11,7 +11,7 @@ consul_alerts_group:
 
 consul_alerts:
   user.present:
-    - shell: /usr/sbin/nologin
+    - shell: /bin/bash
     - home: /opt/consul_alerts
     - uid: 10001
     - allow_uid_change: true
