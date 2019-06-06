@@ -9,8 +9,7 @@ manage_acls:
       - 'olcDatabase={1}mdb,cn=config':
         - replace:
            olcAccess:
-             - '{0}to dn.children="ou=Groups,{{ pillar.openldap.base }}" by self write by group.exact="cn=compunaut_ldap_admin,ou=Groups,{{ pillar.openldap.base }}" write by users read by * auth'
-             - '{1}to dn.children="ou=Users,{{ pillar.openldap.base }}" by self write by group.exact="cn=compunaut_ldap_admin,ou=Groups,{{ pillar.openldap.base }}" write by users read by * auth'
+             - '{0}to dn.children="ou=Groups,{{ pillar.openldap.base }}" by self write by group.exact="cn=compunaut_ldap_admin,ou=Groups,{{ pillar.openldap.base }}" write by * read'
+             - '{1}to dn.children="ou=Users,{{ pillar.openldap.base }}" by self write by group.exact="cn=compunaut_ldap_admin,ou=Groups,{{ pillar.openldap.base }}" write by * read'
              - '{2}to attrs=userPassword by self write by anonymous auth by * none'
-             - '{3}to attrs=shadowLastChange by self write by * read'
-             - '{4}to * by * read'
+             - '{3}to * by * read'
