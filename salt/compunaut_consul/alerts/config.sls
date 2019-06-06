@@ -23,15 +23,13 @@
       - value: default
 
 ###SET UP NOTIFIERS
-{%- for node, slack_args in salt['pillar.get']('compunaut_consul:alerts:notifiers:slack').iteritems() %}
-  {%- for key, value in slack_args %}
+{%- for key, value in salt['pillar.get']('compunaut_consul:alerts:notifiers:slack').iteritems() %}
 /consul-alerts/config/notifiers/slack/{{ key }}:
   module.run:
     - consul.put:
       - consul_url: http://localhost:8500
       - key: /consul-alerts/config/notifiers/slack/{{ key }}
       - value: {{ value }}
-  {%- endfor %}
 {%- endfor %}
 
 /consul-alerts/config/notifiers/email/:
