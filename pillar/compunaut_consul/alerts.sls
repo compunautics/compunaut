@@ -1,15 +1,7 @@
 compunaut_consul:
   alerts:
     notif-profiles:
-      default: |
-        '{
-          "Interval": 10,
-          "NotifList": {
-            "log":true,
-            "slack":false,
-            "email":false
-          }
-        }'
+      default: {'Interval': 10,'NotifList': {'log':true,'slack':false,'email':false}}
 {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
     notifiers:
       slack:
