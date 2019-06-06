@@ -47,4 +47,4 @@ server:
     tracking: null
 {%- set short_local_minion = grains['host'] %}
 webcam:
-  stream: http://webcam.{{ short_local_minion }}.{{ pillar.compunaut.vars.domain }}
+  stream: https://webcam.{{ short_local_minion }}.{{ pillar.compunaut.vars.domain }}

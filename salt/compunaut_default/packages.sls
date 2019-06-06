@@ -15,9 +15,15 @@ install_default_packages:
       - traceroute
       - mtr
       - python-pip
+      - openssh-server
 
 install_default_python_modules:
   pip.installed:
     - pkgs:
       - ruamel.yaml
       - pynag
+
+ssh_service:
+  service.running:
+    - name: ssh
+    - enable: True
