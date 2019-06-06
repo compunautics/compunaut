@@ -5,7 +5,7 @@
       - consul_url: http://localhost:8500
       - key: /consul-alerts/config/notif-profiles/default
       - value: |
-          {{ pillar.compunaut_consul.alerts.notif-profiles.default }}
+          {{ pillar['compunaut_consul']['alerts']['notif-profiles']['default'] }}
 
 ###SET UP DEFAULT NOTIFICATION SELECTORS
 /consul-alerts/config/notif-selection/warning:
