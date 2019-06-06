@@ -59,9 +59,16 @@ rundeck-svc:
 /var/lib/rundeck/var/uploads/:
   file.directory:
     - user: rundeck-svc
+{%- if pillar.compunaut_rundeck is defined %}
+  {%- if pillar.compunaut_rundeck.enabled == True %}
+    - group: rundeck
+    - mode: 0770
+  {%- else %}
     - group: rundeck-svc
-    - makedirs: True
     - mode: 0700
+  {%- endif %}
+{%- endif %}
+    - makedirs: True
 
 ### RUNDECK
 {%- if pillar.compunaut_rundeck is defined %}
