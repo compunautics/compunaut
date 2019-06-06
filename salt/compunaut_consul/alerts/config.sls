@@ -24,7 +24,7 @@
 
 ###SET UP NOTIFIERS
 {%- for node, slack_args in salt['pillar.get']('compunaut_consul:alerts:notifiers:slack').iteritems() %}
-  {%- for key, value in slack_args.items() %}
+  {%- for key, value in slack_args %}
 /consul-alerts/config/notifiers/slack/{{ key }}:
   module.run:
     - consul.put:
