@@ -28,7 +28,7 @@
     - consul.put:
       - consul_url: http://localhost:8500
       - key: /consul-alerts/config/notifiers/slack/{{ key }}
-      - value: {{ value }}
+      - value: "{{ value }}"
 {%- endfor %}
 
 /consul-alerts/config/notifiers/email/:
