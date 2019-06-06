@@ -7,7 +7,7 @@ After=network-online.target
 User=consul_alerts
 Group=consul_alerts
 LimitNOFILE=65536
-ExecStart=/opt/consul_alerts/bin/consul-alerts start --watch-checks --consul-dc=compunaut
+ExecStart=/opt/consul_alerts/bin/consul-alerts start --watch-checks --consul-dc=compunaut --log-level=debug
 KillMode=control-group
 Restart=on-failure
 
