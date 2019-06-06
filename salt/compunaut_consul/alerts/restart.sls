@@ -1,3 +1,3 @@
-influxdb-relay.service:
+consul-alerts.service:
   service.running:
     - enable: True

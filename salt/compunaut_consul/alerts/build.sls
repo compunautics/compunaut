@@ -31,7 +31,7 @@ consul_alerts:
     - group: root
     - mode: 0664
 
-refresh_systemd_for_relay:
+refresh_systemd_for_alerts:
   cmd.run:
     - name: systemctl daemon-reload
     - runas: root
