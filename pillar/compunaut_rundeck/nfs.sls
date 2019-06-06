@@ -13,4 +13,4 @@ nfs:
   {%- endif %}
         device: {{ address }}:/srv/rundeck_execution_logs
 {%- endfor %}
-        opts: "rw,user"
+        opts: "rw,user,soft"
