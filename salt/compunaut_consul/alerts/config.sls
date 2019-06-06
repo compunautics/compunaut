@@ -31,8 +31,11 @@
       - value: "{{ value }}"
 {%- endfor %}
 
-/consul-alerts/config/notifiers/email/:
+{%- for key, value in salt['pillar.get']('compunaut_consul:alerts:notifiers:email').iteritems() %}
+/consul-alerts/config/notifiers/email/{{ key }}:
   module.run:
     - consul.put:
       - consul_url: http://localhost:8500
-      - key: /consul-alerts/config/notifiers/email/
+      - key: /consul-alerts/config/notifiers/email/{{ key }}
+      - value: "{{ value }}"
+{%- endfor %}
