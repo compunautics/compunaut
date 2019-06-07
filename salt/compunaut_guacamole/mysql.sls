@@ -18,14 +18,14 @@ mariadb-client-core-10.0:
     - group: root
     - mode: 0640
 
-'mysql --host=compunaut_mysql_database.service.consul --user=compunaut_guacamole --password={{ pillar.compunaut_guacamole.secrets.guac_database_password }} compunaut_guacamole < /etc/guacamole/schemes/001-create-schema.sql':
+'mysql --host=compunaut-mysql-database.service.consul --user=compunaut_guacamole --password={{ pillar.compunaut_guacamole.secrets.guac_database_password }} compunaut_guacamole < /etc/guacamole/schemes/001-create-schema.sql':
   cmd.run:
     - runas: root
     - require:
       - pkg: mariadb-client-core-10.0
       - file: /etc/guacamole/schemes/001-create-schema.sql
 
-'mysql --host=compunaut_mysql_database.service.consul --user=compunaut_guacamole --password={{ pillar.compunaut_guacamole.secrets.guac_database_password }} compunaut_guacamole < /etc/guacamole/schemes/002-create-admin-user.sql':
+'mysql --host=compunaut-mysql-database.service.consul --user=compunaut_guacamole --password={{ pillar.compunaut_guacamole.secrets.guac_database_password }} compunaut_guacamole < /etc/guacamole/schemes/002-create-admin-user.sql':
   cmd.run:
     - runas: root
     - require:

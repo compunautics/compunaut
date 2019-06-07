@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_consul_apache
+    - name: compunaut-consul-apache
       port: 443
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -14,7 +14,7 @@ consul:
             - -c
             - "1:"
           interval: 10s
-    - name: compunaut_consul_alerts
+    - name: compunaut-consul-alerts
       port: 9000
       address: {{ address }}
 {%- endif %}

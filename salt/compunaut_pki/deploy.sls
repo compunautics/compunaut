@@ -68,16 +68,16 @@ correct_ownership_for_compunaut_pki.pem:
 
 {%- if pillar.compunaut_openldap is defined %}
   {%- if pillar.compunaut_openldap.enabled == True %}
-/etc/ssl/private/compunaut_openldap.service.consul.crt:
+/etc/ssl/private/compunaut-openldap.service.consul.crt:
   file.managed:
-    - source: salt://compunaut_pki/keys/compunaut_openldap.service.consul.crt
+    - source: salt://compunaut_pki/keys/compunaut-openldap.service.consul.crt
     - user: root
     - group: ssl-cert
     - mode: 0660
   
-/etc/ssl/private/compunaut_openldap.service.consul.key:
+/etc/ssl/private/compunaut-openldap.service.consul.key:
   file.managed:
-    - source: salt://compunaut_pki/keys/compunaut_openldap.service.consul.key
+    - source: salt://compunaut_pki/keys/compunaut-openldap.service.consul.key
     - user: root
     - group: ssl-cert
     - mode: 0660

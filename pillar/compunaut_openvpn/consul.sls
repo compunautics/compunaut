@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_openvpn
+    - name: compunaut-openvpn
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}

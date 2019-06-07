@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_rundeck
+    - name: compunaut-rundeck
       port: 4440
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -28,7 +28,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_rundeck_uwsgi
+    - name: compunaut-rundeck-uwsgi
       port: 8080
       address: {{ address }}
       checks:
@@ -54,7 +54,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_rundeck_apache
+    - name: compunaut-rundeck-apache
       port: 443
       address: {{ address }}
       checks:

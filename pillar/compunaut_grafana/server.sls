@@ -9,7 +9,7 @@ grafana:
       password: {{ secrets.grafana_unencrypted_admin_password }}
     database:
       engine: mysql
-      host: compunaut_mysql_database.service.consul
+      host: compunaut-mysql-database.service.consul
       port: 3306
       name: compunaut_grafana
       user: compunaut_grafana

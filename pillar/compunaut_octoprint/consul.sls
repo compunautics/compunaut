@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_octoprint
+    - name: compunaut-octoprint
       port: 5000
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -30,7 +30,7 @@ consul:
             - "3"
           interval: 10s
   {%- endfor %}
-    - name: compunaut_motion
+    - name: compunaut-motion
       port: 8081
       address: {{ address }}
 {%- endif %}

@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_guacamole
+    - name: compunaut-guacamole
       port: 8080
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -28,7 +28,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_guacd
+    - name: compunaut-guacd
       port: 4822
       address: {{ address }}
       checks:
@@ -50,7 +50,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_guacamole_apache
+    - name: compunaut-guacamole-apache
       port: 443
       address: {{ address }}
 {%- endif %}

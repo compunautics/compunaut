@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_mission_control
+    - name: compunaut-mission-control
       port: 8080
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}

@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_mysql_database
+    - name: compunaut-mysql-database
       port: 3306
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}

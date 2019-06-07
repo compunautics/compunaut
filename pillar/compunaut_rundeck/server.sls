@@ -11,7 +11,7 @@ rundeck:
     datasource:
       dbcreate: 'update'
       driverClassName: 'com.mysql.jdbc.Driver'
-      url: 'jdbc:mysql://compunaut_mysql_database.service.consul/compunaut_rundeck?autoReconnect=true'
+      url: 'jdbc:mysql://compunaut-mysql-database.service.consul/compunaut_rundeck?autoReconnect=true'
       username: 'compunaut_rundeck'
       password: "{{ secrets.rundeck_database_password }}"
     extra_opts:

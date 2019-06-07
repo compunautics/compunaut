@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_influxdb_in
+    - name: compunaut-influxdb-in
       port: 25826
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -24,7 +24,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_influxdb_out
+    - name: compunaut-influxdb-out
       port: 8086
       address: {{ address }}
       checks:

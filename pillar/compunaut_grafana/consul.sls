@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_grafana
+    - name: compunaut-grafana
       port: 3000
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -28,7 +28,7 @@ consul:
             - -t
             - "5"
           interval: 10s
-    - name: compunaut_grafana_apache
+    - name: compunaut-grafana-apache
       port: 443
       address: {{ address }}
 {%- endif %}

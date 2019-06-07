@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_chronyd
+    - name: compunaut-chronyd
       port: 123
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}

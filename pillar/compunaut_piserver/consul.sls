@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_piserver_nfs
+    - name: compunaut-piserver-nfs
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
       address: {{ address }}
@@ -33,7 +33,7 @@ consul:
           args:
             - /etc/consul.d/checks/check_nfs_health.sh
           interval: 20s
-    - name: compunaut_vnc
+    - name: compunaut-vnc
       port: 5901
       address: {{ address }}
 {%- endif %}

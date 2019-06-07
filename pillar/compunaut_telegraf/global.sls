@@ -16,7 +16,7 @@ telegraf:
   outputs:
     influxdb:
       urls:
-        - 'http://compunaut_influxdb_in.service.consul:25826'
+        - 'http://compunaut-influxdb-in.service.consul:25826'
       database: 'compunaut_telegraf'
       retention_policy: 'compunaut_one_year'
       skip_database_creation: 'true'

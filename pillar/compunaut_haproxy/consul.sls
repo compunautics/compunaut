@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_haproxy
+    - name: compunaut-haproxy
       port: 80
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}

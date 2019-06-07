@@ -1,6 +1,6 @@
 consul:
   register:
-    - name: compunaut_gitlab
+    - name: compunaut-gitlab
       port: 80
 {%- if grains['ip4_interfaces']['ens2'] is defined %}
   {%- set address = grains['ip4_interfaces']['ens2'][0] %}
@@ -26,7 +26,7 @@ consul:
             - -t
             - "3"
           interval: 10s
-    - name: compunaut_gitlab_apache
+    - name: compunaut-gitlab-apache
       port: 443
       address: {{ address }}
 {%- endif %}

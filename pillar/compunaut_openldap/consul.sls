@@ -24,7 +24,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_phpldapadmin
+    - name: compunaut-phpldapadmin
       address: {{ address }}
       port: 80
       checks:
@@ -46,7 +46,7 @@ consul:
             - -t 
             - "3"
           interval: 10s
-    - name: compunaut_ssp
+    - name: compunaut-ssp
       address: {{ address }}
       port: 443
       checks:
