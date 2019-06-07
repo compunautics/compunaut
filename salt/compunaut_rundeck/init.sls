@@ -1,4 +1,5 @@
 include:
+  - compunaut_rundeck.apache
   - compunaut_rundeck.nfs
   - nfs
   - compunaut_rundeck.sudo
@@ -13,5 +14,4 @@ include:
   - compunaut_rundeck.config
   - compunaut_rundeck.acl
   - compunaut_rundeck.resources
-  - compunaut_rundeck.apache
   - rundeck.client

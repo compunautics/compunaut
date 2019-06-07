@@ -1,4 +1,5 @@
 include:
+  - compunaut_octoprint.apache
   - compunaut_octoprint.repo
   - compunaut_octoprint.user
   - compunaut_octoprint.motion
@@ -6,4 +7,3 @@ include:
   - compunaut_octoprint.config
   - compunaut_octoprint.restart
   - compunaut_octoprint.scripts
-  - compunaut_octoprint.apache
