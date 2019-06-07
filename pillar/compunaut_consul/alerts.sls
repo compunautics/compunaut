@@ -15,6 +15,7 @@ compunaut_consul:
     notifiers:
       slack:
         enabled: true
+        detailed: true
         cluster-name: "Compunaut"
         username: "Compunaut_Alerts"
         channel: "\\\\#placeholder"
