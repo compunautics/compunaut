@@ -13,6 +13,7 @@ enable_mod_authnz_ldap:
 
 restart_apache2_for_ldap:
   service.running:
+    - name: apache2
     - enable: True
     - watch:
       - cmd: enable_mod_ldap
