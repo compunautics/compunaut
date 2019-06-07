@@ -28,6 +28,36 @@ compunaut:
       - user
       - group
 
+### RUNDECK
+{%- if pillar.compunaut_rundeck is defined %}
+  {%- if pillar.compunaut_rundeck.enabled == True %}
+rundeck_group:
+  group.present:
+    - name: rundeck
+    - gid: 9201
+
+rundeck:
+  user.present:
+    - shell: /bin/bash
+    - home: /var/lib/rundeck
+    - uid: 9201
+    - allow_uid_change: true
+    - allow_gid_change: true
+    - groups:
+      - rundeck
+      - adm
+      - sudo
+
+/var/lib/rundeck:
+  file.directory:
+    - user: rundeck
+    - group: rundeck
+    - recurse:
+      - user
+      - group
+  {%- endif %}
+{%- endif %}
+
 ### RUNDECK-SVC
 rundeck-svc_group:
   group.present:
@@ -69,33 +99,3 @@ rundeck-svc:
   {%- endif %}
 {%- endif %}
     - makedirs: True
-
-### RUNDECK
-{%- if pillar.compunaut_rundeck is defined %}
-  {%- if pillar.compunaut_rundeck.enabled == True %}
-rundeck_group:
-  group.present:
-    - name: rundeck
-    - gid: 9201
-
-rundeck:
-  user.present:
-    - shell: /bin/bash
-    - home: /var/lib/rundeck
-    - uid: 9201
-    - allow_uid_change: true
-    - allow_gid_change: true
-    - groups:
-      - rundeck
-      - adm
-      - sudo
-
-/var/lib/rundeck:
-  file.directory:
-    - user: rundeck
-    - group: rundeck
-    - recurse:
-      - user
-      - group
-  {%- endif %}
-{%- endif %}
