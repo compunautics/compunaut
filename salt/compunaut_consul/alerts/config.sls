@@ -1,19 +1,26 @@
 ###SET UP DEFAULT NOTIFICATION PROFILE
-/consul-alerts/config/notif-profiles/default:
+{%- for profile, configs in salt['pillar.get']('compunaut_consul:alerts:notif_profiles').iteritems() %}
+/consul-alerts/config/notif-profiles/{{ profile }}:
   module.run:
     - consul.put:
       - consul_url: http://localhost:8500
-      - key: /consul-alerts/config/notif-profiles/default
-      - value: {{ pillar['compunaut_consul']['alerts']['notif-profiles']['default'] }}
+      - key: /consul-alerts/config/notif-profiles/{{ profile }}
+      - value: {{ configs }}
+{%- endfor %}
 
 ###SET UP DEFAULT NOTIFICATION SELECTORS
-'consul kv put consul-alerts/config/notif-selection/status/warning default':
-  cmd.run:
-    - runas: root
-
-'consul kv put consul-alerts/config/notif-selection/status/critical default':
-  cmd.run:
-    - runas: root
+{%- for selection, types in salt['pillar.get']('compunaut_consul:alerts:notif_selection').iteritems() %}
+  {%- for type, configs in types.items() %}
+    {%- for key, value in configs.items() %}
+/consul-alerts/config/notif-selection/{{ type }}/{{ key }}:
+  module.run:
+    - consul.put:
+      - consul_url: http://localhost:8500
+      - key: /consul-alerts/config/notif-profiles/{{ type }}/{{ key }}
+      - value: {{ value }}
+    {%- endfor %}
+  {%- endfor %}
+{%- endfor %}
 
 ###SET UP NOTIFIERS
 {%- for key, value in salt['pillar.get']('compunaut_consul:alerts:notifiers:slack').iteritems() %}

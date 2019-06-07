@@ -1,12 +1,16 @@
 compunaut_consul:
   alerts:
-    notif-profiles:
+    notif_profiles:
       default: 
         Interval: 10
         NotifList:
           log: true
           slack: false
           email: false
+    notif_selection:
+      status:
+        warning: default
+        critical: default
     notifiers:
       slack:
         enabled: true
