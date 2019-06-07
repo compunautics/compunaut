@@ -99,3 +99,13 @@ rundeck-svc:
   {%- endif %}
 {%- endif %}
     - makedirs: True
+
+{%- if pillar.compunaut_rundeck is defined %}
+  {%- if pillar.compunaut_rundeck.enabled == True %}
+/var/lib/rundeck/var/:
+  file.directory:
+    - user: rundeck-svc
+    - group: rundeck
+    - mode: 0770
+  {%- endif %}
+{%- endif %}
