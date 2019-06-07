@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1559871649669,
+  "iteration": 1559886728982,
   "links": [],
   "panels": [
     {
@@ -192,7 +192,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_keepalived"
+              "value": "compunaut-keepalived"
             }
           ]
         }
@@ -266,7 +266,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -328,7 +328,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_keepalived"
+              "value": "compunaut-keepalived"
             }
           ]
         }
@@ -402,7 +402,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -464,7 +464,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_keepalived"
+              "value": "compunaut-keepalived"
             }
           ]
         }
@@ -538,7 +538,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -600,7 +600,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_keepalived"
+              "value": "compunaut-keepalived"
             }
           ]
         }
@@ -748,7 +748,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_openvpn"
+              "value": "compunaut-openvpn"
             }
           ]
         }
@@ -823,7 +823,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 112,
       "scopedVars": {
         "openvpn_node": {
@@ -885,7 +885,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_openvpn"
+              "value": "compunaut-openvpn"
             }
           ]
         }
@@ -1031,7 +1031,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_haproxy"
+              "value": "compunaut-haproxy"
             }
           ]
         }
@@ -1104,7 +1104,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 148,
       "scopedVars": {
         "haproxy_node": {
@@ -1166,7 +1166,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_haproxy"
+              "value": "compunaut-haproxy"
             }
           ]
         }
@@ -1312,7 +1312,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_mission_control"
+              "value": "compunaut-mission-control"
             }
           ]
         }
@@ -1385,7 +1385,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1631,
       "scopedVars": {
         "mission_control_node": {
@@ -1447,7 +1447,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_mission_control"
+              "value": "compunaut-mission-control"
             }
           ]
         }
@@ -1593,7 +1593,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck_apache"
+              "value": "compunaut-rundeck-apache"
             }
           ]
         }
@@ -1666,7 +1666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1985,
       "scopedVars": {
         "rundeck_node": {
@@ -1728,7 +1728,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck_apache"
+              "value": "compunaut-rundeck-apache"
             }
           ]
         }
@@ -1861,7 +1861,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck"
+              "value": "compunaut-rundeck"
             }
           ]
         }
@@ -1934,7 +1934,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 837,
       "scopedVars": {
         "rundeck_node": {
@@ -1996,7 +1996,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck"
+              "value": "compunaut-rundeck"
             }
           ]
         }
@@ -2129,7 +2129,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck_uwsgi"
+              "value": "compunaut-rundeck-uwsgi"
             }
           ]
         }
@@ -2202,7 +2202,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1515,
       "scopedVars": {
         "rundeck_node": {
@@ -2264,7 +2264,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_rundeck_uwsgi"
+              "value": "compunaut-rundeck-uwsgi"
             }
           ]
         }
@@ -2410,7 +2410,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_grafana_apache"
+              "value": "compunaut-grafana-apache"
             }
           ]
         }
@@ -2483,7 +2483,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1986,
       "scopedVars": {
         "monitor_node": {
@@ -2545,7 +2545,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_grafana_apache"
+              "value": "compunaut-grafana-apache"
             }
           ]
         }
@@ -2678,7 +2678,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_grafana"
+              "value": "compunaut-grafana"
             }
           ]
         }
@@ -2751,7 +2751,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 147,
       "scopedVars": {
         "monitor_node": {
@@ -2813,7 +2813,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_grafana"
+              "value": "compunaut-grafana"
             }
           ]
         }
@@ -2960,7 +2960,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_guacamole_apache"
+              "value": "compunaut-guacamole-apache"
             }
           ]
         }
@@ -3094,7 +3094,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_guacamole"
+              "value": "compunaut-guacamole"
             }
           ]
         }
@@ -3228,7 +3228,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_guacd"
+              "value": "compunaut-guacd"
             }
           ]
         }
@@ -3362,7 +3362,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_vnc"
+              "value": "compunaut-vnc"
             }
           ]
         }
@@ -3496,7 +3496,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -3630,7 +3630,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_piserver_nfs"
+              "value": "compunaut-piserver-nfs"
             }
           ]
         }
@@ -3777,7 +3777,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_gitlab_apache"
+              "value": "compunaut-gitlab-apache"
             }
           ]
         }
@@ -3911,7 +3911,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_gitlab"
+              "value": "compunaut-gitlab"
             }
           ]
         }
@@ -4057,7 +4057,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_ssp"
+              "value": "compunaut-ssp"
             }
           ]
         }
@@ -4130,7 +4130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2595,
       "scopedVars": {
         "ldap_node": {
@@ -4192,7 +4192,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_ssp"
+              "value": "compunaut-ssp"
             }
           ]
         }
@@ -4325,7 +4325,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_phpldapadmin"
+              "value": "compunaut-phpldapadmin"
             }
           ]
         }
@@ -4398,7 +4398,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 412,
       "scopedVars": {
         "ldap_node": {
@@ -4460,7 +4460,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_phpldapadmin"
+              "value": "compunaut-phpldapadmin"
             }
           ]
         }
@@ -4666,7 +4666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 239,
       "scopedVars": {
         "ldap_node": {
@@ -4874,7 +4874,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_in"
+              "value": "compunaut-influxdb-in"
             }
           ]
         }
@@ -4947,7 +4947,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -5009,7 +5009,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_in"
+              "value": "compunaut-influxdb-in"
             }
           ]
         }
@@ -5082,7 +5082,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -5144,7 +5144,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_in"
+              "value": "compunaut-influxdb-in"
             }
           ]
         }
@@ -5277,7 +5277,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_out"
+              "value": "compunaut-influxdb-out"
             }
           ]
         }
@@ -5350,7 +5350,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5412,7 +5412,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_out"
+              "value": "compunaut-influxdb-out"
             }
           ]
         }
@@ -5485,7 +5485,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5547,7 +5547,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_influxdb_out"
+              "value": "compunaut-influxdb-out"
             }
           ]
         }
@@ -5693,7 +5693,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_mysql_database"
+              "value": "compunaut-mysql-database"
             }
           ]
         }
@@ -5766,7 +5766,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -5828,7 +5828,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_mysql_database"
+              "value": "compunaut-mysql-database"
             }
           ]
         }
@@ -5901,7 +5901,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -5963,7 +5963,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_mysql_database"
+              "value": "compunaut-mysql-database"
             }
           ]
         }
@@ -6110,7 +6110,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_nfs"
+              "value": "compunaut-nfs"
             }
           ]
         }
@@ -6257,7 +6257,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_apache"
+              "value": "compunaut-consul-apache"
             }
           ]
         }
@@ -6331,7 +6331,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6393,7 +6393,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_apache"
+              "value": "compunaut-consul-apache"
             }
           ]
         }
@@ -6467,7 +6467,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6529,7 +6529,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_apache"
+              "value": "compunaut-consul-apache"
             }
           ]
         }
@@ -6663,7 +6663,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_alerts"
+              "value": "compunaut-consul-alerts"
             }
           ]
         }
@@ -6737,7 +6737,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2857,
       "scopedVars": {
         "consul_node": {
@@ -6799,7 +6799,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_alerts"
+              "value": "compunaut-consul-alerts"
             }
           ]
         }
@@ -6873,7 +6873,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2857,
       "scopedVars": {
         "consul_node": {
@@ -6935,7 +6935,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_consul_alerts"
+              "value": "compunaut-consul-alerts"
             }
           ]
         }
@@ -7143,7 +7143,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -7279,7 +7279,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -7490,7 +7490,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -7564,7 +7564,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7626,7 +7626,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -7700,7 +7700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7762,7 +7762,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -7836,7 +7836,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7898,7 +7898,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -7972,7 +7972,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8034,7 +8034,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8108,7 +8108,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8170,7 +8170,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8244,7 +8244,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8306,7 +8306,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8380,7 +8380,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8442,7 +8442,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8516,7 +8516,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8578,7 +8578,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8652,7 +8652,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8714,7 +8714,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8788,7 +8788,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8850,7 +8850,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -8924,7 +8924,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8986,7 +8986,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9060,7 +9060,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9122,7 +9122,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9196,7 +9196,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9258,7 +9258,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9332,7 +9332,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9394,7 +9394,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9468,7 +9468,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9530,7 +9530,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9604,7 +9604,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9666,7 +9666,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9740,7 +9740,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9802,7 +9802,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -9876,7 +9876,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9938,7 +9938,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -10012,7 +10012,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10074,7 +10074,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -10148,7 +10148,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10210,7 +10210,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -10284,7 +10284,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10346,7 +10346,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_sssd"
+              "value": "compunaut-sssd"
             }
           ]
         }
@@ -10492,7 +10492,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -10565,7 +10565,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10627,7 +10627,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -10700,7 +10700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10762,7 +10762,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -10835,7 +10835,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10897,7 +10897,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -10970,7 +10970,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11032,7 +11032,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11105,7 +11105,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11167,7 +11167,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11240,7 +11240,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11302,7 +11302,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11375,7 +11375,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11437,7 +11437,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11510,7 +11510,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11572,7 +11572,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11645,7 +11645,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11707,7 +11707,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11780,7 +11780,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11842,7 +11842,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -11915,7 +11915,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11977,7 +11977,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12050,7 +12050,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12112,7 +12112,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12185,7 +12185,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12247,7 +12247,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12320,7 +12320,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12382,7 +12382,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12455,7 +12455,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12517,7 +12517,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12590,7 +12590,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12652,7 +12652,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12725,7 +12725,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12787,7 +12787,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12860,7 +12860,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12922,7 +12922,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -12995,7 +12995,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13057,7 +13057,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -13130,7 +13130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13192,7 +13192,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -13265,7 +13265,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13327,7 +13327,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_telegraf"
+              "value": "compunaut-telegraf"
             }
           ]
         }
@@ -13473,7 +13473,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -13546,7 +13546,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13608,7 +13608,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -13681,7 +13681,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13743,7 +13743,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -13816,7 +13816,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13878,7 +13878,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -13951,7 +13951,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14013,7 +14013,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14086,7 +14086,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14148,7 +14148,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14221,7 +14221,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14283,7 +14283,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14356,7 +14356,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14418,7 +14418,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14491,7 +14491,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14553,7 +14553,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14626,7 +14626,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14688,7 +14688,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14761,7 +14761,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14823,7 +14823,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -14896,7 +14896,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14958,7 +14958,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15031,7 +15031,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15093,7 +15093,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15166,7 +15166,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15228,7 +15228,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15301,7 +15301,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15363,7 +15363,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15436,7 +15436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15498,7 +15498,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15571,7 +15571,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15633,7 +15633,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15706,7 +15706,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15768,7 +15768,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15841,7 +15841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15903,7 +15903,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -15976,7 +15976,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -16038,7 +16038,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -16111,7 +16111,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -16173,7 +16173,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -16246,7 +16246,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -16308,7 +16308,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_dnsmasq"
+              "value": "compunaut-dnsmasq"
             }
           ]
         }
@@ -16529,7 +16529,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16665,7 +16665,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16801,7 +16801,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16937,7 +16937,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17073,7 +17073,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17209,7 +17209,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17345,7 +17345,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17481,7 +17481,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17617,7 +17617,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17753,7 +17753,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17889,7 +17889,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18025,7 +18025,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18161,7 +18161,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18297,7 +18297,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18433,7 +18433,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18569,7 +18569,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18705,7 +18705,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18841,7 +18841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18977,7 +18977,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19113,7 +19113,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19249,7 +19249,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19458,7 +19458,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -19532,7 +19532,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19594,7 +19594,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -19668,7 +19668,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19730,7 +19730,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -19804,7 +19804,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19866,7 +19866,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -19940,7 +19940,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20002,7 +20002,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20076,7 +20076,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20138,7 +20138,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20212,7 +20212,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20274,7 +20274,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20348,7 +20348,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20410,7 +20410,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20484,7 +20484,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20546,7 +20546,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20620,7 +20620,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20682,7 +20682,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20756,7 +20756,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20818,7 +20818,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -20892,7 +20892,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20954,7 +20954,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21028,7 +21028,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21090,7 +21090,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21164,7 +21164,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21226,7 +21226,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21300,7 +21300,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21362,7 +21362,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21436,7 +21436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21498,7 +21498,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21572,7 +21572,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21634,7 +21634,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21708,7 +21708,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21770,7 +21770,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21844,7 +21844,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21906,7 +21906,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -21980,7 +21980,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22042,7 +22042,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -22116,7 +22116,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22178,7 +22178,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -22252,7 +22252,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559871649669,
+      "repeatIteration": 1559886728982,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22314,7 +22314,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_chronyd"
+              "value": "compunaut-chronyd"
             }
           ]
         }
@@ -22373,14 +22373,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_consul_apache/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-consul-apache/",
         "hide": 0,
         "includeAll": true,
         "label": "Consul Node",
         "multi": true,
         "name": "consul_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_consul_apache/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-consul-apache/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22400,14 +22400,14 @@
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_mysql_database/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-mysql-database/",
         "hide": 0,
         "includeAll": true,
         "label": "Database Node",
         "multi": true,
         "name": "db_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_mysql_database/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-mysql-database/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22428,14 +22428,14 @@
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_gitlab/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-gitlab/",
         "hide": 0,
         "includeAll": true,
         "label": "Gitlab Node",
         "multi": true,
         "name": "gitlab_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_gitlab/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-gitlab/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22449,20 +22449,21 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
           "value": [
             "$__all"
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_haproxy/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-haproxy/",
         "hide": 0,
         "includeAll": true,
         "label": "Haproxy Node",
         "multi": true,
         "name": "haproxy_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_haproxy/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-haproxy/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22480,14 +22481,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_influxdb_in/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-influxdb-in/",
         "hide": 0,
         "includeAll": true,
         "label": "Influx Node",
         "multi": true,
         "name": "influx_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_influxdb_in/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-influxdb-in/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22507,14 +22508,14 @@
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_keepalived/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-keepalived/",
         "hide": 0,
         "includeAll": true,
         "label": "Keepalived Node",
         "multi": true,
         "name": "keepalived_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_keepalived/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-keepalived/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22559,14 +22560,14 @@
           ]
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_mission_control/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-mission-control/",
         "hide": 0,
         "includeAll": true,
         "label": "Mission Control Node",
         "multi": true,
         "name": "mission_control_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_mission_control/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-mission-control/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22584,14 +22585,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_grafana/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-grafana/",
         "hide": 0,
         "includeAll": true,
         "label": "Monitor Node",
         "multi": true,
         "name": "monitor_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_grafana/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-grafana/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22609,14 +22610,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_piserver_nfs/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-piserver-nfs/",
         "hide": 0,
         "includeAll": true,
         "label": "Netboot Node",
         "multi": true,
         "name": "netboot_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_piserver_nfs/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-piserver-nfs/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22634,14 +22635,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_nfs/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-nfs/",
         "hide": 0,
         "includeAll": true,
         "label": "NFS Node",
         "multi": true,
         "name": "nfs_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_nfs/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-nfs/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22659,14 +22660,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_openvpn/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-openvpn/",
         "hide": 0,
         "includeAll": true,
         "label": "OpenVPN Node",
         "multi": true,
         "name": "openvpn_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_openvpn/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-openvpn/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
@@ -22684,14 +22685,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_rundeck/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-rundeck/",
         "hide": 0,
         "includeAll": true,
         "label": "Rundeck Node",
         "multi": true,
         "name": "rundeck_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_rundeck/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-rundeck/",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
