@@ -1,22 +1,17 @@
 include:
   - apache
 
-a2enmod ldap:
+'a2enmod ldap':
   cmd.run:
     - unless: ls /etc/apache2/mods-enabled/ldap.load
-    - watch_in:
-      - module: apache-restart
-    - require_in:
-      - module: apache-restart
-      - module: apache-reload
-      - service: apache
 
-a2enmod authnz_ldap:
+'a2enmod authnz_ldap':
   cmd.run:
     - unless: ls /etc/apache2/mods-enabled/authnz_ldap.load
-    - watch_in:
-      - module: apache-restart
-    - require_in:
-      - module: apache-restart
-      - module: apache-reload
-      - service: apache
+
+restart_apache2_for_ldap:
+  service.running:
+    - enable: True
+    - watch:
+      - sls: 'a2enmod ldap'
+      - sls: 'a2enmod authnz_ldap'
