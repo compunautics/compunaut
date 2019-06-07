@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1559772181158,
+  "iteration": 1559871649669,
   "links": [],
   "panels": [
     {
@@ -234,7 +234,7 @@
         "x": 6,
         "y": 4
       },
-      "id": 2728,
+      "id": 2858,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -266,7 +266,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -370,7 +370,7 @@
         "x": 12,
         "y": 4
       },
-      "id": 2729,
+      "id": 2859,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -402,7 +402,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -506,7 +506,7 @@
         "x": 18,
         "y": 4
       },
-      "id": 2730,
+      "id": 2860,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -538,7 +538,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -791,7 +791,7 @@
         "x": 12,
         "y": 6
       },
-      "id": 2731,
+      "id": 2861,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -823,7 +823,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 112,
       "scopedVars": {
         "openvpn_node": {
@@ -1072,7 +1072,7 @@
         "x": 12,
         "y": 8
       },
-      "id": 2732,
+      "id": 2862,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1104,7 +1104,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 148,
       "scopedVars": {
         "haproxy_node": {
@@ -1353,7 +1353,7 @@
         "x": 12,
         "y": 10
       },
-      "id": 2733,
+      "id": 2863,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1385,7 +1385,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1631,
       "scopedVars": {
         "mission_control_node": {
@@ -1634,7 +1634,7 @@
         "x": 12,
         "y": 12
       },
-      "id": 2734,
+      "id": 2864,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1666,7 +1666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1985,
       "scopedVars": {
         "rundeck_node": {
@@ -1902,7 +1902,7 @@
         "x": 12,
         "y": 13
       },
-      "id": 2735,
+      "id": 2865,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1934,7 +1934,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 837,
       "scopedVars": {
         "rundeck_node": {
@@ -2170,7 +2170,7 @@
         "x": 12,
         "y": 14
       },
-      "id": 2736,
+      "id": 2866,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2202,7 +2202,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1515,
       "scopedVars": {
         "rundeck_node": {
@@ -2451,7 +2451,7 @@
         "x": 12,
         "y": 16
       },
-      "id": 2737,
+      "id": 2867,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2483,7 +2483,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1986,
       "scopedVars": {
         "monitor_node": {
@@ -2719,7 +2719,7 @@
         "x": 12,
         "y": 17
       },
-      "id": 2738,
+      "id": 2868,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2751,7 +2751,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 147,
       "scopedVars": {
         "monitor_node": {
@@ -4098,7 +4098,7 @@
         "x": 12,
         "y": 29
       },
-      "id": 2739,
+      "id": 2869,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4130,7 +4130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2595,
       "scopedVars": {
         "ldap_node": {
@@ -4366,7 +4366,7 @@
         "x": 12,
         "y": 30
       },
-      "id": 2740,
+      "id": 2870,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4398,7 +4398,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 412,
       "scopedVars": {
         "ldap_node": {
@@ -4634,7 +4634,7 @@
         "x": 12,
         "y": 31
       },
-      "id": 2741,
+      "id": 2871,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4666,7 +4666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 239,
       "scopedVars": {
         "ldap_node": {
@@ -4915,7 +4915,7 @@
         "x": 8,
         "y": 33
       },
-      "id": 2742,
+      "id": 2872,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4947,7 +4947,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -5050,7 +5050,7 @@
         "x": 16,
         "y": 33
       },
-      "id": 2743,
+      "id": 2873,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5082,7 +5082,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -5318,7 +5318,7 @@
         "x": 8,
         "y": 34
       },
-      "id": 2744,
+      "id": 2874,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5350,7 +5350,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5453,7 +5453,7 @@
         "x": 16,
         "y": 34
       },
-      "id": 2745,
+      "id": 2875,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5485,7 +5485,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5734,7 +5734,7 @@
         "x": 8,
         "y": 36
       },
-      "id": 2746,
+      "id": 2876,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5766,7 +5766,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -5869,7 +5869,7 @@
         "x": 16,
         "y": 36
       },
-      "id": 2747,
+      "id": 2877,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5901,7 +5901,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -6138,7 +6138,7 @@
       },
       "id": 2107,
       "panels": [],
-      "title": "Consul Service",
+      "title": "Consul Server",
       "type": "row"
     },
     {
@@ -6299,7 +6299,7 @@
         "x": 8,
         "y": 40
       },
-      "id": 2748,
+      "id": 2878,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6331,7 +6331,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6435,7 +6435,7 @@
         "x": 16,
         "y": 40
       },
-      "id": 2749,
+      "id": 2879,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6467,7 +6467,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6570,6 +6570,412 @@
         "w": 8,
         "x": 0,
         "y": 41
+      },
+      "id": 2857,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": "consul_node",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "consul_node": {
+          "selected": false,
+          "text": "consul01-vm.compunaut.net",
+          "value": "consul01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut_consul_alerts",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$consul_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut_consul_alerts"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$consul_node - Consul Alerts",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 8,
+        "x": 8,
+        "y": 41
+      },
+      "id": 2880,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1559871649669,
+      "repeatPanelId": 2857,
+      "scopedVars": {
+        "consul_node": {
+          "selected": false,
+          "text": "consul02-vm.compunaut.net",
+          "value": "consul02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut_consul_alerts",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$consul_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut_consul_alerts"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$consul_node - Consul Alerts",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 8,
+        "x": 16,
+        "y": 41
+      },
+      "id": 2881,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1559871649669,
+      "repeatPanelId": 2857,
+      "scopedVars": {
+        "consul_node": {
+          "selected": false,
+          "text": "consul03-vm.compunaut.net",
+          "value": "consul03-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut_consul_alerts",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$consul_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut_consul_alerts"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$consul_node - Consul Alerts",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 8,
+        "x": 0,
+        "y": 42
       },
       "id": 2347,
       "interval": null,
@@ -6703,9 +7109,9 @@
         "h": 1,
         "w": 8,
         "x": 8,
-        "y": 41
+        "y": 42
       },
-      "id": 2750,
+      "id": 2882,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6737,7 +7143,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -6839,9 +7245,9 @@
         "h": 1,
         "w": 8,
         "x": 16,
-        "y": 41
+        "y": 42
       },
-      "id": 2751,
+      "id": 2883,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6873,7 +7279,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -6959,7 +7365,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 42
+        "y": 43
       },
       "id": 506,
       "panels": [],
@@ -6988,7 +7394,7 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 43
+        "y": 44
       },
       "id": 423,
       "interval": null,
@@ -7124,9 +7530,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 43
+        "y": 44
       },
-      "id": 2752,
+      "id": 2884,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7158,7 +7564,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7260,9 +7666,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 43
+        "y": 44
       },
-      "id": 2753,
+      "id": 2885,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7294,7 +7700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7396,9 +7802,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 43
+        "y": 44
       },
-      "id": 2754,
+      "id": 2886,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7430,7 +7836,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7532,9 +7938,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 43
+        "y": 44
       },
-      "id": 2755,
+      "id": 2887,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7566,7 +7972,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7668,9 +8074,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 43
+        "y": 44
       },
-      "id": 2756,
+      "id": 2888,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7702,7 +8108,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7804,9 +8210,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 44
+        "y": 45
       },
-      "id": 2757,
+      "id": 2889,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7838,7 +8244,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7940,9 +8346,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 44
+        "y": 45
       },
-      "id": 2758,
+      "id": 2890,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7974,7 +8380,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8076,9 +8482,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 44
+        "y": 45
       },
-      "id": 2759,
+      "id": 2891,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8110,7 +8516,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8212,9 +8618,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 44
+        "y": 45
       },
-      "id": 2760,
+      "id": 2892,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8246,7 +8652,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8348,9 +8754,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 44
+        "y": 45
       },
-      "id": 2761,
+      "id": 2893,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8382,7 +8788,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8484,9 +8890,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 44
+        "y": 45
       },
-      "id": 2762,
+      "id": 2894,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8518,7 +8924,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8620,9 +9026,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 45
+        "y": 46
       },
-      "id": 2763,
+      "id": 2895,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8654,7 +9060,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8756,9 +9162,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 45
+        "y": 46
       },
-      "id": 2764,
+      "id": 2896,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8790,7 +9196,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8892,9 +9298,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 45
+        "y": 46
       },
-      "id": 2765,
+      "id": 2897,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8926,7 +9332,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9028,9 +9434,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 45
+        "y": 46
       },
-      "id": 2766,
+      "id": 2898,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9062,7 +9468,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9164,9 +9570,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 45
+        "y": 46
       },
-      "id": 2767,
+      "id": 2899,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9198,7 +9604,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9300,9 +9706,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 45
+        "y": 46
       },
-      "id": 2768,
+      "id": 2900,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9334,7 +9740,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9436,9 +9842,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 46
+        "y": 47
       },
-      "id": 2769,
+      "id": 2901,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9470,7 +9876,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9572,9 +9978,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 46
+        "y": 47
       },
-      "id": 2770,
+      "id": 2902,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9606,7 +10012,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9708,9 +10114,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 46
+        "y": 47
       },
-      "id": 2771,
+      "id": 2903,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9742,7 +10148,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9844,9 +10250,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 46
+        "y": 47
       },
-      "id": 2772,
+      "id": 2904,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9878,7 +10284,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9964,7 +10370,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 47
+        "y": 48
       },
       "id": 78,
       "panels": [],
@@ -9992,7 +10398,7 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 48
+        "y": 49
       },
       "id": 146,
       "interval": null,
@@ -10125,9 +10531,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 48
+        "y": 49
       },
-      "id": 2773,
+      "id": 2905,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10159,7 +10565,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10260,9 +10666,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 48
+        "y": 49
       },
-      "id": 2774,
+      "id": 2906,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10294,7 +10700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10395,9 +10801,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 48
+        "y": 49
       },
-      "id": 2775,
+      "id": 2907,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10429,7 +10835,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10530,9 +10936,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 48
+        "y": 49
       },
-      "id": 2776,
+      "id": 2908,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10564,7 +10970,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10665,9 +11071,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 48
+        "y": 49
       },
-      "id": 2777,
+      "id": 2909,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10699,7 +11105,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10800,9 +11206,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 49
+        "y": 50
       },
-      "id": 2778,
+      "id": 2910,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10834,7 +11240,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10935,9 +11341,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 49
+        "y": 50
       },
-      "id": 2779,
+      "id": 2911,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10969,7 +11375,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11070,9 +11476,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 49
+        "y": 50
       },
-      "id": 2780,
+      "id": 2912,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11104,7 +11510,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11205,9 +11611,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 49
+        "y": 50
       },
-      "id": 2781,
+      "id": 2913,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11239,7 +11645,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11340,9 +11746,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 49
+        "y": 50
       },
-      "id": 2782,
+      "id": 2914,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11374,7 +11780,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11475,9 +11881,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 49
+        "y": 50
       },
-      "id": 2783,
+      "id": 2915,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11509,7 +11915,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11610,9 +12016,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 50
+        "y": 51
       },
-      "id": 2784,
+      "id": 2916,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11644,7 +12050,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11745,9 +12151,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 50
+        "y": 51
       },
-      "id": 2785,
+      "id": 2917,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11779,7 +12185,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11880,9 +12286,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 50
+        "y": 51
       },
-      "id": 2786,
+      "id": 2918,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11914,7 +12320,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12015,9 +12421,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 50
+        "y": 51
       },
-      "id": 2787,
+      "id": 2919,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12049,7 +12455,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12150,9 +12556,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 50
+        "y": 51
       },
-      "id": 2788,
+      "id": 2920,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12184,7 +12590,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12285,9 +12691,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 50
+        "y": 51
       },
-      "id": 2789,
+      "id": 2921,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12319,7 +12725,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12420,9 +12826,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 51
+        "y": 52
       },
-      "id": 2790,
+      "id": 2922,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12454,7 +12860,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12555,9 +12961,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 51
+        "y": 52
       },
-      "id": 2791,
+      "id": 2923,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12589,7 +12995,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12690,9 +13096,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 51
+        "y": 52
       },
-      "id": 2792,
+      "id": 2924,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12724,7 +13130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12825,9 +13231,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 51
+        "y": 52
       },
-      "id": 2793,
+      "id": 2925,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12859,7 +13265,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12945,7 +13351,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 52
+        "y": 53
       },
       "id": 68,
       "panels": [],
@@ -12973,7 +13379,7 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 53
+        "y": 54
       },
       "id": 145,
       "interval": null,
@@ -13106,9 +13512,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 53
+        "y": 54
       },
-      "id": 2794,
+      "id": 2926,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13140,7 +13546,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13241,9 +13647,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 53
+        "y": 54
       },
-      "id": 2795,
+      "id": 2927,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13275,7 +13681,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13376,9 +13782,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 53
+        "y": 54
       },
-      "id": 2796,
+      "id": 2928,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13410,7 +13816,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13511,9 +13917,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 53
+        "y": 54
       },
-      "id": 2797,
+      "id": 2929,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13545,7 +13951,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13646,9 +14052,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 53
+        "y": 54
       },
-      "id": 2798,
+      "id": 2930,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13680,7 +14086,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13781,9 +14187,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 54
+        "y": 55
       },
-      "id": 2799,
+      "id": 2931,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13815,7 +14221,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13916,9 +14322,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 54
+        "y": 55
       },
-      "id": 2800,
+      "id": 2932,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13950,7 +14356,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14051,9 +14457,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 54
+        "y": 55
       },
-      "id": 2801,
+      "id": 2933,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14085,7 +14491,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14186,9 +14592,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 54
+        "y": 55
       },
-      "id": 2802,
+      "id": 2934,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14220,7 +14626,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14321,9 +14727,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 54
+        "y": 55
       },
-      "id": 2803,
+      "id": 2935,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14355,7 +14761,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14456,9 +14862,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 54
+        "y": 55
       },
-      "id": 2804,
+      "id": 2936,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14490,7 +14896,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14591,9 +14997,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 55
+        "y": 56
       },
-      "id": 2805,
+      "id": 2937,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14625,7 +15031,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14726,9 +15132,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 55
+        "y": 56
       },
-      "id": 2806,
+      "id": 2938,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14760,7 +15166,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14861,9 +15267,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 55
+        "y": 56
       },
-      "id": 2807,
+      "id": 2939,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14895,7 +15301,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14996,9 +15402,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 55
+        "y": 56
       },
-      "id": 2808,
+      "id": 2940,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15030,7 +15436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15131,9 +15537,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 55
+        "y": 56
       },
-      "id": 2809,
+      "id": 2941,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15165,7 +15571,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15266,9 +15672,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 55
+        "y": 56
       },
-      "id": 2810,
+      "id": 2942,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15300,7 +15706,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15401,9 +15807,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 56
+        "y": 57
       },
-      "id": 2811,
+      "id": 2943,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15435,7 +15841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15536,9 +15942,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 56
+        "y": 57
       },
-      "id": 2812,
+      "id": 2944,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15570,7 +15976,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15671,9 +16077,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 56
+        "y": 57
       },
-      "id": 2813,
+      "id": 2945,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15705,7 +16111,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15806,9 +16212,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 56
+        "y": 57
       },
-      "id": 2814,
+      "id": 2946,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15840,7 +16246,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15926,11 +16332,11 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 57
+        "y": 58
       },
       "id": 27,
       "panels": [],
-      "title": "Consul Service",
+      "title": "Consul Agents",
       "type": "row"
     },
     {
@@ -15955,7 +16361,7 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 58
+        "y": 59
       },
       "id": 29,
       "interval": null,
@@ -16089,9 +16495,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 58
+        "y": 59
       },
-      "id": 2815,
+      "id": 2947,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16123,7 +16529,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16225,9 +16631,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 58
+        "y": 59
       },
-      "id": 2816,
+      "id": 2948,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16259,7 +16665,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16361,9 +16767,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 58
+        "y": 59
       },
-      "id": 2817,
+      "id": 2949,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16395,7 +16801,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16497,9 +16903,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 58
+        "y": 59
       },
-      "id": 2818,
+      "id": 2950,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16531,7 +16937,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16633,9 +17039,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 58
+        "y": 59
       },
-      "id": 2819,
+      "id": 2951,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16667,7 +17073,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16769,9 +17175,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 59
+        "y": 60
       },
-      "id": 2820,
+      "id": 2952,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16803,7 +17209,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16905,9 +17311,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 59
+        "y": 60
       },
-      "id": 2821,
+      "id": 2953,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16939,7 +17345,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17041,9 +17447,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 59
+        "y": 60
       },
-      "id": 2822,
+      "id": 2954,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17075,7 +17481,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17177,9 +17583,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 59
+        "y": 60
       },
-      "id": 2823,
+      "id": 2955,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17211,7 +17617,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17313,9 +17719,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 59
+        "y": 60
       },
-      "id": 2824,
+      "id": 2956,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17347,7 +17753,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17449,9 +17855,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 59
+        "y": 60
       },
-      "id": 2825,
+      "id": 2957,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17483,7 +17889,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17585,9 +17991,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 60
+        "y": 61
       },
-      "id": 2826,
+      "id": 2958,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17619,7 +18025,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17721,9 +18127,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 60
+        "y": 61
       },
-      "id": 2827,
+      "id": 2959,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17755,7 +18161,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17857,9 +18263,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 60
+        "y": 61
       },
-      "id": 2828,
+      "id": 2960,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17891,7 +18297,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17993,9 +18399,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 60
+        "y": 61
       },
-      "id": 2829,
+      "id": 2961,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18027,7 +18433,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18129,9 +18535,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 60
+        "y": 61
       },
-      "id": 2830,
+      "id": 2962,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18163,7 +18569,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18265,9 +18671,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 60
+        "y": 61
       },
-      "id": 2831,
+      "id": 2963,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18299,7 +18705,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18401,9 +18807,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 61
+        "y": 62
       },
-      "id": 2832,
+      "id": 2964,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18435,7 +18841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18537,9 +18943,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 61
+        "y": 62
       },
-      "id": 2833,
+      "id": 2965,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18571,7 +18977,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18673,9 +19079,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 61
+        "y": 62
       },
-      "id": 2834,
+      "id": 2966,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18707,7 +19113,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18809,9 +19215,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 61
+        "y": 62
       },
-      "id": 2835,
+      "id": 2967,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18843,7 +19249,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18929,7 +19335,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 62
+        "y": 63
       },
       "id": 1867,
       "panels": [],
@@ -18958,7 +19364,7 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 63
+        "y": 64
       },
       "id": 1865,
       "interval": null,
@@ -19092,9 +19498,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 63
+        "y": 64
       },
-      "id": 2836,
+      "id": 2968,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19126,7 +19532,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19228,9 +19634,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 63
+        "y": 64
       },
-      "id": 2837,
+      "id": 2969,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19262,7 +19668,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19364,9 +19770,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 63
+        "y": 64
       },
-      "id": 2838,
+      "id": 2970,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19398,7 +19804,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19500,9 +19906,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 63
+        "y": 64
       },
-      "id": 2839,
+      "id": 2971,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19534,7 +19940,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19636,9 +20042,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 63
+        "y": 64
       },
-      "id": 2840,
+      "id": 2972,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19670,7 +20076,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19772,9 +20178,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 64
+        "y": 65
       },
-      "id": 2841,
+      "id": 2973,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19806,7 +20212,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19908,9 +20314,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 64
+        "y": 65
       },
-      "id": 2842,
+      "id": 2974,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19942,7 +20348,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20044,9 +20450,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 64
+        "y": 65
       },
-      "id": 2843,
+      "id": 2975,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20078,7 +20484,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20180,9 +20586,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 64
+        "y": 65
       },
-      "id": 2844,
+      "id": 2976,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20214,7 +20620,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20316,9 +20722,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 64
+        "y": 65
       },
-      "id": 2845,
+      "id": 2977,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20350,7 +20756,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20452,9 +20858,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 64
+        "y": 65
       },
-      "id": 2846,
+      "id": 2978,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20486,7 +20892,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20588,9 +20994,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 65
+        "y": 66
       },
-      "id": 2847,
+      "id": 2979,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20622,7 +21028,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20724,9 +21130,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 65
+        "y": 66
       },
-      "id": 2848,
+      "id": 2980,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20758,7 +21164,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20860,9 +21266,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 65
+        "y": 66
       },
-      "id": 2849,
+      "id": 2981,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20894,7 +21300,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20996,9 +21402,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 65
+        "y": 66
       },
-      "id": 2850,
+      "id": 2982,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21030,7 +21436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21132,9 +21538,9 @@
         "h": 1,
         "w": 4,
         "x": 16,
-        "y": 65
+        "y": 66
       },
-      "id": 2851,
+      "id": 2983,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21166,7 +21572,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21268,9 +21674,9 @@
         "h": 1,
         "w": 4,
         "x": 20,
-        "y": 65
+        "y": 66
       },
-      "id": 2852,
+      "id": 2984,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21302,7 +21708,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21404,9 +21810,9 @@
         "h": 1,
         "w": 4,
         "x": 0,
-        "y": 66
+        "y": 67
       },
-      "id": 2853,
+      "id": 2985,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21438,7 +21844,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21540,9 +21946,9 @@
         "h": 1,
         "w": 4,
         "x": 4,
-        "y": 66
+        "y": 67
       },
-      "id": 2854,
+      "id": 2986,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21574,7 +21980,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21676,9 +22082,9 @@
         "h": 1,
         "w": 4,
         "x": 8,
-        "y": 66
+        "y": 67
       },
-      "id": 2855,
+      "id": 2987,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21710,7 +22116,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21812,9 +22218,9 @@
         "h": 1,
         "w": 4,
         "x": 12,
-        "y": 66
+        "y": 67
       },
-      "id": 2856,
+      "id": 2988,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21846,7 +22252,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559772181158,
+      "repeatIteration": 1559871649669,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22015,8 +22421,11 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
-          "value": "$__all"
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": "compunaut_influxdb",
         "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_gitlab/",
@@ -22040,7 +22449,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -22093,7 +22501,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
