@@ -6,7 +6,7 @@ install_grafana:
     - batch: 1
     - batch-wait: 15
     - sls:
+      - compunaut_apache
       - compunaut_grafana.repo
       - compunaut_grafana.dashboards
       - grafana
-      - compunaut_grafana.apache

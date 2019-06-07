@@ -4,6 +4,7 @@ install_rundeck:
     - tgt: 'compunaut_rundeck:enabled:True'
     - tgt_type: pillar
     - sls:
+      - compunaut_apache
       - compunaut_rundeck.truststore
       - compunaut_rundeck.sudo
       - rundeck.repo
@@ -17,4 +18,3 @@ install_rundeck:
       - compunaut_rundeck.config
       - compunaut_rundeck.acl
       - compunaut_rundeck.resources
-      - compunaut_rundeck.apache
