@@ -1,5 +1,5 @@
 include:
-  - compunaut_octoprint.apache
+  - compunaut_apache
   - compunaut_octoprint.repo
   - compunaut_octoprint.user
   - compunaut_octoprint.motion

@@ -1,5 +1,5 @@
 include:
-  - compunaut_rundeck.apache
+  - compunaut_apache
   - compunaut_rundeck.nfs
   - nfs
   - compunaut_rundeck.sudo

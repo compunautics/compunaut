@@ -1,5 +1,5 @@
 include:
-  - compunaut_grafana.apache
+  - compunaut_apache
   - compunaut_grafana.repo
   - compunaut_grafana.dashboards
   - grafana

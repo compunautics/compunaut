@@ -1,5 +1,5 @@
 include:
-  - compunaut_gitlab.apache
+  - compunaut_apache
   - compunaut_gitlab.repo
   - compunaut_gitlab.users
   - gitlab.server
