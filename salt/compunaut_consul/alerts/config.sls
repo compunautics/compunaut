@@ -9,16 +9,14 @@
 {%- endfor %}
 
 ###SET UP DEFAULT NOTIFICATION SELECTORS
-{%- for selection, types in salt['pillar.get']('compunaut_consul:alerts:notif_selection').iteritems() %}
-  {%- for type, configs in types.items() %}
-    {%- for key, value in configs.items() %}
-/consul-alerts/config/notif-selection/{{ type }}/{{ key }}:
+{%- for selection, configs in salt['pillar.get']('compunaut_consul:alerts:notif_selection').iteritems() %}
+  {%- for key, value in configs.items() %}
+/consul-alerts/config/notif-selection/{{ selection }}/{{ key }}:
   module.run:
     - consul.put:
       - consul_url: http://localhost:8500
-      - key: /consul-alerts/config/notif-profiles/{{ type }}/{{ key }}
+      - key: /consul-alerts/config/notif-selection/{{ selection }}/{{ key }}
       - value: {{ value }}
-    {%- endfor %}
   {%- endfor %}
 {%- endfor %}
 
