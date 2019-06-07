@@ -1,3 +1,4 @@
+### Please refer to https://github.com/AcalephStorage/consul-alerts for documentation on configuring consul-alerts
 compunaut_consul:
   alerts:
     notif_profiles:
