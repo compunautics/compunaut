@@ -11,7 +11,7 @@ install_cgi_plugin_deps:
     - require: 
       - pkg: install_cgi_plugin_deps
 
-/usr/lib/cgi-bin:
+/opt/rundeck_uwsgi:
   file.recurse:
     - source: salt://compunaut_rundeck/uwsgi/
     - makedirs: True
