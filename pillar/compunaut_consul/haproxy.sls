@@ -15,6 +15,7 @@ haproxy:
     compunaut_consul:
       mode: http
       balance: roundrobin
+      cookie: "CNAUT_CNSL_ID insert indirect nocache"
       servers:
   {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_consul:server:enabled:True', fun='network.interfaces', tgt_type='pillar').items() %}
     {%- if interfaces['ens2'] is not defined %}
@@ -25,7 +26,7 @@ haproxy:
         {{ minion }}:
           host: {{ address }}
           port: 443
-          check: ssl verify none fall 3 rise 2
+          check: ssl verify none fall 3 rise 2 cookie {{ minion }}
   {%- endfor %}
       options:
         - httplog
