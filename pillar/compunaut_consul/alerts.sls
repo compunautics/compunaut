@@ -20,6 +20,7 @@ compunaut_consul:
         username: "Compunaut_Alerts"
         channel: "\\\\#placeholder"
         url: https://placeholder
+        icon-url: https://avatars1.githubusercontent.com/u/41558985
       email:
         enabled: true
         cluster-name: "Compunaut"
