@@ -182,7 +182,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_octoprint"
+              "value": "compunaut-octoprint"
             },
             {
               "condition": "AND",
@@ -237,7 +237,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_octoprint"
+              "value": "compunaut-octoprint"
             },
             {
               "condition": "AND",
@@ -604,7 +604,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_octoprint"
+              "value": "compunaut-octoprint"
             },
             {
               "condition": "AND",
@@ -659,7 +659,7 @@
               "condition": "AND",
               "key": "service_name",
               "operator": "=",
-              "value": "compunaut_octoprint"
+              "value": "compunaut-octoprint"
             },
             {
               "condition": "AND",
@@ -1055,14 +1055,14 @@
           "value": "$__all"
         },
         "datasource": "compunaut_influxdb",
-        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_octoprint/",
+        "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-octoprint/",
         "hide": 0,
         "includeAll": true,
         "label": "Octoprint Node",
         "multi": true,
         "name": "octoprint_node",
         "options": [],
-        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut_octoprint/",
+        "query": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-octoprint/",
         "refresh": 2,
         "regex": "",
         "skipUrlSync": false,
