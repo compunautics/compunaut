@@ -387,7 +387,7 @@ CREATE TABLE guacamole_user_password_history (
   `user_id`             int(11) NOT NULL,
 
   -- Salted password
-  `password_hash` binary(32) NOT NULL,
+  `password_hash` binary(32),
   `password_salt` binary(32),
   `password_date` datetime   NOT NULL,
 
