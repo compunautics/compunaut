@@ -91,7 +91,7 @@ CREATE TABLE `guacamole_user` (
 
   -- Username and optionally-salted password
   `username`      varchar(128) NOT NULL,
-  `password_hash` binary(32)   NOT NULL,
+  `password_hash` binary(32),
   `password_salt` binary(32),
   `password_date` datetime     NOT NULL,
 
