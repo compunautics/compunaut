@@ -12,8 +12,6 @@ install_default_packages:
       - sshpass
       - jq
       - mlocate
-      - traceroute
-      - mtr
       - python-pip
       - openssh-server
 
