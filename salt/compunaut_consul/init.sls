@@ -5,6 +5,7 @@ include:
   {%- if pillar.compunaut_consul.server is defined %}
     {%- if pillar.compunaut_consul.server.enabled == True %}
   - compunaut_apache
+  - compunaut_consul.apache.mod_ldap
   - compunaut_consul.alerts
     {%- endif %}
   {%- endif %}
