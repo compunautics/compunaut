@@ -65,7 +65,7 @@ manage_compunaut_login_groups:
             objectClass:
               - top
               - groupOfNames
-            memberUid:
+            member:
               - cn=compunaut_system,ou=Users,{{ pillar.openldap.base }}
             description:
               - This group allows access to the Consul UI
