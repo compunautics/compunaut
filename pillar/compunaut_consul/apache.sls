@@ -1,6 +1,9 @@
 {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
 apache:
   manage_service_states: True
+  sites:
+    443-consul.{{ vars.domain }}:
+    enabled: False
   compunaut_sites:
     consul:
       ServerName: consul.{{ vars.domain }}
