@@ -65,11 +65,11 @@ manage_compunaut_login_groups:
             objectClass:
               - top
               - posixGroup
-            gidNumber: 661
+            gidNumber: 611
             memberUid:
               - compunaut_system
             description:
-              - Group for Consul UI Access
+              - This group allows access to the Consul UI
       - 'cn=compunaut_octoprint,ou=Groups,{{ pillar.openldap.base }}':
         - add:
             cn:
