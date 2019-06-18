@@ -13,7 +13,7 @@ apache:
         ProxyPassTarget: 'http://localhost:8500/'
         ProxyPassTargetOptions: 'connectiontimeout=10 timeout=90'
         ProxyPassReverseSource: '/'
-        ProxyPassReverseTarget: 'http://localhost:8500/'a
+        ProxyPassReverseTarget: 'http://localhost:8500/'
   {%- for minion, secrets in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_openldap_secrets', tgt_type='pillar').items() %}
       Location:
         target: '/'
