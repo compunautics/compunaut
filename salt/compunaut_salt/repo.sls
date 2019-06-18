@@ -15,4 +15,5 @@ saltstack.repo:
     - keyid: DE57BFBE
     - keyserver: keyserver.ubuntu.com
     - clean_file: True
+  {%- endif %}
 {% endif %}
