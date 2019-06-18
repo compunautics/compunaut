@@ -4,6 +4,7 @@ configure_salt_minions:
     - tgt: '*'
     - batch: 6
     - sls:
+      - compunaut_salt.repo
       - compunaut_salt.minion
 
 sync_all_custom_modules:
