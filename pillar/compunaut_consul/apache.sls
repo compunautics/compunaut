@@ -4,6 +4,8 @@ apache:
   sites:
     443-consul.{{ vars.domain }}:
       enabled: False
+      interface: '*'
+      port: '443'
   compunaut_sites:
     consul:
       ServerName: consul.{{ vars.domain }}
