@@ -58,6 +58,17 @@ manage_compunaut_login_groups:
               - cn=compunaut_system,ou=Users,{{ pillar.openldap.base }}
             description:
               - Group for Linux Access; Add users to sudo if they should also have sudoers access
+      - 'cn=compunaut_consul,ou=Groups,{{ pillar.openldap.base }}':
+        - add:
+            cn:
+              - compunaut_consul
+            objectClass:
+              - top
+              - groupOfNames
+            member:
+              - cn=compunaut_system,ou=Users,{{ pillar.openldap.base }}
+            description:
+              - Group for Consul UI Access
       - 'cn=compunaut_octoprint,ou=Groups,{{ pillar.openldap.base }}':
         - add:
             cn:
