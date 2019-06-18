@@ -3,7 +3,7 @@ apache:
   manage_service_states: True
   sites:
     443-consul.{{ vars.domain }}:
-    enabled: False
+      enabled: False
   compunaut_sites:
     consul:
       ServerName: consul.{{ vars.domain }}
