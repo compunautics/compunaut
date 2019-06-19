@@ -25,11 +25,17 @@
 <main>
     <header>
         <!-- MAIN LOGO NEEDS TO BE A LINK BACK TO THE INDEX.HTML PAGE -->
-        <a id="homepage" href="index.html" target="_self"><img id="logo" src="img/460azzy.png" /></a>
+        <a id="homepage" target="_self" href="index.html"><img id="logo" src="img/460azzy.png" /></a>
         <h1 id="Compunaut">Compunaut Fleet Controller</h1>
         <h1 id="MissionCtrl">MISSION CONTROL</h1>
     </header>
     
+    <div class="two links">
+        <a id="sspasswd" class="" href="https://password.{{ pillar.compunaut.vars.domain }}/">
+            <img class="" src="img/self-serve-password.png" />
+            <div><h1 id="password">PASSWORD</h1></div>
+        </a>
+    </div>
     <div class="two links">
         <a id="rundeck" class="left" href="https://rundeck.{{ pillar.compunaut.vars.domain }}/menu/home">
             <img class="logo-wide" src="img/rundeck-wide.jpg" />
@@ -65,7 +71,7 @@
         </a>
     </div>
     
-    <a id="printers" class="solo" href="printers.html" target="_self">
+    <a id="printers" class="solo" target="_self" href="printers.html">
         <h1 id="print-wide">P R I N T E R S</h1>
         <h1 id="print-narrow">PRINTERS</h1>
     </a>
