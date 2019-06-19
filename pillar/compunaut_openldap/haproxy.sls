@@ -25,7 +25,7 @@ haproxy:
         {{ local_minion }}:
           host: {{ local_minion }}.node.consul
           port: 443
-          check: ssl verify none fall 3 rise 2 cookie {{ local_minion }}
+          check: ssl verify none resolvers dnsmasq fall 3 rise 2 cookie {{ local_minion }}
       options:
         - httplog
         - forwardfor
