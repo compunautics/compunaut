@@ -35,7 +35,7 @@ haproxy:
       - server 1m
       - check 10s
   resolvers:
-    consul_dns:
+    consul:
       options:
         - nameserver consul 127.0.0.1:8600
         - resolve_retries 3
