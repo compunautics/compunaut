@@ -20,7 +20,7 @@ haproxy:
         {{ local_minion }}:
           host: {{ local_minion }}.node.consul
           port: 8080
-          check: fall 3 rise 2 resolvers dnsmasq
+          check: fall 3 rise 2 resolvers consul
       options:
         - httplog
         - forwardfor

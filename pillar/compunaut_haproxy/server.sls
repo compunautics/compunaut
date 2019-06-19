@@ -35,9 +35,9 @@ haproxy:
       - server 1m
       - check 10s
   resolvers:
-    local_dns:
+    consul_dns:
       options:
-        - nameserver dnsmasq 127.0.0.1:53
+        - nameserver consul 127.0.0.1:8600
         - resolve_retries 3
         - timeout retry 1s
         - hold valid 10s
