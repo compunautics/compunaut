@@ -23,7 +23,7 @@ haproxy:
       balance: roundrobin
       servers:
         {{ local_minion }}:
-          host: {{ grains.ip4_interfaces.eth0.0 }}
+          host: {{ local_minion }}.node.consul
           port: 443
           check: ssl verify none fall 3 rise 2
       options:
@@ -36,7 +36,7 @@ haproxy:
       balance: roundrobin
       servers:
         {{ local_minion }}:
-          host: {{ grains.ip4_interfaces.eth0.0 }}
+          host: {{ local_minion }}.node.consul
           port: 443
           check: ssl verify none fall 3 rise 2
       options:

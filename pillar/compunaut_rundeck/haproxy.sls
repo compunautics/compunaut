@@ -1,3 +1,4 @@
+{%- set local_minion = grains['id'] %}
 {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
 haproxy:
   frontends:
@@ -17,17 +18,10 @@ haproxy:
       balance: roundrobin
       cookie: "CNAUT_RUND_ID insert indirect nocache"
       servers:
-  {%- for minion, interfaces in salt.saltutil.runner('mine.get', tgt='compunaut_rundeck:enabled:True', fun='network.interfaces', tgt_type='pillar').items() %}
-    {%- if interfaces['ens2'] is not defined %}
-      {%- set address = '127.0.0.1' %}
-    {%- else %}
-      {%- set address = interfaces['ens2']['inet'][0]['address'] %}
-    {%- endif %}
-        {{ minion }}:
-          host: {{ address }}
+        {{ local_minion }}:
+          host: {{ local_minion }}.node.consul
           port: 443
-          check: ssl verify none fall 3 rise 2 cookie {{ minion }}
-  {%- endfor %}
+          check: ssl verify none fall 3 rise 2 cookie {{ local_minion }}
       options:
         - httplog
         - forwardfor
