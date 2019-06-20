@@ -1,4 +1,4 @@
 influxdb_role:
-  grains.present:
+  grains.list_present:
     - name: role
     - value: influxdb_server

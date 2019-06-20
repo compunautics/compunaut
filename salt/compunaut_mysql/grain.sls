@@ -1,4 +1,4 @@
 mysql_role:
-  grains.present:
+  grains.list_present:
     - name: role
     - value: mysql_server
