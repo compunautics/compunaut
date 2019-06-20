@@ -1,4 +1,5 @@
 haproxy_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: haproxy_server
+    - value: 
+      - haproxy_server

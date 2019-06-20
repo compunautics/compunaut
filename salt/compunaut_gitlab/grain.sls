@@ -1,4 +1,5 @@
 gitlab_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: gitlab_server
+    - value: 
+      - gitlab_server

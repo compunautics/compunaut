@@ -1,4 +1,5 @@
 nfs_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: nfs_server
+    - value: 
+      - nfs_server

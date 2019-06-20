@@ -1,4 +1,5 @@
 grafana_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: grafana_server
+    - value: 
+      - grafana_server

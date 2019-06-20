@@ -1,4 +1,5 @@
 kvm_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: kvm_hypervisor
+    - value: 
+      - kvm_hypervisor

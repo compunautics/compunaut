@@ -1,4 +1,5 @@
 guacamole_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: guacamole_server
+    - value: 
+      - guacamole_server

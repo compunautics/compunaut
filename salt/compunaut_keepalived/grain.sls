@@ -1,4 +1,5 @@
 keepalived_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: keepalived_server
+    - value: 
+      - keepalived_server

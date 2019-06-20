@@ -1,4 +1,5 @@
 printer_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: octoprint_printer
+    - value: 
+      - octoprint_printer

@@ -1,4 +1,5 @@
 piserver_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: piserver_server
+    - value: 
+      - piserver_server

@@ -1,4 +1,5 @@
 openvpn_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: openvpn_server
+    - value: 
+      - openvpn_server

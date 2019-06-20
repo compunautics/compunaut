@@ -1,4 +1,5 @@
 consul_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: consul_server
+    - value: 
+      - consul_server

@@ -1,4 +1,5 @@
 rundeck_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: rundeck_server
+    - value: 
+      - rundeck_server

@@ -1,4 +1,5 @@
 mission_control_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: mission_control_server
+    - value: 
+      - mission_control_server

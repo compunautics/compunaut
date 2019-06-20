@@ -1,4 +1,5 @@
 openldap_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: openldap_server
+    - value: 
+      - openldap_server
