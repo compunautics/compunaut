@@ -16,7 +16,7 @@ haproxy:
       mode: http
       balance: roundrobin
       servers:
-  {%- for minion, hostname in salt.saltutil.runner('mine.get', tgt='compunaut_guacamole:enabled:True', fun='network.get_hostname', tgt_type='pillar').items() %}
+  {%- for minion, hostname in salt.saltutil.runner('mine.get', tgt='compunaut_mission_control:enabled:True', fun='network.get_hostname', tgt_type='pillar').items() %}
         {{ hostname }}:
           host: {{ hostname }}.node.consul
           port: 8080
