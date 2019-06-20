@@ -7,3 +7,4 @@ include:
   - compunaut_octoprint.config
   - compunaut_octoprint.restart
   - compunaut_octoprint.scripts
+  - compunaut_octoprint.grain

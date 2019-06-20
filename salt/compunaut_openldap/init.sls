@@ -10,5 +10,6 @@ include:
   - compunaut_openldap.restart
   - compunaut_openldap.phpldapadmin
   - compunaut_openldap.self_service_password
+  - compunaut_openldap.grain
   {%- endif %}
 {%- endif %}

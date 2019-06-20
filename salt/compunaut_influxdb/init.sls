@@ -5,3 +5,4 @@ include:
   - compunaut_influxdb.restart
   - compunaut_influxdb.relay
   - compunaut_influxdb.database
+  - compunaut_influxdb.grain

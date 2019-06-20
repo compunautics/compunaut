@@ -3,3 +3,4 @@ include:
   - compunaut_kvm.network
   - compunaut_kvm.images
   - compunaut_kvm.vms
+  - compunaut_kvm.grain

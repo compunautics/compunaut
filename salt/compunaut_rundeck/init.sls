@@ -15,3 +15,4 @@ include:
   - compunaut_rundeck.acl
   - compunaut_rundeck.resources
   - rundeck.client
+  - compunaut_rundeck.grain

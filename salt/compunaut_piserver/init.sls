@@ -7,3 +7,4 @@ include:
   - compunaut_piserver.scripts
   - compunaut_piserver.sudo
   - compunaut_piserver.exports
+  - compunaut_piserver.grain

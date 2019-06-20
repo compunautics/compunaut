@@ -7,6 +7,7 @@ include:
   - compunaut_apache
   - compunaut_consul.apache
   - compunaut_consul.alerts
+  - compunaut_consul.grain
     {%- endif %}
   {%- endif %}
 {%- endif %}

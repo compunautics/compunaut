@@ -4,3 +4,4 @@ include:
   - compunaut_gitlab.users
   - gitlab.server
   - gitlab.client
+  - compunaut_gitlab.grain

@@ -4,3 +4,4 @@ include:
   - mysql.server
   - compunaut_mysql.galera
   - mysql
+  - compunaut_mysql.grain
