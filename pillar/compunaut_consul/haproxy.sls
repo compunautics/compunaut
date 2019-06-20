@@ -17,7 +17,7 @@ haproxy:
       balance: roundrobin
       cookie: "CNAUT_CNSL_ID insert indirect nocache"
       servers:
-  {%- for minion, hostname in salt.saltutil.runner('mine.get', tgt='compunaut_consul:enabled:True', fun='network.get_hostname', tgt_type='pillar').items() %}
+  {%- for minion, hostname in salt.saltutil.runner('mine.get', tgt='compunaut_consul:server:enabled:True', fun='network.get_hostname', tgt_type='pillar').items() %}
         {{ hostname }}:
           host: {{ hostname }}.node.consul
           port: 443
