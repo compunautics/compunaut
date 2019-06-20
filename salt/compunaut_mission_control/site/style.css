@@ -74,16 +74,26 @@ a.solo { grid-column-end: span 2; }
 
 a#sspasswd {
     grid-column-end: span 2;
+    /*
     display: grid;
     grid-template-columns: 1fr 6fr;
+    */
+    display: flex;
+    flex-direction: row;
     border-radius: 1em;
+    height: 4em;
 }
-a#sspasswd img { margin-right: 2em; }
-a#sspasswd h1 { margin-left: 2rem !important; }
+a#sspasswd img {
+    /* margin-right: 2em; */
+    width: auto;
+    height: 100%;
+}
+/* a#sspasswd h1 { margin-left: 2rem !important; } */
 a#sspasswd div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-grow: 10; 
 }
 
 main a img { border-radius: 1em; width: 100%; }
@@ -93,7 +103,6 @@ img.logo-square { display: none ; }
 a#sspasswd, a#printers, a.printer {
     background-color: rgba(255,255,255,0.5);
     color: inherit;
-    text-align: center;
     text-decoration: none;
 }
 
@@ -112,9 +121,12 @@ a.printer { grid-column-end: span 1 !important; }
 
 a#sspasswd h1, a#printers h1, a.printer h1 {
     margin: 0;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+a#printers h1, a.printer h1 {
     font-size: 400%;
     font-style: italic;
-    text-shadow: var(--text-shadow);
 }
 h1#print-wide   { display: block; }
 h1#print-narrow { display: none ; }
@@ -156,7 +168,7 @@ footer p { margin: 0 1em; padding: 0; }
     img.logo-square { display: block ; }
     h1#print-wide   { display: none  ; }
     h1#print-narrow { display: block ; }
-    h1#password     { font-size: 300% !important; }
+    h1#password     { font-size: 175% !important; }
     a#sspasswd      { grid-template-columns: 1fr 5fr; }
     main a.printer {
         border-radius: 1em;
@@ -169,6 +181,6 @@ footer p { margin: 0 1em; padding: 0; }
 @media only screen and (max-width: 570px) {
     header a#homepage { grid-column: 1 / span 2; }
     header h1         { grid-column: 3 / span 2; }
-    h1#password { font-size: 200% !important; }
+    h1#password { font-size: 150% !important; }
     a#sspasswd { grid-template-columns: 1fr 4fr; }
 }
