@@ -1,2 +1,2 @@
 role:
-  grains.exists
+  grains.present
