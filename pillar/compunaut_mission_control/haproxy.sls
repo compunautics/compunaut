@@ -1,4 +1,3 @@
-{%- set local_minion = grains['id'] %}
 {%- for minion, vars in salt.saltutil.runner('mine.get', tgt='compunaut_salt:enabled:True', fun='get_vars', tgt_type='pillar').items() %}
 haproxy:
   frontends:
@@ -17,10 +16,12 @@ haproxy:
       mode: http
       balance: roundrobin
       servers:
-        {{ local_minion }}:
-          host: {{ local_minion }}.node.consul
+  {%- for minion, hostname in salt.saltutil.runner('mine.get', tgt='compunaut_guacamole:enabled:True', fun='network.get_hostname', tgt_type='pillar').items() %}
+        {{ hostname }}:
+          host: {{ hostname }}.node.consul
           port: 8080
           check: fall 3 rise 2 resolvers consul
+  {%- endfor %}
       options:
         - httplog
         - forwardfor
