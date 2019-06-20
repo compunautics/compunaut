@@ -1,4 +1,5 @@
 salt_master_role:
-  grains.present:
+  grains.list_present:
     - name: role
-    - value: salt_master
+    - value: 
+      - salt_master

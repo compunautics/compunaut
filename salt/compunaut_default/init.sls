@@ -8,3 +8,4 @@ include:
   - compunaut_default.bash
   - compunaut_default.packages
   - rsyslog
+  - compunaut_default.grain
