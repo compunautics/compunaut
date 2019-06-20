@@ -25,7 +25,7 @@ install_guacamole_dependencies:
 
 /var/lib/tomcat8/webapps/guacamole.war:
   file.managed:
-    - source: https://cfhcable.dl.sourceforge.net/project/guacamole/current/binary/guacamole-0.9.14.war
+    - source: http://archive.apache.org/dist/guacamole/1.0.0/binary/guacamole-1.0.0.war
     - makedirs: True
     - user: root
     - group: root
@@ -37,7 +37,7 @@ install_guacamole_dependencies:
 https://github.com/apache/guacamole-server.git:
   git.detached:
     - target: /tmp/guacamole-server
-    - rev: 0.9.14
+    - rev: 1.0.0
     - require:
       - pkg: install_guacamole_dependencies
 
