@@ -17,30 +17,34 @@
 -- under the License.
 --
 
--- Create default user "guacadmin" with password "guacadmin"
-INSERT INTO guacamole_user (username, password_date)
-VALUES ('{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}', NOW())
-ON DUPLICATE KEY UPDATE password_date = NOW();
+INSERT INTO guacamole_entity (name, type) VALUES ('{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}', 'USER');
+INSERT INTO guacamole_user (entity_id, password_date)
+SELECT
+    entity_id,
+    NOW()
+FROM guacamole_entity WHERE name = '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}';
 
 -- Grant this user all system permissions
-INSERT INTO guacamole_system_permission
-SELECT user_id, permission
+INSERT INTO guacamole_system_permission (entity_id, permission)
+SELECT entity_id, permission
 FROM (
           SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_CONNECTION'       AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_CONNECTION_GROUP' AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_SHARING_PROFILE'  AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_USER'             AS permission
+    UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'CREATE_USER_GROUP'       AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}'  AS username, 'ADMINISTER'              AS permission
 ) permissions
-JOIN guacamole_user ON permissions.username = guacamole_user.username;
+JOIN guacamole_entity ON permissions.username = guacamole_entity.name AND guacamole_entity.type = 'USER';
 
 -- Grant admin permission to read/update/administer self
-INSERT INTO guacamole_user_permission
-SELECT guacamole_user.user_id, affected.user_id, permission
+INSERT INTO guacamole_user_permission (entity_id, affected_user_id, permission)
+SELECT guacamole_entity.entity_id, guacamole_user.user_id, permission
 FROM (
           SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'READ'       AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'UPDATE'     AS permission
     UNION SELECT '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS username, '{{ pillar.compunaut_guacamole.secrets.guac_admin_user }}' AS affected_username, 'ADMINISTER' AS permission
 ) permissions
-JOIN guacamole_user          ON permissions.username = guacamole_user.username
-JOIN guacamole_user affected ON permissions.affected_username = affected.username;
+JOIN guacamole_entity          ON permissions.username = guacamole_entity.name AND guacamole_entity.type = 'USER'
+JOIN guacamole_entity affected ON permissions.affected_username = affected.name AND guacamole_entity.type = 'USER'
+JOIN guacamole_user            ON guacamole_user.entity_id = affected.entity_id;
