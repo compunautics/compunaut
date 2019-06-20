@@ -1,2 +1,3 @@
 role:
-  grains.present
+  grains.present:
+    - value: minion
