@@ -1,3 +1,2 @@
 role:
-  grains.present:
-    - value: ''
+  grains.list_present:
