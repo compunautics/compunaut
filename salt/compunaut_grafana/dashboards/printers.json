@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1549866809835,
+  "iteration": 1561085843148,
   "links": [],
   "panels": [
     {
@@ -43,6 +43,7 @@
       "mode": "time",
       "offsetFromUtc": null,
       "offsetFromUtcMinutes": null,
+      "options": {},
       "refreshSettings": {
         "syncWithDashboard": false
       },
@@ -50,6 +51,13 @@
         "customFormat": "HH:mm:ss",
         "fontSize": "60px",
         "fontWeight": "bold"
+      },
+      "timezone": null,
+      "timezoneSettings": {
+        "fontSize": "12px",
+        "fontWeight": "normal",
+        "showTimezone": false,
+        "zoneFormat": "offsetAbbv"
       },
       "title": "Current Time",
       "type": "grafana-clock-panel"
@@ -102,8 +110,9 @@
       "lines": true,
       "linewidth": 1,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
       "nullPointMode": "connected",
+      "options": {},
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -507,7 +516,7 @@
         "y": 4
       },
       "hideTimeOverride": false,
-      "id": 15,
+      "id": 24,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -522,15 +531,16 @@
       "lines": true,
       "linewidth": 1,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
       "nullPointMode": "connected",
+      "options": {},
       "percentage": false,
       "pointradius": 5,
       "points": false,
       "renderer": "flot",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549866809835,
+      "repeatIteration": 1561085843148,
       "repeatPanelId": 2,
       "scopedVars": {
         "octoprint_node": {
@@ -915,9 +925,246 @@
         "x": 0,
         "y": 9
       },
-      "id": 14,
+      "id": 22,
       "panels": [],
-      "title": "Available Filaments",
+      "title": "Job Progress",
+      "type": "row"
+    },
+    {
+      "cacheTimeout": null,
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 10
+      },
+      "hideTimeOverride": false,
+      "id": 20,
+      "links": [],
+      "maxPerRow": 4,
+      "options": {
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "defaults": {
+            "max": 100,
+            "min": 0
+          },
+          "mappings": [],
+          "override": {},
+          "thresholds": [
+            {
+              "color": "dark-red",
+              "index": 0,
+              "value": null
+            },
+            {
+              "color": "#EAB839",
+              "index": 1,
+              "value": 33
+            },
+            {
+              "color": "dark-green",
+              "index": 2,
+              "value": 67
+            }
+          ],
+          "values": false
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "6.2.4",
+      "repeat": "octoprint_node",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p101.compunaut.prtr",
+          "value": "p101.compunaut.prtr"
+        }
+      },
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "progress"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "job_progress"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Job Progress - $octoprint_node",
+      "type": "gauge"
+    },
+    {
+      "cacheTimeout": null,
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 10
+      },
+      "hideTimeOverride": false,
+      "id": 25,
+      "links": [],
+      "maxPerRow": 4,
+      "options": {
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "defaults": {
+            "max": 100,
+            "min": 0
+          },
+          "mappings": [],
+          "override": {},
+          "thresholds": [
+            {
+              "color": "dark-red",
+              "index": 0,
+              "value": null
+            },
+            {
+              "color": "#EAB839",
+              "index": 1,
+              "value": 33
+            },
+            {
+              "color": "dark-green",
+              "index": 2,
+              "value": 67
+            }
+          ],
+          "values": false
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "6.2.4",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561085843148,
+      "repeatPanelId": 20,
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p102.compunaut.prtr",
+          "value": "p102.compunaut.prtr"
+        }
+      },
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "progress"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "job_progress"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Job Progress - $octoprint_node",
+      "type": "gauge"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 15
+      },
+      "id": 18,
+      "panels": [],
+      "title": "Filament Status",
       "type": "row"
     },
     {
@@ -927,12 +1174,13 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 10
+        "y": 16
       },
       "hideTimeOverride": true,
-      "id": 11,
+      "id": 16,
       "links": [],
-      "minSpan": 4,
+      "maxPerRow": 6,
+      "options": {},
       "pageSize": null,
       "repeat": "filaments",
       "repeatDirection": "h",
@@ -1016,6 +1264,14 @@
                 ],
                 "type": "field"
               }
+            ],
+            [
+              {
+                "params": [
+                  "status"
+                ],
+                "type": "field"
+              }
             ]
           ],
           "slimit": "",
@@ -1023,7 +1279,7 @@
             {
               "key": "name",
               "operator": "=",
-              "value": "registered_filament"
+              "value": "filament_status"
             },
             {
               "condition": "AND",
@@ -1041,7 +1297,7 @@
     }
   ],
   "refresh": "10s",
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [
     "printers"
@@ -1052,7 +1308,9 @@
         "allValue": null,
         "current": {
           "text": "All",
-          "value": "$__all"
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": "compunaut_influxdb",
         "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-octoprint/",
@@ -1077,7 +1335,9 @@
         "allValue": null,
         "current": {
           "text": "All",
-          "value": "$__all"
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": "compunaut_influxdb",
         "definition": "select distinct(filament) from octoprint_custom where time > now() - 20s",
@@ -1132,5 +1392,5 @@
   "timezone": "browser",
   "title": "Printers",
   "uid": "DA_uBtumz",
-  "version": 16
+  "version": 1
 }
