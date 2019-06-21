@@ -25,7 +25,7 @@ try:
   printer_response = r.json()
 
   # consul
-  r = requests.get(consul_url)
+  r = requests.get(consul_agent_url)
   if r.status_code is not 200:
     print "Invalid response code from Consul."
     exit(2)
