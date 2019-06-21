@@ -10,7 +10,8 @@ hostname = socket.gethostname()
 headers = {"X-Api-Key":"{{ pillar.telegraf.secrets.octoprint_api_key }}","Content-Type":"application/json"}
 printer_url = "http://localhost:5000/api/printer"
 printer_data = {}
-consul_url = "http://localhost:8500/v1/agent/services"
+consul_agent_url = "http://localhost:8500/v1/agent/services"
+consul_health_url = "http://localhost:8500/v1/agent/health/service/name/"
 consul_data = {}
 
 # make requests and receive responses
@@ -56,9 +57,25 @@ try:
   for service, data in consul_response.iteritems():
     if 'filament' in service:
       consul_data['filament_name'] = service
+
+      # get the service health
+      consul_service_url = consul_health_url + consul_data['filament_name']
+      r = requests.get(consul_service_url)
+
+      if r.status_code is not 200:
+        print "Invalid response from consul when getting service health."
+        exit(2)
+
+      service_health = r.json()
+      if service_health[0]['AggregatedStatus'] == 'passing':
+        consul_data['filament_status'] = 'available'
+      elif service_health[0]['AggregatedStatus'] == 'critical':
+        consul_data['filament_status'] = 'unavailable'
+
       break
     else:
       consul_data['filament_name'] = "none_registered"
+      consul_data['filament_status'] = "none_registered"
 
 except Exception as e:
   print e
@@ -71,3 +88,4 @@ print "octoprint,name=bed_target temp="+str(printer_data['bed_target'])
 print "octoprint,name=tool_actual temp="+str(printer_data['tool_actual'])
 print "octoprint,name=tool_target temp="+str(printer_data['tool_target'])
 print "octoprint,name=registered_filament,filament_name="+str(consul_data['filament_name'])+" filament=\""+str(consul_data['filament_name'])+"\",node=\""+hostname+"\""
+print "octoprint,name=filament_status,filament_name="+str(consul_data['filament_name'])+" status=\""+str(consul_data['filament_status'])+"\",node=\""+hostname+"\""
