@@ -3,3 +3,9 @@ install-self-service-password:
     - pkgs:
       - php-mbstring
       - self-service-password
+
+restart_apache2_for_ssp:
+  cmd.run:
+    - name: 'systemctl restart apache2'
+    - watch:
+      - cmd: install-self-service-password
