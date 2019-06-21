@@ -62,10 +62,6 @@ try:
       consul_service_url = consul_health_url + consul_data['filament_name']
       r = requests.get(consul_service_url)
 
-      if r.status_code is not 200:
-        print "Invalid response from consul when getting service health."
-        exit(2)
-
       service_health = r.json()
       if service_health[0]['AggregatedStatus'] == 'passing':
         consul_data['filament_status'] = 'available'
