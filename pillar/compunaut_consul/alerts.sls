@@ -29,8 +29,8 @@ compunaut_consul:
       slack:
         enabled: true
         detailed: true
-        cluster-name: "Compunaut"
-        username: "Compunaut_Alerts"
+        cluster-name: "Compunaut_Alerts"
+        username: "Compunaut"
         channel: "\\\\#placeholder"
         url: https://placeholder
         icon-url: https://avatars1.githubusercontent.com/u/41558985
