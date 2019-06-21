@@ -11,12 +11,21 @@
 ###SET UP DEFAULT NOTIFICATION SELECTORS
 {%- for selection, configs in salt['pillar.get']('compunaut_consul:alerts:notif_selection').iteritems() %}
   {%- for key, value in configs.items() %}
+    {%- if 'status' in selection %}
 /consul-alerts/config/notif-selection/{{ selection }}/{{ key }}:
   module.run:
     - consul.put:
       - consul_url: http://localhost:8500
       - key: /consul-alerts/config/notif-selection/{{ selection }}/{{ key }}
       - value: {{ value }}
+    {%- elif 'services' in selection %}
+/consul-alerts/config/notif-selection/{{ selection }}:
+  module.run:
+    - consul.put:
+      - consul_url: http://localhost:8500
+      - key: /consul-alerts/config/notif-selection/{{ selection }}
+      - value: {{ configs }}
+    {%- endif %}
   {%- endfor %}
 {%- endfor %}
 

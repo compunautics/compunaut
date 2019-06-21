@@ -23,8 +23,8 @@ compunaut_consul:
       status:
         warning: default
         critical: default
-      services:
-        "^filament_.*": printers
+      services: 
+        "^filament_.*": "printers"
     notifiers:
       slack:
         enabled: true
