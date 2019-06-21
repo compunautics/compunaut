@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1561085843148,
+  "iteration": 1561088450906,
   "links": [],
   "panels": [
     {
@@ -516,7 +516,7 @@
         "y": 4
       },
       "hideTimeOverride": false,
-      "id": 24,
+      "id": 23,
       "legend": {
         "alignAsTable": false,
         "avg": false,
@@ -540,7 +540,7 @@
       "renderer": "flot",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1561085843148,
+      "repeatIteration": 1561088450906,
       "repeatPanelId": 2,
       "scopedVars": {
         "octoprint_node": {
@@ -945,9 +945,10 @@
       "options": {
         "fieldOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "defaults": {
+            "decimals": 2,
             "max": 100,
             "min": 0
           },
@@ -997,7 +998,7 @@
             },
             {
               "params": [
-                "null"
+                "previous"
               ],
               "type": "fill"
             }
@@ -1050,15 +1051,16 @@
         "y": 10
       },
       "hideTimeOverride": false,
-      "id": 25,
+      "id": 24,
       "links": [],
       "maxPerRow": 4,
       "options": {
         "fieldOptions": {
           "calcs": [
-            "mean"
+            "last"
           ],
           "defaults": {
+            "decimals": 2,
             "max": 100,
             "min": 0
           },
@@ -1090,7 +1092,7 @@
       "pluginVersion": "6.2.4",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1561085843148,
+      "repeatIteration": 1561088450906,
       "repeatPanelId": 20,
       "scopedVars": {
         "octoprint_node": {
@@ -1110,7 +1112,7 @@
             },
             {
               "params": [
-                "null"
+                "previous"
               ],
               "type": "fill"
             }
@@ -1392,5 +1394,5 @@
   "timezone": "browser",
   "title": "Printers",
   "uid": "DA_uBtumz",
-  "version": 1
+  "version": 2
 }
