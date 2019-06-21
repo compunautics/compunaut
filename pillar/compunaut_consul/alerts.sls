@@ -16,7 +16,7 @@ compunaut_consul:
           email: false
         VarOverrides:
           slack:
-            username: "Printer_Alerts"
+            cluster-name: "Printer_Alerts"
             channel: "#some_other_channel"
             url: https://placeholder
     notif_selection:
