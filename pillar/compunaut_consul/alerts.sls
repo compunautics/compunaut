@@ -9,7 +9,7 @@ compunaut_consul:
           slack: false
           email: false
       printers:
-        Interval: 10
+        Interval: 180
         NotifList:
           log: true
           slack: false
@@ -17,7 +17,7 @@ compunaut_consul:
         VarOverrides:
           slack:
             username: "Printer_Alerts"
-            channel: "\\\\#some_other_channel"
+            channel: "#some_other_channel"
             url: https://placeholder
     notif_selection:
       status:
