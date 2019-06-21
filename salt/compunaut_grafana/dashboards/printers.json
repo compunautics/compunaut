@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1561088450906,
+  "iteration": 1561088822334,
   "links": [],
   "panels": [
     {
@@ -540,7 +540,7 @@
       "renderer": "flot",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1561088450906,
+      "repeatIteration": 1561088822334,
       "repeatPanelId": 2,
       "scopedVars": {
         "octoprint_node": {
@@ -961,14 +961,19 @@
               "value": null
             },
             {
-              "color": "#EAB839",
+              "color": "dark-orange",
               "index": 1,
-              "value": 33
+              "value": 25
+            },
+            {
+              "color": "#EAB839",
+              "index": 2,
+              "value": 50
             },
             {
               "color": "dark-green",
-              "index": 2,
-              "value": 67
+              "index": 3,
+              "value": 75
             }
           ],
           "values": false
@@ -1073,14 +1078,19 @@
               "value": null
             },
             {
-              "color": "#EAB839",
+              "color": "dark-orange",
               "index": 1,
-              "value": 33
+              "value": 25
+            },
+            {
+              "color": "#EAB839",
+              "index": 2,
+              "value": 50
             },
             {
               "color": "dark-green",
-              "index": 2,
-              "value": 67
+              "index": 3,
+              "value": 75
             }
           ],
           "values": false
@@ -1092,7 +1102,7 @@
       "pluginVersion": "6.2.4",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1561088450906,
+      "repeatIteration": 1561088822334,
       "repeatPanelId": 20,
       "scopedVars": {
         "octoprint_node": {
@@ -1309,6 +1319,7 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -1394,5 +1405,5 @@
   "timezone": "browser",
   "title": "Printers",
   "uid": "DA_uBtumz",
-  "version": 2
+  "version": 3
 }
