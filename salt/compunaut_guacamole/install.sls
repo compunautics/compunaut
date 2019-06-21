@@ -30,7 +30,7 @@ install_guacamole_dependencies:
     - user: root
     - group: root
     - mode: 0644
-    - source_hash: 8831d9720a6a984919dd00f683c114136f35e0f07b33df171714026ecb23d94d
+    - source_hash: 93f66f43f4ea77011dc44df2aeeb297dd270cb0f34593d221e58968216a469cf
     - require:
       - pkg: install_guacamole_dependencies
 

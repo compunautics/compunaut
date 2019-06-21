@@ -10,17 +10,17 @@ include:
     - require:
       - pkg: install_guacamole_dependencies
 
-/etc/guacamole/extensions/guacamole-auth-jdbc-mysql-0.9.14.jar:
+/etc/guacamole/extensions/guacamole-auth-jdbc-mysql-1.0.0.jar:
   file.managed:
-    - source: salt://compunaut_guacamole/config/guacamole-auth-jdbc-mysql-0.9.14.jar
+    - source: salt://compunaut_guacamole/config/guacamole-auth-jdbc-mysql-1.0.0.jar
     - makedirs: True
     - user: root
     - group: tomcat8
     - mode: 0660
 
-/etc/guacamole/extensions/guacamole-auth-ldap-0.9.14.jar:
+/etc/guacamole/extensions/guacamole-auth-ldap-1.0.0.jar:
   file.managed:
-    - source: salt://compunaut_guacamole/config/guacamole-auth-ldap-0.9.14.jar
+    - source: salt://compunaut_guacamole/config/guacamole-auth-ldap-1.0.0.jar
     - makedirs: True
     - user: root
     - group: tomcat8
