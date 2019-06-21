@@ -8,10 +8,23 @@ compunaut_consul:
           log: true
           slack: false
           email: false
+      printers:
+        Interval: 10
+        NotifList:
+          log: true
+          slack: false
+          email: false
+        VarOverrides:
+          slack:
+            username: "Printer_Alerts"
+            channel: "\\\\#some_other_channel"
+            url: https://placeholder
     notif_selection:
       status:
         warning: default
         critical: default
+      services:
+        "^filament_.*": printers
     notifiers:
       slack:
         enabled: true
