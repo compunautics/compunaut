@@ -9,15 +9,19 @@ clear_cache:
 
 grain_update:
   salt.function:
-    - name: saltutil.refresh_grains
-    - tgt: '*'
-    - batch: 4
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - salt '*' saltutil.refresh_grains -b2 --batch-wait 6
 
 first_pillar_update:
   salt.function:
-    - name: saltutil.refresh_pillar
-    - tgt: '*'
-    - batch: 4
+    - name: cmd.run
+    - tgt: 'compunaut_salt:enabled:True'
+    - tgt_type: pillar
+    - arg:
+      - salt '*' saltutil.refresh_pillar -b2 --batch-wait 3
 
 mine_update:
   salt.function:
@@ -29,4 +33,3 @@ second_pillar_update:
   salt.function:
     - name: saltutil.refresh_pillar
     - tgt: '*'
-    - batch: 4
