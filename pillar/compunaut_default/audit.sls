@@ -32,9 +32,9 @@ audit:
       - -w /usr/bin/apt-get -p x -k software_mgmt
       - -w /usr/bin/aptitude -p x -k software_mgmt
       # time
-      -a always,exit -F arch=b64 -S adjtimex,settimeofday -F key=time-change
-      -a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -F key=time-change
-      -w /etc/localtime -p wa -k time-change
+      - -a always,exit -F arch=b64 -S adjtimex,settimeofday -F key=time-change
+      - -a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -F key=time-change
+      - -w /etc/localtime -p wa -k time-change
       # priv escalations
       - -a always,exit -F arch=b64 -S setuid -F a0=0 -F exe=/usr/bin/su -F key=elevated-privs-session
       - -a always,exit -F arch=b64 -S setresuid -F a0=0 -F exe=/usr/bin/sudo -F key=elevated-privs-session
