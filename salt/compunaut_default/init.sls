@@ -8,5 +8,4 @@ include:
   - compunaut_default.bash
   - compunaut_default.packages
   - rsyslog
-  - audit
   - compunaut_default.grain

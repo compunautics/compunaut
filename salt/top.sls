@@ -63,3 +63,4 @@ base:
     - compunaut_iptables
     - compunaut_sssd
     - compunaut_telegraf
+    - compuanut_audit
