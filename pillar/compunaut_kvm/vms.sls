@@ -19,7 +19,7 @@ compunaut_kvm:
         vcpu: 4
         memory: 4096
         disk: 200
-      nfs01-vm:
+      log01-vm:
         public_mac: 52:54:00:6c:6e:06
         private_mac: 52:54:00:13:e0:71
         private_ip: {{ vars.private_net }}.13
