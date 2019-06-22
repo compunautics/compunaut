@@ -1,5 +1,6 @@
 audit:
   auditctl:
+    backlog_limit: 8192
     rules:
       ## Obtained from https://github.com/Neo23x0/auditd/blob/master/audit.rules
       # self auditing
@@ -25,21 +26,6 @@ audit:
       - -a exit,never -F arch=b64 -F dir=/var/lock/lvm -k locklvm
       # rules
       - -w /etc/sysctl.conf -p wa -k sysctl
-      - -a always,exit -F perm=x -F auid!=-1 -F path=/sbin/insmod -k modules
-      - -a always,exit -F perm=x -F auid!=-1 -F path=/sbin/modprobe -k modules
-      - -a always,exit -F perm=x -F auid!=-1 -F path=/sbin/rmmod -k modules
-      - -a always,exit -F arch=b64 -S finit_module -S init_module -S delete_module -F auid!=-1 -k modules
-      - -a always,exit -F arch=b32 -S finit_module -S init_module -S delete_module -F auid!=-1 -k modules
-      - -a always,exit -F arch=b64 -S kexec_load -k KEXEC
-      - -a always,exit -F arch=b32 -S sys_kexec_load -k KEXEC
-      - -a exit,always -F arch=b32 -S mknod -S mknodat -k specialfiles
-      - -a exit,always -F arch=b64 -S mknod -S mknodat -k specialfiles
-      - -a always,exit -F arch=b64 -S mount -S umount2 -F auid!=-1 -k mount
-      - -a always,exit -F arch=b32 -S mount -S umount -S umount2 -F auid!=-1 -k mount
-      - -a always,exit -F arch=b64 -S swapon -S swapoff -F auid!=-1 -k swap
-      - -a always,exit -F arch=b32 -S swapon -S swapoff -F auid!=-1 -k swap
-      - -a exit,always -F arch=b32 -S adjtimex -S settimeofday -S clock_settime -k time
-      - -a exit,always -F arch=b64 -S adjtimex -S settimeofday -S clock_settime -k time
       - -w /etc/localtime -p wa -k localtime
       - -w /etc/cron.allow -p wa -k cron
       - -w /etc/cron.deny -p wa -k cron
@@ -72,22 +58,12 @@ audit:
       - -a always,exit -F arch=b64 -S sethostname -S setdomainname -k network_modifications
       - -w /etc/hosts -p wa -k network_modifications
       - -w /etc/network/ -p wa -k network
-      - -w /etc/issue -p wa -k etcissue
-      - -w /etc/issue.net -p wa -k etcissue
       - -w /etc/inittab -p wa -k init
       - -w /etc/init.d/ -p wa -k init
       - -w /etc/init/ -p wa -k init
-      - -w /etc/ld.so.conf -p wa -k libpath
-      - -w /etc/pam.d/ -p wa -k pam
-      - -w /etc/security/limits.conf -p wa  -k pam
-      - -w /etc/security/pam_env.conf -p wa -k pam
-      - -w /etc/security/namespace.conf -p wa -k pam
-      - -w /etc/security/namespace.init -p wa -k pam
-      - -w /etc/aliases -p wa -k mail
       - -w /etc/ssh/sshd_config -k sshd
       - -w /bin/systemctl -p x -k systemd 
       - -w /etc/systemd/ -p wa -k systemd
-      - -w /etc/selinux/ -p wa -k mac_policy
       - -a exit,always -F arch=b64 -S open -F dir=/etc -F success=0 -k unauthedfileaccess
       - -a exit,always -F arch=b64 -S open -F dir=/bin -F success=0 -k unauthedfileaccess
       - -a exit,always -F arch=b64 -S open -F dir=/sbin -F success=0 -k unauthedfileaccess
@@ -143,7 +119,6 @@ audit:
       - -w /bin/nc -p x -k susp_activity
       - -w /bin/netcat -p x -k susp_activity
       - -w /usr/bin/ssh -p x -k susp_activity
-      - -w /bin/nc.openbsd -p x -k susp_activity
       - -w /sbin/iptables -p x -k sbin_susp 
       - -w /sbin/ifconfig -p x -k sbin_susp
       - -w /usr/sbin/tcpdump -p x -k sbin_susp
@@ -163,17 +138,7 @@ audit:
       - -w /usr/bin/aptitude -p x -k software_mgmt
       - -a exit,always -F arch=b64 -F euid=0 -S execve -k rootcmd
       - -a exit,always -F arch=b32 -F euid=0 -S execve -k rootcmd
-      - -a always,exit -F arch=b32 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
-      - -a always,exit -F arch=b64 -S rmdir -S unlink -S unlinkat -S rename -S renameat -F auid>=500 -F auid!=4294967295 -k delete
       - -a always,exit -F arch=b32 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b32 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b64 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b64 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k file_access
-      - -a always,exit -F arch=b32 -S creat,link,mknod,mkdir,symlink,mknodat,linkat,symlinkat -F exit=-EACCES -k file_creation
-      - -a always,exit -F arch=b64 -S mkdir,creat,link,symlink,mknod,mknodat,linkat,symlinkat -F exit=-EACCES -k file_creation
-      - -a always,exit -F arch=b32 -S link,mkdir,symlink,mkdirat -F exit=-EPERM -k file_creation
-      - -a always,exit -F arch=b64 -S mkdir,link,symlink,mkdirat -F exit=-EPERM -k file_creation
-      - -a always,exit -F arch=b32 -S rename -S renameat -S truncate -S chmod -S setxattr -S lsetxattr -S removexattr -S lremovexattr -F exit=-EACCES -k file_modification
-      - -a always,exit -F arch=b64 -S rename -S renameat -S truncate -S chmod -S setxattr -S lsetxattr -S removexattr -S lremovexattr -F exit=-EACCES -k file_modification
-      - -a always,exit -F arch=b32 -S rename -S renameat -S truncate -S chmod -S setxattr -S lsetxattr -S removexattr -S lremovexattr -F exit=-EPERM -k file_modification
-      - -a always,exit -F arch=b64 -S rename -S renameat -S truncate -S chmod -S setxattr -S lsetxattr -S removexattr -S lremovexattr -F exit=-EPERM -k file_modification
