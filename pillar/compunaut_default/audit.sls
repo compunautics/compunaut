@@ -22,7 +22,6 @@ audit:
       - -a exit,never -F arch=b64 -F dir=/dev/shm -k sharedmemaccess
       - -a exit,never -F arch=b64 -F dir=/var/lock/lvm -k locklvm
       # rules
-      - -a exit,always -F arch=b64 -F euid=0 -S execve -k rootcmd
       - -w /usr/bin/dpkg -p x -k software_mgmt
       - -w /usr/bin/apt-add-repository -p x -k software_mgmt
       - -w /usr/bin/apt-get -p x -k software_mgmt
@@ -104,3 +103,4 @@ audit:
       - -a always,exit -F dir=/home -F uid=0 -F auid>=1000 -F auid!=4294967295 -C auid!=obj_uid -k power_abuse
       - -a always,exit -F arch=b64 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b64 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k file_access
+      - -a exit,always -F arch=b64 -F euid=0 -S execve -k rootcmd
