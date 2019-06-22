@@ -1,4 +1,5 @@
 include:
+  - compunaut_consul.audit
   - compunaut_consul.iptables
   - compunaut_consul.secrets
   - compunaut_consul.telegraf

@@ -4,8 +4,8 @@
     - makedirs: True
     - user: consul
     - group: consul
-    - file_mode: 0755
-    - dir_mode: 0755
+    - file_mode: 0700
+    - dir_mode: 0700
 
 /etc/consul.d/checks/check_octoprint.py:
   file.managed:
@@ -14,7 +14,7 @@
     - makedirs: True
     - user: consul
     - group: consul
-    - mode: 0755
+    - mode: 0700
 
 libnet-telnet-perl:
   pkg.installed
