@@ -26,6 +26,7 @@ deploy_compunaut_pki:
   salt.state:
     - tgt: 'compunaut_pki:enabled:True'
     - tgt_type: pillar
+    - batch: 6
     - sls:
       - compunaut_default.users
       - compunaut_pki.deploy

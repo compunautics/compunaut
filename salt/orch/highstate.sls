@@ -9,6 +9,6 @@ run_highstate_on_vms:
   salt.state:
     - tgt: 'not I@compunaut_kvm:enabled:True'
     - tgt_type: compound
-    - batch: 5
+    - batch: 4
     - batch_wait: 15
     - highstate: True
