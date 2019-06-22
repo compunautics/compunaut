@@ -25,6 +25,12 @@ audit:
       - -a exit,never -F arch=b32 -F dir=/var/lock/lvm -k locklvm
       - -a exit,never -F arch=b64 -F dir=/var/lock/lvm -k locklvm
       # rules
+      - -a exit,always -F arch=b64 -F euid=0 -S execve -k rootcmd
+      - -a exit,always -F arch=b32 -F euid=0 -S execve -k rootcmd
+      - -w /usr/bin/dpkg -p x -k software_mgmt
+      - -w /usr/bin/apt-add-repository -p x -k software_mgmt
+      - -w /usr/bin/apt-get -p x -k software_mgmt
+      - -w /usr/bin/aptitude -p x -k software_mgmt
       - -w /etc/sysctl.conf -p wa -k sysctl
       - -w /etc/localtime -p wa -k localtime
       - -w /etc/cron.allow -p wa -k cron
@@ -79,36 +85,10 @@ audit:
       - -w /sbin/poweroff -p x -k power
       - -w /sbin/reboot -p x -k power
       - -w /sbin/halt -p x -k power
-      - -w /var/run/utmp -p wa -k session
-      - -w /var/log/btmp -p wa -k session
-      - -w /var/log/wtmp -p wa -k session
       - -a always,exit -F arch=b32 -S chmod -F auid>=500 -F auid!=4294967295 -k perm_mod
       - -a always,exit -F arch=b32 -S chown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fchmod -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fchown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fchownat -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fremovexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S lchown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S lremovexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S lsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S removexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b32 -S setxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
       - -a always,exit -F arch=b64 -S chmod  -F auid>=500 -F auid!=4294967295 -k perm_mod
       - -a always,exit -F arch=b64 -S chown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fchmod -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fchmodat -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fchown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fchownat -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fremovexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S fsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S lchown -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S lremovexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S lsetxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S removexattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      - -a always,exit -F arch=b64 -S setxattr -F auid>=500 -F auid!=4294967295 -k perm_mod
-      # special rules
       - -a always,exit -F arch=b32 -S all -k 32bit_api
       - -w /usr/bin/whoami -p x -k recon
       - -w /etc/issue -p r -k recon
@@ -132,12 +112,6 @@ audit:
       - -a always,exit -F arch=b32 -S ptrace -F a0=0x6 -k register_injection
       - -a always,exit -F arch=b64 -S ptrace -F a0=0x6 -k register_injection
       - -a always,exit -F dir=/home -F uid=0 -F auid>=1000 -F auid!=4294967295 -C auid!=obj_uid -k power_abuse
-      - -w /usr/bin/dpkg -p x -k software_mgmt
-      - -w /usr/bin/apt-add-repository -p x -k software_mgmt
-      - -w /usr/bin/apt-get -p x -k software_mgmt
-      - -w /usr/bin/aptitude -p x -k software_mgmt
-      - -a exit,always -F arch=b64 -F euid=0 -S execve -k rootcmd
-      - -a exit,always -F arch=b32 -F euid=0 -S execve -k rootcmd
       - -a always,exit -F arch=b32 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b32 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EPERM -F auid>=500 -F auid!=4294967295 -k file_access
       - -a always,exit -F arch=b64 -S creat -S open -S openat -S open_by_handle_at -S truncate -S ftruncate -F exit=-EACCES -F auid>=500 -F auid!=4294967295 -k file_access
