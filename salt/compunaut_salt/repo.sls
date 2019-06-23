@@ -7,6 +7,7 @@ saltstack.repo:
     - keyid: DE57BFBE
     - keyserver: keyserver.ubuntu.com
     - clean_file: True
+    - refresh: False
   {%- else %}
 saltstack.repo:
   pkgrepo.managed:
@@ -15,5 +16,6 @@ saltstack.repo:
     - keyid: DE57BFBE
     - keyserver: keyserver.ubuntu.com
     - clean_file: True
+    - refresh: False
   {%- endif %}
 {% endif %}
