@@ -9,8 +9,8 @@ import json
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # define variables
-username = '{{ pillar.telegraf.secrets.rundeck_user }}'
-password = '{{ pillar.telegraf.secrets.rundeck_password }}'
+username = '{{ pillar.telegraf.secrets.rundeck_admin_user }}'
+password = '{{ pillar.telegraf.secrets.rundeck_admin_unencrypted_password }}'
 data = {
   'j_username':username,
   'j_password':password
