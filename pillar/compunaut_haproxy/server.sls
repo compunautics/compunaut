@@ -15,7 +15,7 @@ haproxy:
       enable: True
       path: /var/lib/haproxy
     log:
-      - 127.0.0.1 local0
+      - /dev/log local0
     stats:
       enable: True
       socketpath: /var/lib/haproxy/stats
