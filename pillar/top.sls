@@ -17,7 +17,7 @@ base:
     - compunaut_piserver
   '*log*':
     - compunaut_nfs
-    - compunaut_rsyslog.server
+    - compunaut_rsyslog
   '*proxy*':
     - compunaut_haproxy
     - compunaut_keepalived
