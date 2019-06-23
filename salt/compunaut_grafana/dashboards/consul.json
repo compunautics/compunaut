@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "iteration": 1559886728982,
+  "iteration": 1561262931341,
   "links": [],
   "panels": [
     {
@@ -148,7 +148,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Serf Health",
+          "alias": "compunaut-keepalived",
           "groupBy": [
             {
               "params": [
@@ -234,7 +234,7 @@
         "x": 6,
         "y": 4
       },
-      "id": 2858,
+      "id": 3013,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -266,7 +266,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -284,7 +284,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Serf Health",
+          "alias": "compunaut-keepalived",
           "groupBy": [
             {
               "params": [
@@ -370,7 +370,7 @@
         "x": 12,
         "y": 4
       },
-      "id": 2859,
+      "id": 3014,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -402,7 +402,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -420,7 +420,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Serf Health",
+          "alias": "compunaut-keepalived",
           "groupBy": [
             {
               "params": [
@@ -506,7 +506,7 @@
         "x": 18,
         "y": 4
       },
-      "id": 2860,
+      "id": 3015,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -538,7 +538,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 97,
       "scopedVars": {
         "keepalived_node": {
@@ -556,7 +556,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Serf Health",
+          "alias": "compunaut-keepalived",
           "groupBy": [
             {
               "params": [
@@ -704,7 +704,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "OpenVPN",
+          "alias": "compunaut-openvpn",
           "groupBy": [
             {
               "params": [
@@ -791,7 +791,7 @@
         "x": 12,
         "y": 6
       },
-      "id": 2861,
+      "id": 3016,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -823,7 +823,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 112,
       "scopedVars": {
         "openvpn_node": {
@@ -841,7 +841,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "OpenVPN",
+          "alias": "compunaut-openvpn",
           "groupBy": [
             {
               "params": [
@@ -987,7 +987,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_haproxy",
+          "alias": "compunaut-haproxy",
           "groupBy": [
             {
               "params": [
@@ -1072,7 +1072,7 @@
         "x": 12,
         "y": 8
       },
-      "id": 2862,
+      "id": 3017,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1104,7 +1104,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 148,
       "scopedVars": {
         "haproxy_node": {
@@ -1122,7 +1122,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_haproxy",
+          "alias": "compunaut-haproxy",
           "groupBy": [
             {
               "params": [
@@ -1268,7 +1268,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_mission_control",
+          "alias": "compunaut-mission-control",
           "groupBy": [
             {
               "params": [
@@ -1353,7 +1353,7 @@
         "x": 12,
         "y": 10
       },
-      "id": 2863,
+      "id": 3018,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1385,7 +1385,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1631,
       "scopedVars": {
         "mission_control_node": {
@@ -1403,7 +1403,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_mission_control",
+          "alias": "compunaut-mission-control",
           "groupBy": [
             {
               "params": [
@@ -1549,7 +1549,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck_apache",
+          "alias": "compunaut-rundeck-apache",
           "groupBy": [
             {
               "params": [
@@ -1634,7 +1634,7 @@
         "x": 12,
         "y": 12
       },
-      "id": 2864,
+      "id": 3019,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1666,7 +1666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1985,
       "scopedVars": {
         "rundeck_node": {
@@ -1684,7 +1684,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck_apache",
+          "alias": "compunaut-rundeck-apache",
           "groupBy": [
             {
               "params": [
@@ -1817,7 +1817,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck",
+          "alias": "compunaut-rundeck",
           "groupBy": [
             {
               "params": [
@@ -1902,7 +1902,7 @@
         "x": 12,
         "y": 13
       },
-      "id": 2865,
+      "id": 3020,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -1934,7 +1934,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 837,
       "scopedVars": {
         "rundeck_node": {
@@ -1952,7 +1952,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck",
+          "alias": "compunaut-rundeck",
           "groupBy": [
             {
               "params": [
@@ -2085,7 +2085,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck_uwsgi",
+          "alias": "compunaut-rundeck-uwsgi",
           "groupBy": [
             {
               "params": [
@@ -2170,7 +2170,7 @@
         "x": 12,
         "y": 14
       },
-      "id": 2866,
+      "id": 3021,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2202,7 +2202,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1515,
       "scopedVars": {
         "rundeck_node": {
@@ -2220,7 +2220,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_rundeck_uwsgi",
+          "alias": "compunaut-rundeck-uwsgi",
           "groupBy": [
             {
               "params": [
@@ -2366,7 +2366,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_grafana_apache",
+          "alias": "compunaut-grafana-apache",
           "groupBy": [
             {
               "params": [
@@ -2451,7 +2451,7 @@
         "x": 12,
         "y": 16
       },
-      "id": 2867,
+      "id": 3022,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2483,7 +2483,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1986,
       "scopedVars": {
         "monitor_node": {
@@ -2501,7 +2501,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_grafana_apache",
+          "alias": "compunaut-grafana-apache",
           "groupBy": [
             {
               "params": [
@@ -2634,7 +2634,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_grafana",
+          "alias": "compunaut-grafana",
           "groupBy": [
             {
               "params": [
@@ -2719,7 +2719,7 @@
         "x": 12,
         "y": 17
       },
-      "id": 2868,
+      "id": 3023,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -2751,7 +2751,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 147,
       "scopedVars": {
         "monitor_node": {
@@ -2769,7 +2769,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_grafana",
+          "alias": "compunaut-grafana",
           "groupBy": [
             {
               "params": [
@@ -2916,7 +2916,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut Guacamole Apache",
+          "alias": "compunaut-guacamole-apache",
           "groupBy": [
             {
               "params": [
@@ -3050,7 +3050,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut Guacamole",
+          "alias": "compunaut-guacamole-tomcat",
           "groupBy": [
             {
               "params": [
@@ -3184,7 +3184,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut Guacd",
+          "alias": "compunaut-guacd",
           "groupBy": [
             {
               "params": [
@@ -3318,7 +3318,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut VNC",
+          "alias": "compunaut-vnc",
           "groupBy": [
             {
               "params": [
@@ -3452,7 +3452,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut Dnsmasq",
+          "alias": "compunaut-piserver-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -3502,7 +3502,7 @@
         }
       ],
       "thresholds": "0.5,1",
-      "title": "$netboot_node - Dnsmasq",
+      "title": "$netboot_node - Piserver Dnsmasq",
       "type": "singlestat",
       "valueFontSize": "20%",
       "valueMaps": [
@@ -3586,7 +3586,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut Piserver NFS",
+          "alias": "compunaut-piserver-nfs",
           "groupBy": [
             {
               "params": [
@@ -3733,7 +3733,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_gitlab_apache",
+          "alias": "compunaut-gitlab-apache",
           "groupBy": [
             {
               "params": [
@@ -3867,7 +3867,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_Gitlab",
+          "alias": "compunaut-gitlab",
           "groupBy": [
             {
               "params": [
@@ -4013,7 +4013,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_ssp",
+          "alias": "compunaut-ssp",
           "groupBy": [
             {
               "params": [
@@ -4098,7 +4098,7 @@
         "x": 12,
         "y": 29
       },
-      "id": 2869,
+      "id": 3024,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4130,7 +4130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2595,
       "scopedVars": {
         "ldap_node": {
@@ -4148,7 +4148,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_ssp",
+          "alias": "compunaut-ssp",
           "groupBy": [
             {
               "params": [
@@ -4281,7 +4281,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_phpldapadmin",
+          "alias": "compunaut-phpldapadmin",
           "groupBy": [
             {
               "params": [
@@ -4366,7 +4366,7 @@
         "x": 12,
         "y": 30
       },
-      "id": 2870,
+      "id": 3025,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4398,7 +4398,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 412,
       "scopedVars": {
         "ldap_node": {
@@ -4416,7 +4416,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_phpldapadmin",
+          "alias": "compunaut-phpldapadmin",
           "groupBy": [
             {
               "params": [
@@ -4549,7 +4549,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_ldap",
+          "alias": "compunaut-openldap",
           "groupBy": [
             {
               "params": [
@@ -4634,7 +4634,7 @@
         "x": 12,
         "y": 31
       },
-      "id": 2871,
+      "id": 3026,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4666,7 +4666,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 239,
       "scopedVars": {
         "ldap_node": {
@@ -4684,7 +4684,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_ldap",
+          "alias": "compunaut-openldap",
           "groupBy": [
             {
               "params": [
@@ -4830,7 +4830,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB In",
+          "alias": "compunaut-influxdb-in",
           "groupBy": [
             {
               "params": [
@@ -4915,7 +4915,7 @@
         "x": 8,
         "y": 33
       },
-      "id": 2872,
+      "id": 3027,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -4947,7 +4947,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -4965,7 +4965,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB In",
+          "alias": "compunaut-influxdb-in",
           "groupBy": [
             {
               "params": [
@@ -5050,7 +5050,7 @@
         "x": 16,
         "y": 33
       },
-      "id": 2873,
+      "id": 3028,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5082,7 +5082,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 14,
       "scopedVars": {
         "influx_node": {
@@ -5100,7 +5100,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB In",
+          "alias": "compunaut-influxdb-in",
           "groupBy": [
             {
               "params": [
@@ -5233,7 +5233,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB Out",
+          "alias": "compunaut-influxdb-out",
           "groupBy": [
             {
               "params": [
@@ -5318,7 +5318,7 @@
         "x": 8,
         "y": 34
       },
-      "id": 2874,
+      "id": 3029,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5350,7 +5350,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5368,7 +5368,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB Out",
+          "alias": "compunaut-influxdb-out",
           "groupBy": [
             {
               "params": [
@@ -5453,7 +5453,7 @@
         "x": 16,
         "y": 34
       },
-      "id": 2875,
+      "id": 3030,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5485,7 +5485,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 19,
       "scopedVars": {
         "influx_node": {
@@ -5503,7 +5503,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut InfluxDB Out",
+          "alias": "compunaut-influxdb-out",
           "groupBy": [
             {
               "params": [
@@ -5649,7 +5649,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_mysql_database",
+          "alias": "compunaut-mysql-database",
           "groupBy": [
             {
               "params": [
@@ -5734,7 +5734,7 @@
         "x": 8,
         "y": 36
       },
-      "id": 2876,
+      "id": 3031,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5766,7 +5766,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -5784,7 +5784,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_mysql_database",
+          "alias": "compunaut-mysql-database",
           "groupBy": [
             {
               "params": [
@@ -5869,7 +5869,7 @@
         "x": 16,
         "y": 36
       },
-      "id": 2877,
+      "id": 3032,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -5901,7 +5901,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2,
       "scopedVars": {
         "db_node": {
@@ -5919,7 +5919,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_mysql_database",
+          "alias": "compunaut-mysql-database",
           "groupBy": [
             {
               "params": [
@@ -6053,8 +6053,8 @@
       "scopedVars": {
         "nfs_node": {
           "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -6066,7 +6066,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut NFS",
+          "alias": "compunaut-nfs",
           "groupBy": [
             {
               "params": [
@@ -6213,7 +6213,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_apache",
+          "alias": "compunaut-consul-apache",
           "groupBy": [
             {
               "params": [
@@ -6299,7 +6299,7 @@
         "x": 8,
         "y": 40
       },
-      "id": 2878,
+      "id": 3033,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6331,7 +6331,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6349,7 +6349,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_apache",
+          "alias": "compunaut-consul-apache",
           "groupBy": [
             {
               "params": [
@@ -6435,7 +6435,7 @@
         "x": 16,
         "y": 40
       },
-      "id": 2879,
+      "id": 3034,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6467,7 +6467,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2226,
       "scopedVars": {
         "consul_node": {
@@ -6485,7 +6485,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_apache",
+          "alias": "compunaut-consul-apache",
           "groupBy": [
             {
               "params": [
@@ -6619,7 +6619,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_alerts",
+          "alias": "compunaut-consul-alerts",
           "groupBy": [
             {
               "params": [
@@ -6705,7 +6705,7 @@
         "x": 8,
         "y": 41
       },
-      "id": 2880,
+      "id": 3035,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6737,7 +6737,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2857,
       "scopedVars": {
         "consul_node": {
@@ -6755,7 +6755,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_alerts",
+          "alias": "compunaut-consul-alerts",
           "groupBy": [
             {
               "params": [
@@ -6841,7 +6841,7 @@
         "x": 16,
         "y": 41
       },
-      "id": 2881,
+      "id": 3036,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -6873,7 +6873,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2857,
       "scopedVars": {
         "consul_node": {
@@ -6891,7 +6891,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_alerts",
+          "alias": "compunaut-consul-alerts",
           "groupBy": [
             {
               "params": [
@@ -7025,7 +7025,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_server",
+          "alias": "compunaut-consul-server",
           "groupBy": [
             {
               "params": [
@@ -7111,7 +7111,7 @@
         "x": 8,
         "y": 42
       },
-      "id": 2882,
+      "id": 3037,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7143,7 +7143,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -7161,7 +7161,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_server",
+          "alias": "compunaut-consul-server",
           "groupBy": [
             {
               "params": [
@@ -7247,7 +7247,7 @@
         "x": 16,
         "y": 42
       },
-      "id": 2883,
+      "id": 3038,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7279,7 +7279,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 2347,
       "scopedVars": {
         "consul_node": {
@@ -7297,7 +7297,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_consul_server",
+          "alias": "compunaut-consul-server",
           "groupBy": [
             {
               "params": [
@@ -7446,7 +7446,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -7532,7 +7532,7 @@
         "x": 4,
         "y": 44
       },
-      "id": 2884,
+      "id": 3039,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7564,7 +7564,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7582,7 +7582,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -7668,7 +7668,7 @@
         "x": 8,
         "y": 44
       },
-      "id": 2885,
+      "id": 3040,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7700,7 +7700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7718,7 +7718,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -7804,7 +7804,7 @@
         "x": 12,
         "y": 44
       },
-      "id": 2886,
+      "id": 3041,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7836,7 +7836,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7854,7 +7854,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -7940,7 +7940,7 @@
         "x": 16,
         "y": 44
       },
-      "id": 2887,
+      "id": 3042,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -7972,7 +7972,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -7990,7 +7990,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8076,7 +8076,7 @@
         "x": 20,
         "y": 44
       },
-      "id": 2888,
+      "id": 3043,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8108,7 +8108,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8126,7 +8126,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8212,7 +8212,7 @@
         "x": 0,
         "y": 45
       },
-      "id": 2889,
+      "id": 3044,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8244,7 +8244,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8262,7 +8262,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8348,7 +8348,7 @@
         "x": 4,
         "y": 45
       },
-      "id": 2890,
+      "id": 3045,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8380,7 +8380,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8398,7 +8398,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8484,7 +8484,7 @@
         "x": 8,
         "y": 45
       },
-      "id": 2891,
+      "id": 3046,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8516,7 +8516,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8534,7 +8534,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8620,7 +8620,7 @@
         "x": 12,
         "y": 45
       },
-      "id": 2892,
+      "id": 3047,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8652,7 +8652,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8670,7 +8670,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8756,7 +8756,7 @@
         "x": 16,
         "y": 45
       },
-      "id": 2893,
+      "id": 3048,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8788,7 +8788,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -8806,7 +8806,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -8892,7 +8892,7 @@
         "x": 20,
         "y": 45
       },
-      "id": 2894,
+      "id": 3049,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -8924,13 +8924,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor01-vm.compunaut.net",
-          "value": "monitor01-vm.compunaut.net"
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -8942,7 +8942,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9028,7 +9028,7 @@
         "x": 0,
         "y": 46
       },
-      "id": 2895,
+      "id": 3050,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9060,13 +9060,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor02-vm.compunaut.net",
-          "value": "monitor02-vm.compunaut.net"
+          "text": "monitor01-vm.compunaut.net",
+          "value": "monitor01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -9078,7 +9078,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9164,7 +9164,7 @@
         "x": 4,
         "y": 46
       },
-      "id": 2896,
+      "id": 3051,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9196,13 +9196,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "netboot01-vm.compunaut.net",
-          "value": "netboot01-vm.compunaut.net"
+          "text": "monitor02-vm.compunaut.net",
+          "value": "monitor02-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -9214,7 +9214,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9300,7 +9300,7 @@
         "x": 8,
         "y": 46
       },
-      "id": 2897,
+      "id": 3052,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9332,13 +9332,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
+          "text": "netboot01-vm.compunaut.net",
+          "value": "netboot01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -9350,7 +9350,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9436,7 +9436,7 @@
         "x": 12,
         "y": 46
       },
-      "id": 2898,
+      "id": 3053,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9468,7 +9468,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9486,7 +9486,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9572,7 +9572,7 @@
         "x": 16,
         "y": 46
       },
-      "id": 2899,
+      "id": 3054,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9604,7 +9604,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9622,7 +9622,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9708,7 +9708,7 @@
         "x": 20,
         "y": 46
       },
-      "id": 2900,
+      "id": 3055,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9740,7 +9740,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9758,7 +9758,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9844,7 +9844,7 @@
         "x": 0,
         "y": 47
       },
-      "id": 2901,
+      "id": 3056,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -9876,7 +9876,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -9894,7 +9894,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -9980,7 +9980,7 @@
         "x": 4,
         "y": 47
       },
-      "id": 2902,
+      "id": 3057,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10012,7 +10012,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10030,7 +10030,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -10116,7 +10116,7 @@
         "x": 8,
         "y": 47
       },
-      "id": 2903,
+      "id": 3058,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10148,7 +10148,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10166,7 +10166,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -10252,7 +10252,7 @@
         "x": 12,
         "y": 47
       },
-      "id": 2904,
+      "id": 3059,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10284,7 +10284,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 423,
       "scopedVars": {
         "node": {
@@ -10302,7 +10302,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "Compunaut_SSSD",
+          "alias": "compunaut-sssd",
           "groupBy": [
             {
               "params": [
@@ -10448,7 +10448,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -10533,7 +10533,7 @@
         "x": 4,
         "y": 49
       },
-      "id": 2905,
+      "id": 3060,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10565,7 +10565,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10583,7 +10583,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -10668,7 +10668,7 @@
         "x": 8,
         "y": 49
       },
-      "id": 2906,
+      "id": 3061,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10700,7 +10700,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10718,7 +10718,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -10803,7 +10803,7 @@
         "x": 12,
         "y": 49
       },
-      "id": 2907,
+      "id": 3062,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10835,7 +10835,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10853,7 +10853,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -10938,7 +10938,7 @@
         "x": 16,
         "y": 49
       },
-      "id": 2908,
+      "id": 3063,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -10970,7 +10970,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -10988,7 +10988,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11073,7 +11073,7 @@
         "x": 20,
         "y": 49
       },
-      "id": 2909,
+      "id": 3064,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11105,7 +11105,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11123,7 +11123,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11208,7 +11208,7 @@
         "x": 0,
         "y": 50
       },
-      "id": 2910,
+      "id": 3065,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11240,7 +11240,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11258,7 +11258,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11343,7 +11343,7 @@
         "x": 4,
         "y": 50
       },
-      "id": 2911,
+      "id": 3066,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11375,7 +11375,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11393,7 +11393,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11478,7 +11478,7 @@
         "x": 8,
         "y": 50
       },
-      "id": 2912,
+      "id": 3067,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11510,7 +11510,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11528,7 +11528,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11613,7 +11613,7 @@
         "x": 12,
         "y": 50
       },
-      "id": 2913,
+      "id": 3068,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11645,7 +11645,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11663,7 +11663,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11748,7 +11748,7 @@
         "x": 16,
         "y": 50
       },
-      "id": 2914,
+      "id": 3069,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11780,7 +11780,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -11798,7 +11798,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -11883,7 +11883,7 @@
         "x": 20,
         "y": 50
       },
-      "id": 2915,
+      "id": 3070,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -11915,13 +11915,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor01-vm.compunaut.net",
-          "value": "monitor01-vm.compunaut.net"
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -11933,7 +11933,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12018,7 +12018,7 @@
         "x": 0,
         "y": 51
       },
-      "id": 2916,
+      "id": 3071,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12050,13 +12050,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor02-vm.compunaut.net",
-          "value": "monitor02-vm.compunaut.net"
+          "text": "monitor01-vm.compunaut.net",
+          "value": "monitor01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -12068,7 +12068,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12153,7 +12153,7 @@
         "x": 4,
         "y": 51
       },
-      "id": 2917,
+      "id": 3072,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12185,13 +12185,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "netboot01-vm.compunaut.net",
-          "value": "netboot01-vm.compunaut.net"
+          "text": "monitor02-vm.compunaut.net",
+          "value": "monitor02-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -12203,7 +12203,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12288,7 +12288,7 @@
         "x": 8,
         "y": 51
       },
-      "id": 2918,
+      "id": 3073,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12320,13 +12320,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
+          "text": "netboot01-vm.compunaut.net",
+          "value": "netboot01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -12338,7 +12338,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12423,7 +12423,7 @@
         "x": 12,
         "y": 51
       },
-      "id": 2919,
+      "id": 3074,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12455,7 +12455,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12473,7 +12473,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12558,7 +12558,7 @@
         "x": 16,
         "y": 51
       },
-      "id": 2920,
+      "id": 3075,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12590,7 +12590,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12608,7 +12608,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12693,7 +12693,7 @@
         "x": 20,
         "y": 51
       },
-      "id": 2921,
+      "id": 3076,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12725,7 +12725,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12743,7 +12743,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12828,7 +12828,7 @@
         "x": 0,
         "y": 52
       },
-      "id": 2922,
+      "id": 3077,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12860,7 +12860,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -12878,7 +12878,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -12963,7 +12963,7 @@
         "x": 4,
         "y": 52
       },
-      "id": 2923,
+      "id": 3078,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -12995,7 +12995,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13013,7 +13013,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -13098,7 +13098,7 @@
         "x": 8,
         "y": 52
       },
-      "id": 2924,
+      "id": 3079,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13130,7 +13130,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13148,7 +13148,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -13233,7 +13233,7 @@
         "x": 12,
         "y": 52
       },
-      "id": 2925,
+      "id": 3080,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13265,7 +13265,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 146,
       "scopedVars": {
         "node": {
@@ -13283,7 +13283,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_telegraf",
+          "alias": "compunaut-telegraf",
           "groupBy": [
             {
               "params": [
@@ -13429,7 +13429,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -13514,7 +13514,7 @@
         "x": 4,
         "y": 54
       },
-      "id": 2926,
+      "id": 3081,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13546,7 +13546,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13564,7 +13564,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -13649,7 +13649,7 @@
         "x": 8,
         "y": 54
       },
-      "id": 2927,
+      "id": 3082,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13681,7 +13681,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13699,7 +13699,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -13784,7 +13784,7 @@
         "x": 12,
         "y": 54
       },
-      "id": 2928,
+      "id": 3083,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13816,7 +13816,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13834,7 +13834,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -13919,7 +13919,7 @@
         "x": 16,
         "y": 54
       },
-      "id": 2929,
+      "id": 3084,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -13951,7 +13951,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -13969,7 +13969,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14054,7 +14054,7 @@
         "x": 20,
         "y": 54
       },
-      "id": 2930,
+      "id": 3085,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14086,7 +14086,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14104,7 +14104,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14189,7 +14189,7 @@
         "x": 0,
         "y": 55
       },
-      "id": 2931,
+      "id": 3086,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14221,7 +14221,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14239,7 +14239,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14324,7 +14324,7 @@
         "x": 4,
         "y": 55
       },
-      "id": 2932,
+      "id": 3087,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14356,7 +14356,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14374,7 +14374,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14459,7 +14459,7 @@
         "x": 8,
         "y": 55
       },
-      "id": 2933,
+      "id": 3088,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14491,7 +14491,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14509,7 +14509,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14594,7 +14594,7 @@
         "x": 12,
         "y": 55
       },
-      "id": 2934,
+      "id": 3089,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14626,7 +14626,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14644,7 +14644,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14729,7 +14729,7 @@
         "x": 16,
         "y": 55
       },
-      "id": 2935,
+      "id": 3090,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14761,7 +14761,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -14779,7 +14779,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14864,7 +14864,7 @@
         "x": 20,
         "y": 55
       },
-      "id": 2936,
+      "id": 3091,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -14896,13 +14896,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor01-vm.compunaut.net",
-          "value": "monitor01-vm.compunaut.net"
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -14914,7 +14914,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -14999,7 +14999,7 @@
         "x": 0,
         "y": 56
       },
-      "id": 2937,
+      "id": 3092,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15031,13 +15031,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor02-vm.compunaut.net",
-          "value": "monitor02-vm.compunaut.net"
+          "text": "monitor01-vm.compunaut.net",
+          "value": "monitor01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -15049,7 +15049,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15134,7 +15134,7 @@
         "x": 4,
         "y": 56
       },
-      "id": 2938,
+      "id": 3093,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15166,13 +15166,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "netboot01-vm.compunaut.net",
-          "value": "netboot01-vm.compunaut.net"
+          "text": "monitor02-vm.compunaut.net",
+          "value": "monitor02-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -15184,7 +15184,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15269,7 +15269,7 @@
         "x": 8,
         "y": 56
       },
-      "id": 2939,
+      "id": 3094,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15301,13 +15301,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
+          "text": "netboot01-vm.compunaut.net",
+          "value": "netboot01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -15319,7 +15319,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15404,7 +15404,7 @@
         "x": 12,
         "y": 56
       },
-      "id": 2940,
+      "id": 3095,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15436,7 +15436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15454,7 +15454,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15539,7 +15539,7 @@
         "x": 16,
         "y": 56
       },
-      "id": 2941,
+      "id": 3096,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15571,7 +15571,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15589,7 +15589,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15674,7 +15674,7 @@
         "x": 20,
         "y": 56
       },
-      "id": 2942,
+      "id": 3097,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15706,7 +15706,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15724,7 +15724,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15809,7 +15809,7 @@
         "x": 0,
         "y": 57
       },
-      "id": 2943,
+      "id": 3098,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15841,7 +15841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15859,7 +15859,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -15944,7 +15944,7 @@
         "x": 4,
         "y": 57
       },
-      "id": 2944,
+      "id": 3099,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -15976,7 +15976,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -15994,7 +15994,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -16079,7 +16079,7 @@
         "x": 8,
         "y": 57
       },
-      "id": 2945,
+      "id": 3100,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16111,7 +16111,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -16129,7 +16129,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -16214,7 +16214,7 @@
         "x": 12,
         "y": 57
       },
-      "id": 2946,
+      "id": 3101,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16246,7 +16246,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 145,
       "scopedVars": {
         "node": {
@@ -16264,7 +16264,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_dnsmasq",
+          "alias": "compunaut-dnsmasq",
           "groupBy": [
             {
               "params": [
@@ -16497,7 +16497,7 @@
         "x": 4,
         "y": 59
       },
-      "id": 2947,
+      "id": 3102,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16529,7 +16529,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16633,7 +16633,7 @@
         "x": 8,
         "y": 59
       },
-      "id": 2948,
+      "id": 3103,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16665,7 +16665,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16769,7 +16769,7 @@
         "x": 12,
         "y": 59
       },
-      "id": 2949,
+      "id": 3104,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16801,7 +16801,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -16905,7 +16905,7 @@
         "x": 16,
         "y": 59
       },
-      "id": 2950,
+      "id": 3105,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -16937,7 +16937,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17041,7 +17041,7 @@
         "x": 20,
         "y": 59
       },
-      "id": 2951,
+      "id": 3106,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17073,7 +17073,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17177,7 +17177,7 @@
         "x": 0,
         "y": 60
       },
-      "id": 2952,
+      "id": 3107,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17209,7 +17209,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17313,7 +17313,7 @@
         "x": 4,
         "y": 60
       },
-      "id": 2953,
+      "id": 3108,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17345,7 +17345,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17449,7 +17449,7 @@
         "x": 8,
         "y": 60
       },
-      "id": 2954,
+      "id": 3109,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17481,7 +17481,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17585,7 +17585,7 @@
         "x": 12,
         "y": 60
       },
-      "id": 2955,
+      "id": 3110,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17617,7 +17617,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17721,7 +17721,7 @@
         "x": 16,
         "y": 60
       },
-      "id": 2956,
+      "id": 3111,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17753,7 +17753,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17857,7 +17857,7 @@
         "x": 20,
         "y": 60
       },
-      "id": 2957,
+      "id": 3112,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -17889,7 +17889,143 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 29,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "Serf Health",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "check_id",
+              "operator": "=",
+              "value": "serfHealth"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Consul",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 0,
+        "y": 61
+      },
+      "id": 3113,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -17990,10 +18126,10 @@
       "gridPos": {
         "h": 1,
         "w": 4,
-        "x": 0,
+        "x": 4,
         "y": 61
       },
-      "id": 2958,
+      "id": 3114,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18025,7 +18161,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18126,10 +18262,10 @@
       "gridPos": {
         "h": 1,
         "w": 4,
-        "x": 4,
+        "x": 8,
         "y": 61
       },
-      "id": 2959,
+      "id": 3115,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18161,7 +18297,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18262,146 +18398,10 @@
       "gridPos": {
         "h": 1,
         "w": 4,
-        "x": 8,
-        "y": 61
-      },
-      "id": 2960,
-      "interval": null,
-      "links": [],
-      "mappingType": 1,
-      "mappingTypes": [
-        {
-          "name": "value to text",
-          "value": 1
-        },
-        {
-          "name": "range to text",
-          "value": 2
-        }
-      ],
-      "maxDataPoints": 100,
-      "maxPerRow": 6,
-      "nullPointMode": "connected",
-      "nullText": null,
-      "options": {},
-      "postfix": "",
-      "postfixFontSize": "20%",
-      "prefix": "",
-      "prefixFontSize": "20%",
-      "rangeMaps": [
-        {
-          "from": "null",
-          "text": "N/A",
-          "to": "null"
-        }
-      ],
-      "repeat": null,
-      "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
-      "repeatPanelId": 29,
-      "scopedVars": {
-        "node": {
-          "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
-        }
-      },
-      "sparkline": {
-        "fillColor": "rgba(31, 118, 189, 0.18)",
-        "full": false,
-        "lineColor": "rgb(31, 120, 193)",
-        "show": false
-      },
-      "tableColumn": "",
-      "targets": [
-        {
-          "alias": "Serf Health",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "consul_health_checks",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "passing"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "node",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "check_id",
-              "operator": "=",
-              "value": "serfHealth"
-            }
-          ]
-        }
-      ],
-      "thresholds": "0.5,1",
-      "title": "$node - Consul",
-      "type": "singlestat",
-      "valueFontSize": "20%",
-      "valueMaps": [
-        {
-          "op": "=",
-          "text": "0",
-          "value": "null"
-        }
-      ],
-      "valueName": "current"
-    },
-    {
-      "cacheTimeout": null,
-      "colorBackground": true,
-      "colorValue": true,
-      "colors": [
-        "#d44a3a",
-        "#e5ac0e",
-        "#299c46"
-      ],
-      "datasource": "compunaut_influxdb",
-      "format": "none",
-      "gauge": {
-        "maxValue": 100,
-        "minValue": 0,
-        "show": false,
-        "thresholdLabels": false,
-        "thresholdMarkers": true
-      },
-      "gridPos": {
-        "h": 1,
-        "w": 4,
         "x": 12,
         "y": 61
       },
-      "id": 2961,
+      "id": 3116,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18433,7 +18433,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18537,7 +18537,7 @@
         "x": 16,
         "y": 61
       },
-      "id": 2962,
+      "id": 3117,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18569,7 +18569,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18673,7 +18673,7 @@
         "x": 20,
         "y": 61
       },
-      "id": 2963,
+      "id": 3118,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18705,7 +18705,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18809,7 +18809,7 @@
         "x": 0,
         "y": 62
       },
-      "id": 2964,
+      "id": 3119,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18841,7 +18841,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -18945,7 +18945,7 @@
         "x": 4,
         "y": 62
       },
-      "id": 2965,
+      "id": 3120,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -18977,7 +18977,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19081,7 +19081,7 @@
         "x": 8,
         "y": 62
       },
-      "id": 2966,
+      "id": 3121,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19113,7 +19113,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19217,7 +19217,7 @@
         "x": 12,
         "y": 62
       },
-      "id": 2967,
+      "id": 3122,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19249,7 +19249,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 29,
       "scopedVars": {
         "node": {
@@ -19414,7 +19414,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -19500,7 +19500,7 @@
         "x": 4,
         "y": 64
       },
-      "id": 2968,
+      "id": 3123,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19532,7 +19532,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19550,7 +19550,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -19636,7 +19636,7 @@
         "x": 8,
         "y": 64
       },
-      "id": 2969,
+      "id": 3124,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19668,7 +19668,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19686,7 +19686,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -19772,7 +19772,7 @@
         "x": 12,
         "y": 64
       },
-      "id": 2970,
+      "id": 3125,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19804,7 +19804,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19822,7 +19822,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -19908,7 +19908,7 @@
         "x": 16,
         "y": 64
       },
-      "id": 2971,
+      "id": 3126,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -19940,7 +19940,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -19958,7 +19958,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20044,7 +20044,7 @@
         "x": 20,
         "y": 64
       },
-      "id": 2972,
+      "id": 3127,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20076,7 +20076,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20094,7 +20094,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20180,7 +20180,7 @@
         "x": 0,
         "y": 65
       },
-      "id": 2973,
+      "id": 3128,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20212,7 +20212,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20230,7 +20230,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20316,7 +20316,7 @@
         "x": 4,
         "y": 65
       },
-      "id": 2974,
+      "id": 3129,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20348,7 +20348,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20366,7 +20366,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20452,7 +20452,7 @@
         "x": 8,
         "y": 65
       },
-      "id": 2975,
+      "id": 3130,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20484,7 +20484,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20502,7 +20502,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20588,7 +20588,7 @@
         "x": 12,
         "y": 65
       },
-      "id": 2976,
+      "id": 3131,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20620,7 +20620,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20638,7 +20638,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20724,7 +20724,7 @@
         "x": 16,
         "y": 65
       },
-      "id": 2977,
+      "id": 3132,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20756,7 +20756,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -20774,7 +20774,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20860,7 +20860,7 @@
         "x": 20,
         "y": 65
       },
-      "id": 2978,
+      "id": 3133,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -20892,13 +20892,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor01-vm.compunaut.net",
-          "value": "monitor01-vm.compunaut.net"
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -20910,7 +20910,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -20996,7 +20996,7 @@
         "x": 0,
         "y": 66
       },
-      "id": 2979,
+      "id": 3134,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21028,13 +21028,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "monitor02-vm.compunaut.net",
-          "value": "monitor02-vm.compunaut.net"
+          "text": "monitor01-vm.compunaut.net",
+          "value": "monitor01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -21046,7 +21046,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21132,7 +21132,7 @@
         "x": 4,
         "y": 66
       },
-      "id": 2980,
+      "id": 3135,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21164,13 +21164,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "netboot01-vm.compunaut.net",
-          "value": "netboot01-vm.compunaut.net"
+          "text": "monitor02-vm.compunaut.net",
+          "value": "monitor02-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -21182,7 +21182,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21268,7 +21268,7 @@
         "x": 8,
         "y": 66
       },
-      "id": 2981,
+      "id": 3136,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21300,13 +21300,13 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
           "selected": false,
-          "text": "nfs01-vm.compunaut.net",
-          "value": "nfs01-vm.compunaut.net"
+          "text": "netboot01-vm.compunaut.net",
+          "value": "netboot01-vm.compunaut.net"
         }
       },
       "sparkline": {
@@ -21318,7 +21318,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21404,7 +21404,7 @@
         "x": 12,
         "y": 66
       },
-      "id": 2982,
+      "id": 3137,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21436,7 +21436,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21454,7 +21454,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21540,7 +21540,7 @@
         "x": 16,
         "y": 66
       },
-      "id": 2983,
+      "id": 3138,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21572,7 +21572,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21590,7 +21590,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21676,7 +21676,7 @@
         "x": 20,
         "y": 66
       },
-      "id": 2984,
+      "id": 3139,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21708,7 +21708,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21726,7 +21726,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21812,7 +21812,7 @@
         "x": 0,
         "y": 67
       },
-      "id": 2985,
+      "id": 3140,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21844,7 +21844,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21862,7 +21862,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -21948,7 +21948,7 @@
         "x": 4,
         "y": 67
       },
-      "id": 2986,
+      "id": 3141,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -21980,7 +21980,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -21998,7 +21998,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -22084,7 +22084,7 @@
         "x": 8,
         "y": 67
       },
-      "id": 2987,
+      "id": 3142,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -22116,7 +22116,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22134,7 +22134,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -22220,7 +22220,7 @@
         "x": 12,
         "y": 67
       },
-      "id": 2988,
+      "id": 3143,
       "interval": null,
       "links": [],
       "mappingType": 1,
@@ -22252,7 +22252,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1559886728982,
+      "repeatIteration": 1561262931341,
       "repeatPanelId": 1865,
       "scopedVars": {
         "node": {
@@ -22270,7 +22270,7 @@
       "tableColumn": "",
       "targets": [
         {
-          "alias": "compunaut_chronyd",
+          "alias": "compunaut-chronyd",
           "groupBy": [
             {
               "params": [
@@ -22321,6 +22321,3009 @@
       ],
       "thresholds": "0.5,1",
       "title": "$node - Chronyd",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 68
+      },
+      "id": 2991,
+      "panels": [],
+      "title": "Rsyslog Service",
+      "type": "row"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 0,
+        "y": 69
+      },
+      "id": 2989,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": "node",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "consul01-vm.compunaut.net",
+          "value": "consul01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 4,
+        "y": 69
+      },
+      "id": 3144,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "consul02-vm.compunaut.net",
+          "value": "consul02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 8,
+        "y": 69
+      },
+      "id": 3145,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "consul03-vm.compunaut.net",
+          "value": "consul03-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 12,
+        "y": 69
+      },
+      "id": 3146,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "db01-vm.compunaut.net",
+          "value": "db01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 16,
+        "y": 69
+      },
+      "id": 3147,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "db02-vm.compunaut.net",
+          "value": "db02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 20,
+        "y": 69
+      },
+      "id": 3148,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "db03-vm.compunaut.net",
+          "value": "db03-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 0,
+        "y": 70
+      },
+      "id": 3149,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "gitlab01-vm.compunaut.net",
+          "value": "gitlab01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 4,
+        "y": 70
+      },
+      "id": 3150,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm02",
+          "value": "kvm02"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 8,
+        "y": 70
+      },
+      "id": 3151,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "kvm03",
+          "value": "kvm03"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 12,
+        "y": 70
+      },
+      "id": 3152,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "ldap01-vm.compunaut.net",
+          "value": "ldap01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 16,
+        "y": 70
+      },
+      "id": 3153,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "ldap02-vm.compunaut.net",
+          "value": "ldap02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 20,
+        "y": 70
+      },
+      "id": 3154,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "log01-vm.compunaut.net",
+          "value": "log01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 0,
+        "y": 71
+      },
+      "id": 3155,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "monitor01-vm.compunaut.net",
+          "value": "monitor01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 4,
+        "y": 71
+      },
+      "id": 3156,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "monitor02-vm.compunaut.net",
+          "value": "monitor02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 8,
+        "y": 71
+      },
+      "id": 3157,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "netboot01-vm.compunaut.net",
+          "value": "netboot01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 12,
+        "y": 71
+      },
+      "id": 3158,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "proxy01-vm.compunaut.net",
+          "value": "proxy01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 16,
+        "y": 71
+      },
+      "id": 3159,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "proxy02-vm.compunaut.net",
+          "value": "proxy02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 20,
+        "y": 71
+      },
+      "id": 3160,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "rundeck01-vm.compunaut.net",
+          "value": "rundeck01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 0,
+        "y": 72
+      },
+      "id": 3161,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "rundeck02-vm.compunaut.net",
+          "value": "rundeck02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 4,
+        "y": 72
+      },
+      "id": 3162,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "salt01",
+          "value": "salt01"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 8,
+        "y": 72
+      },
+      "id": 3163,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "vpn01-vm.compunaut.net",
+          "value": "vpn01-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
+      "type": "singlestat",
+      "valueFontSize": "20%",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "0",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "colorBackground": true,
+      "colorValue": true,
+      "colors": [
+        "#d44a3a",
+        "#e5ac0e",
+        "#299c46"
+      ],
+      "datasource": "compunaut_influxdb",
+      "format": "none",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": false,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 1,
+        "w": 4,
+        "x": 12,
+        "y": 72
+      },
+      "id": 3164,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "maxDataPoints": 100,
+      "maxPerRow": 6,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "20%",
+      "prefix": "",
+      "prefixFontSize": "20%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1561262931341,
+      "repeatPanelId": 2989,
+      "scopedVars": {
+        "node": {
+          "selected": false,
+          "text": "vpn02-vm.compunaut.net",
+          "value": "vpn02-vm.compunaut.net"
+        }
+      },
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "",
+      "targets": [
+        {
+          "alias": "compunaut-rsyslog",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "null"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-rsyslog"
+            }
+          ]
+        }
+      ],
+      "thresholds": "0.5,1",
+      "title": "$node - Rsyslog",
       "type": "singlestat",
       "valueFontSize": "20%",
       "valueMaps": [
@@ -22394,6 +25397,7 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -22449,7 +25453,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
