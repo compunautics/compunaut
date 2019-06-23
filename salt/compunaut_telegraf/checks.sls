@@ -5,8 +5,8 @@
     - makedirs: True
     - user: telegraf
     - group: telegraf
-    - file_mode: 0755
-    - dir_mode: 0755
+    - file_mode: 0750
+    - dir_mode: 0750
 
 install_telegraf_python_modules:
   pip.installed:
