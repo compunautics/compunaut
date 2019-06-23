@@ -5,3 +5,6 @@ rsyslog:
   filegroup: root
   filemode: '0640'
   dirmode: '0755'
+  ### optional forwarder from main syslog server to other remotes
+  # target: placeholder.com
+  # protocol: udp
