@@ -17,6 +17,7 @@ source ./compunaut_functions
   echo_green "Waiting 60 seconds"
   sleep 60
 
+  echo_blue "Configure Minions"
   time salt-run state.orch orch.configure_minions --state-output=mixed --log-level=quiet
   time salt-run state.orch orch.update_data --state-output=mixed --log-level=quiet # update data
 

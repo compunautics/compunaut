@@ -27,10 +27,9 @@ audit:
       - -w /sbin/auditctl -p x -k audittools
       - -w /sbin/auditd -p x -k audittools
       # software installation
-      - -w /usr/bin/dpkg -p x -k software_mgmt
       - -w /usr/bin/apt-add-repository -p x -k software_mgmt
       - -w /usr/bin/apt-get -p x -k software_mgmt
-      - -w /usr/bin/aptitude -p x -k software_mgmt
+      - -w /usr/bin/apt -p x -k software_mgmt
       # time
       - -a always,exit -F arch=b64 -S adjtimex,settimeofday -F key=time-change
       - -a always,exit -F arch=b64 -S clock_settime -F a0=0x0 -F key=time-change
