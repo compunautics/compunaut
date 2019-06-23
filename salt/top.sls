@@ -63,4 +63,4 @@ base:
     - compunaut_iptables
     - compunaut_sssd
     - compunaut_telegraf
-    - compuanut_audit
+#    - compuanut_audit # this is disabled by default due to performance impact
