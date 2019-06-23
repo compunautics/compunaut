@@ -8,4 +8,4 @@ restart_apache2_for_ssp:
   cmd.run:
     - name: 'systemctl restart apache2'
     - watch:
-      - cmd: install-self-service-password
+      - pkg: install-self-service-password
