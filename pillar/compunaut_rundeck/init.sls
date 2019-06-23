@@ -7,6 +7,7 @@ include:
   - compunaut_rundeck.mysql
   - compunaut_rundeck.nfs
   - compunaut_rundeck.server
+  - compunaut_rundeck.telegraf
   - compunaut_rundeck.uwsgi
 
 compunaut_rundeck:
