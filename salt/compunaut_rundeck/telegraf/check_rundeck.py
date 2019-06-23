@@ -61,4 +61,4 @@ except Exception as e:
 
 # print data to influxdb
 for job in rundeck_data:
-  print "rundeck,name=running_job job_name=\""+job['job_name']+"\",date_started=\""+job['date_started']+"\",user=\""+job['user']+"\""
+  print "rundeck,name=running_job,date_started="+job['date_started']+" job_name=\""+job['job_name']+"\",user=\""+job['user']+"\""
