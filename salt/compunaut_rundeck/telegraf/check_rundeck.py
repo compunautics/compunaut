@@ -51,7 +51,7 @@ try:
   if jobs['executions']:
     for job in jobs['executions']:
       rundeck_data.append({
-        'job_name': job['job']['name'],
+        'job_name': job['job']['name'].replace(" ", "_"),
         'date_started': job['date-started']['date'],
         'user': job['user']
       })
