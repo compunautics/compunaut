@@ -56,6 +56,21 @@ rundeck:
       - user
       - group
   {%- endif %}
+{%- elif pillar.compunaut_nfs is defined %}
+  {%- if pillar.compunaut_nfs.enabled == True %}
+rundeck_group:
+  group.present:
+    - name: rundeck
+    - gid: 9201
+
+rundeck:
+  user.present:
+    - shell: /bin/false
+    - home: /srv/rundeck_execution_logs
+    - uid: 9201
+    - groups:
+      - rundeck 
+  {%- endif %}
 {%- endif %}
 
 ### RUNDECK-SVC

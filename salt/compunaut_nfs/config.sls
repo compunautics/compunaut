@@ -1,7 +1,7 @@
 /srv/rundeck_execution_logs:
   file.directory:
-    - user: root
-    - group: root
+    - user: rundeck
+    - group: rundeck
     - mode: 0750
     - makedirs: True
 
