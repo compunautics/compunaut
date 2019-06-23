@@ -17,6 +17,7 @@ base:
     - compunaut_piserver
   '*log*':
     - compunaut_nfs
+    - compunaut_rsyslog.server
   '*proxy*':
     - compunaut_haproxy
     - compunaut_keepalived
@@ -39,5 +40,6 @@ base:
     - compunaut_iptables
     - compunaut_openldap.client
     - compunaut_pki
+    - compunaut_rsyslog.client
     - compunaut_sssd
     - compunaut_telegraf
