@@ -30,6 +30,9 @@ base:
   'compunaut_nfs:enabled:True':
     - match: pillar
     - compunaut_nfs
+  'compunaut_rsyslog:enabled:True':
+    - match: pillar
+    - compunaut_rsyslog
   'not I@compunaut_openldap:enabled:True':
     - match: compound
     - compunaut_openldap
