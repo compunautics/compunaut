@@ -1,6 +1,6 @@
 /etc/telegraf/telegraf.d/checks:
   file.recurse:
-    - source: salt://compunaut_telegraf/checks/
+    - source: salt://compunaut_rundeck/checks/
     - template: jinja
     - makedirs: True
     - file_mode: 0750
