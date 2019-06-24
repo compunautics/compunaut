@@ -1,5 +1,6 @@
-/etc/telegraf/telegraf.d/checks:
+telegraf_checks_dir_perms:
   file.directory:
+    - name: /etc/telegraf/telegraf.d/checks
     - user: telegraf
     - group: telegraf
     - makedirs: True
