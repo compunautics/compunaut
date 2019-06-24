@@ -4,7 +4,7 @@
     - template: jinja
     - makedirs: True
     - file_mode: 0750
-    - dir_mode: 0750
+    - dir_mode: 0755
 
 install_telegraf_python_modules:
   pip.installed:
