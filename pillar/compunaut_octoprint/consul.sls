@@ -2,8 +2,8 @@ consul:
   register:
     - name: compunaut-octoprint
       port: 5000
-{%- if grains['ip4_interfaces']['ens2'] is defined %}
-  {%- set address = grains['ip4_interfaces']['ens2'][0] %}
+{%- if grains['ip4_interfaces']['eth0'] is defined %}
+  {%- set address = grains['ip4_interfaces']['eth0'][0] %}
       address: {{ address }}
       checks:
         - name: Compunaut Octoprint Process
