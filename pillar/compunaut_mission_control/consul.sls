@@ -7,7 +7,7 @@ consul:
       address: {{ address }}
 {%- endif %}
       checks:
-        - name: Compunaut Apache Process
+        - name: Compunaut Mission Control Apache Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a

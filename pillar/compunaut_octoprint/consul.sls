@@ -33,7 +33,6 @@ consul:
     - name: compunaut-motion
       port: 8081
       address: {{ address }}
-{%- endif %}
       checks:
         - name: Compunaut Motion Process
           args:
@@ -63,3 +62,16 @@ consul:
             - -q 
             - "'Failed to open video device'"
           interval: 30s
+    - name: compunaut-octoprint-apache
+      port: 443
+      address: {{ address }}
+{%- endif %}
+      checks:
+        - name: Compunaut Octoprint Apache Process
+          args:
+            - /usr/lib/nagios/plugins/check_procs
+            - -a
+            - "/usr/sbin/apache2"
+            - -c
+            - "1:"
+          interval: 10s

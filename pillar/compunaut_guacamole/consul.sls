@@ -55,7 +55,7 @@ consul:
       address: {{ address }}
 {%- endif %}
       checks:
-        - name: Compunaut Rundeck Apache Process
+        - name: Compunaut Guacamole Apache Process
           args:
             - /usr/lib/nagios/plugins/check_procs
             - -a
