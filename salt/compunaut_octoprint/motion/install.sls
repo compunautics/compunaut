@@ -4,9 +4,8 @@ motion:
 'modprobe bcm2835-v4l2':
   cmd.run:
     - runas: root
-    - unless: test -f /etc/modprobe.d/bcm2835-v4l2.conf
 
-/etc/modprobe.d/bcm2835-v4l2.conf:
+/etc/modules:
   file.managed:
     - contents: "bcm2835-v4l2"
     - user: root
