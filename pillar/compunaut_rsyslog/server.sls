@@ -1,3 +1,6 @@
+include:
+  - compunaut_rsyslog.consul_rsyslog_server
+
 rsyslog:
   listenudp: true
   logbasepath: /srv/remote_logs
