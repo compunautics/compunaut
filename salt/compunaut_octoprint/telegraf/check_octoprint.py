@@ -65,7 +65,7 @@ try:
   if type(printer_job_response['progress']['completion']) in (float, int) :
     printer_data['progress'] = round(printer_job_response['progress']['completion'], 2)
   else:
-    printer_data['progress'] = 'N/A'
+    printer_data['progress'] = '0'
 
   # consul
   for service, data in consul_response.iteritems():
