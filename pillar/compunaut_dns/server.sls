@@ -3,6 +3,7 @@ dnsmasq:
   dnsmasq_conf: salt://dnsmasq/files/dnsmasq.conf
   dnsmasq_addresses: salt://dnsmasq/files/dnsmasq.addresses
   settings:
+    interface: ens2
     port: 53
     server:
       - 209.244.0.3
