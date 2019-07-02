@@ -54,3 +54,5 @@ grafana:
         enabled: true
       grafana-polystat-panel:
         enabled: true
+      blackmirror1-singlestat-math-panel:
+        enabled: true
