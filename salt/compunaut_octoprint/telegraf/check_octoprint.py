@@ -48,8 +48,10 @@ try:
   # octoprint printer status
   if printer_response['state']['flags']['printing'] == True:
     printer_data['printing'] = 1
+    printer_data['not_printing'] = 0
   else:
     printer_data['printing'] = 0
+    printer_data['not_printing'] = 1
 
   if printer_response['state']['flags']['operational'] == True:
     printer_data['operational'] = 1
@@ -92,6 +94,7 @@ except Exception as e:
 
 # print data to influxdb
 print "octoprint,name=printing state="+str(printer_data['printing'])
+print "octoprint,name=not_printing state="+str(printer_data['not_printing'])
 print "octoprint,name=operational state="+str(printer_data['operational'])
 print "octoprint,name=bed_actual temp="+str(printer_data['bed_actual'])
 print "octoprint,name=bed_target temp="+str(printer_data['bed_target'])
