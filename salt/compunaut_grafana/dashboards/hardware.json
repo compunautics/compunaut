@@ -16,7 +16,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1549426740518,
+  "iteration": 1562117043364,
   "links": [],
   "panels": [
     {
@@ -44,6 +44,7 @@
       "mode": "time",
       "offsetFromUtc": null,
       "offsetFromUtcMinutes": null,
+      "options": {},
       "refreshSettings": {
         "syncWithDashboard": false
       },
@@ -51,6 +52,13 @@
         "customFormat": "HH:mm:ss",
         "fontSize": "60px",
         "fontWeight": "bold"
+      },
+      "timezone": null,
+      "timezoneSettings": {
+        "fontSize": "12px",
+        "fontWeight": "normal",
+        "showTimezone": false,
+        "zoneFormat": "offsetAbbv"
       },
       "title": "Current Time",
       "type": "grafana-clock-panel"
@@ -82,7 +90,8 @@
       },
       "id": 38,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -285,9 +294,10 @@
         "x": 8,
         "y": 4
       },
-      "id": 121,
+      "id": 131,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -327,7 +337,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 38,
       "savedComposites": [],
       "savedOverrides": [
@@ -492,9 +502,10 @@
         "x": 16,
         "y": 4
       },
-      "id": 122,
+      "id": 132,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -534,7 +545,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 38,
       "savedComposites": [],
       "savedOverrides": [
@@ -714,7 +725,8 @@
       },
       "id": 69,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -867,9 +879,10 @@
         "x": 8,
         "y": 11
       },
-      "id": 123,
+      "id": 133,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -909,7 +922,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 69,
       "savedComposites": [],
       "savedOverrides": [
@@ -1024,9 +1037,10 @@
         "x": 16,
         "y": 11
       },
-      "id": 124,
+      "id": 134,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -1066,7 +1080,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 69,
       "savedComposites": [],
       "savedOverrides": [
@@ -1196,7 +1210,8 @@
       },
       "id": 98,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -1390,9 +1405,10 @@
         "x": 8,
         "y": 18
       },
-      "id": 125,
+      "id": 135,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -1432,7 +1448,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 98,
       "savedComposites": [],
       "savedOverrides": [
@@ -1588,9 +1604,10 @@
         "x": 16,
         "y": 18
       },
-      "id": 126,
+      "id": 136,
       "links": [],
-      "minSpan": 5,
+      "maxPerRow": 4,
+      "options": {},
       "polystat": {
         "animationSpeed": 2500,
         "columnAutoSize": true,
@@ -1630,7 +1647,7 @@
       },
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
+      "repeatIteration": 1562117043364,
       "repeatPanelId": 98,
       "savedComposites": [],
       "savedOverrides": [
@@ -1773,845 +1790,6 @@
       ],
       "title": "PowerSupply Status - $node",
       "type": "grafana-polystat-panel"
-    },
-    {
-      "collapsed": false,
-      "gridPos": {
-        "h": 1,
-        "w": 24,
-        "x": 0,
-        "y": 24
-      },
-      "id": 6,
-      "panels": [],
-      "title": "CPU Temp",
-      "type": "row"
-    },
-    {
-      "aliasColors": {
-        "Crit Temp": "#bf1b00",
-        "Max Temp": "#e5ac0e"
-      },
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "fill": 1,
-      "gridPos": {
-        "h": 8,
-        "w": 8,
-        "x": 0,
-        "y": 25
-      },
-      "id": 2,
-      "legend": {
-        "alignAsTable": true,
-        "avg": false,
-        "current": true,
-        "max": false,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "minSpan": 5,
-      "nullPointMode": "connected",
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": "node",
-      "repeatDirection": "h",
-      "scopedVars": {
-        "node": {
-          "selected": false,
-          "text": "kvm02",
-          "value": "kvm02"
-        }
-      },
-      "seriesOverrides": [
-        {
-          "alias": "Max Temp",
-          "fill": 0
-        },
-        {
-          "alias": "Crit Temp",
-          "fill": 0
-        }
-      ],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "alias": "CPU Temp - $tag_chip",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "chip"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": false,
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_input"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Max Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "C",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_max"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Crit Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "B",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_crit"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "CPU Temp - $node",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "celsius",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {
-        "Crit Temp": "#bf1b00",
-        "Max Temp": "#e5ac0e"
-      },
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "fill": 1,
-      "gridPos": {
-        "h": 8,
-        "w": 8,
-        "x": 8,
-        "y": 25
-      },
-      "id": 127,
-      "legend": {
-        "alignAsTable": true,
-        "avg": false,
-        "current": true,
-        "max": false,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "minSpan": 5,
-      "nullPointMode": "connected",
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
-      "repeatPanelId": 2,
-      "scopedVars": {
-        "node": {
-          "selected": false,
-          "text": "kvm03",
-          "value": "kvm03"
-        }
-      },
-      "seriesOverrides": [
-        {
-          "alias": "Max Temp",
-          "fill": 0
-        },
-        {
-          "alias": "Crit Temp",
-          "fill": 0
-        }
-      ],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "alias": "CPU Temp - $tag_chip",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "chip"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": false,
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_input"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Max Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "C",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_max"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Crit Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "B",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_crit"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "CPU Temp - $node",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "celsius",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
-    },
-    {
-      "aliasColors": {
-        "Crit Temp": "#bf1b00",
-        "Max Temp": "#e5ac0e"
-      },
-      "bars": false,
-      "dashLength": 10,
-      "dashes": false,
-      "fill": 1,
-      "gridPos": {
-        "h": 8,
-        "w": 8,
-        "x": 16,
-        "y": 25
-      },
-      "id": 128,
-      "legend": {
-        "alignAsTable": true,
-        "avg": false,
-        "current": true,
-        "max": false,
-        "min": false,
-        "rightSide": false,
-        "show": true,
-        "total": false,
-        "values": true
-      },
-      "lines": true,
-      "linewidth": 1,
-      "links": [],
-      "minSpan": 5,
-      "nullPointMode": "connected",
-      "percentage": false,
-      "pointradius": 5,
-      "points": false,
-      "renderer": "flot",
-      "repeat": null,
-      "repeatDirection": "h",
-      "repeatIteration": 1549426740518,
-      "repeatPanelId": 2,
-      "scopedVars": {
-        "node": {
-          "selected": false,
-          "text": "salt01",
-          "value": "salt01"
-        }
-      },
-      "seriesOverrides": [
-        {
-          "alias": "Max Temp",
-          "fill": 0
-        },
-        {
-          "alias": "Crit Temp",
-          "fill": 0
-        }
-      ],
-      "spaceLength": 10,
-      "stack": false,
-      "steppedLine": false,
-      "targets": [
-        {
-          "alias": "CPU Temp - $tag_chip",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "chip"
-              ],
-              "type": "tag"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
-          "rawQuery": false,
-          "refId": "A",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_input"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Max Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "C",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_max"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        },
-        {
-          "alias": "Crit Temp",
-          "groupBy": [
-            {
-              "params": [
-                "$__interval"
-              ],
-              "type": "time"
-            },
-            {
-              "params": [
-                "null"
-              ],
-              "type": "fill"
-            }
-          ],
-          "measurement": "sensors",
-          "orderByTime": "ASC",
-          "policy": "compunaut_one_year",
-          "refId": "B",
-          "resultFormat": "time_series",
-          "select": [
-            [
-              {
-                "params": [
-                  "temp_crit"
-                ],
-                "type": "field"
-              },
-              {
-                "params": [],
-                "type": "mean"
-              }
-            ]
-          ],
-          "tags": [
-            {
-              "key": "host",
-              "operator": "=~",
-              "value": "/^$node$/"
-            },
-            {
-              "condition": "AND",
-              "key": "chip",
-              "operator": "=~",
-              "value": "/^$chip$/"
-            },
-            {
-              "condition": "AND",
-              "key": "feature",
-              "operator": "=~",
-              "value": "/^$feature$/"
-            }
-          ]
-        }
-      ],
-      "thresholds": [],
-      "timeFrom": null,
-      "timeRegions": [],
-      "timeShift": null,
-      "title": "CPU Temp - $node",
-      "tooltip": {
-        "shared": true,
-        "sort": 0,
-        "value_type": "individual"
-      },
-      "type": "graph",
-      "xaxis": {
-        "buckets": null,
-        "mode": "time",
-        "name": null,
-        "show": true,
-        "values": []
-      },
-      "yaxes": [
-        {
-          "format": "celsius",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        },
-        {
-          "format": "short",
-          "label": null,
-          "logBase": 1,
-          "max": null,
-          "min": null,
-          "show": true
-        }
-      ],
-      "yaxis": {
-        "align": false,
-        "alignLevel": null
-      }
     },
     {
       "collapsed": true,
@@ -2619,7 +1797,850 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 33
+        "y": 24
+      },
+      "id": 6,
+      "panels": [
+        {
+          "aliasColors": {
+            "Crit Temp": "#bf1b00",
+            "Max Temp": "#e5ac0e"
+          },
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 8,
+            "w": 8,
+            "x": 0,
+            "y": 25
+          },
+          "id": 2,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "maxPerRow": 4,
+          "nullPointMode": "connected",
+          "options": {},
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": "node",
+          "repeatDirection": "h",
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm02",
+              "value": "kvm02"
+            }
+          },
+          "seriesOverrides": [
+            {
+              "alias": "Max Temp",
+              "fill": 0
+            },
+            {
+              "alias": "Crit Temp",
+              "fill": 0
+            }
+          ],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "CPU Temp - $tag_chip",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "chip"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+              "rawQuery": false,
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_input"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Max Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "C",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_max"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Crit Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "B",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_crit"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "CPU Temp - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "celsius",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {
+            "Crit Temp": "#bf1b00",
+            "Max Temp": "#e5ac0e"
+          },
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 8,
+            "w": 8,
+            "x": 8,
+            "y": 25
+          },
+          "id": 137,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "maxPerRow": 4,
+          "nullPointMode": "connected",
+          "options": {},
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1562117043364,
+          "repeatPanelId": 2,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "kvm03",
+              "value": "kvm03"
+            }
+          },
+          "seriesOverrides": [
+            {
+              "alias": "Max Temp",
+              "fill": 0
+            },
+            {
+              "alias": "Crit Temp",
+              "fill": 0
+            }
+          ],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "CPU Temp - $tag_chip",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "chip"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+              "rawQuery": false,
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_input"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Max Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "C",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_max"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Crit Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "B",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_crit"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "CPU Temp - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "celsius",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        },
+        {
+          "aliasColors": {
+            "Crit Temp": "#bf1b00",
+            "Max Temp": "#e5ac0e"
+          },
+          "bars": false,
+          "dashLength": 10,
+          "dashes": false,
+          "fill": 1,
+          "gridPos": {
+            "h": 8,
+            "w": 8,
+            "x": 16,
+            "y": 25
+          },
+          "id": 138,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "rightSide": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 1,
+          "links": [],
+          "maxPerRow": 4,
+          "nullPointMode": "connected",
+          "options": {},
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "repeat": null,
+          "repeatDirection": "h",
+          "repeatIteration": 1562117043364,
+          "repeatPanelId": 2,
+          "scopedVars": {
+            "node": {
+              "selected": false,
+              "text": "salt01",
+              "value": "salt01"
+            }
+          },
+          "seriesOverrides": [
+            {
+              "alias": "Max Temp",
+              "fill": 0
+            },
+            {
+              "alias": "Crit Temp",
+              "fill": 0
+            }
+          ],
+          "spaceLength": 10,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "CPU Temp - $tag_chip",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "chip"
+                  ],
+                  "type": "tag"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "query": "SELECT mean(\"temp_input\") FROM \"compunaut_one_year\".\"sensors\" WHERE (\"host\" =~ /^$node$/ AND \"chip\" =~ /^$chip$/ AND \"feature\" = 'core_0') AND $timeFilter GROUP BY time($__interval) fill(null)",
+              "rawQuery": false,
+              "refId": "A",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_input"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Max Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "C",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_max"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            },
+            {
+              "alias": "Crit Temp",
+              "groupBy": [
+                {
+                  "params": [
+                    "$__interval"
+                  ],
+                  "type": "time"
+                },
+                {
+                  "params": [
+                    "null"
+                  ],
+                  "type": "fill"
+                }
+              ],
+              "measurement": "sensors",
+              "orderByTime": "ASC",
+              "policy": "compunaut_one_year",
+              "refId": "B",
+              "resultFormat": "time_series",
+              "select": [
+                [
+                  {
+                    "params": [
+                      "temp_crit"
+                    ],
+                    "type": "field"
+                  },
+                  {
+                    "params": [],
+                    "type": "mean"
+                  }
+                ]
+              ],
+              "tags": [
+                {
+                  "key": "host",
+                  "operator": "=~",
+                  "value": "/^$node$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "chip",
+                  "operator": "=~",
+                  "value": "/^$chip$/"
+                },
+                {
+                  "condition": "AND",
+                  "key": "feature",
+                  "operator": "=~",
+                  "value": "/^$feature$/"
+                }
+              ]
+            }
+          ],
+          "thresholds": [],
+          "timeFrom": null,
+          "timeRegions": [],
+          "timeShift": null,
+          "title": "CPU Temp - $node",
+          "tooltip": {
+            "shared": true,
+            "sort": 0,
+            "value_type": "individual"
+          },
+          "type": "graph",
+          "xaxis": {
+            "buckets": null,
+            "mode": "time",
+            "name": null,
+            "show": true,
+            "values": []
+          },
+          "yaxes": [
+            {
+              "format": "celsius",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            },
+            {
+              "format": "short",
+              "label": null,
+              "logBase": 1,
+              "max": null,
+              "min": null,
+              "show": true
+            }
+          ],
+          "yaxis": {
+            "align": false,
+            "alignLevel": null
+          }
+        }
+      ],
+      "title": "CPU Temp",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 25
       },
       "id": 16,
       "panels": [
@@ -2649,8 +2670,9 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
@@ -2778,7 +2800,7 @@
             "x": 8,
             "y": 34
           },
-          "id": 117,
+          "id": 129,
           "legend": {
             "alignAsTable": true,
             "avg": false,
@@ -2792,15 +2814,16 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
           "repeat": null,
           "repeatDirection": "h",
-          "repeatIteration": 1549328091033,
+          "repeatIteration": 1562117043360,
           "repeatPanelId": 10,
           "scopedVars": {
             "node": {
@@ -2923,7 +2946,7 @@
             "x": 16,
             "y": 34
           },
-          "id": 118,
+          "id": 130,
           "legend": {
             "alignAsTable": true,
             "avg": false,
@@ -2937,15 +2960,16 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
           "repeat": null,
           "repeatDirection": "h",
-          "repeatIteration": 1549328091033,
+          "repeatIteration": 1562117043360,
           "repeatPanelId": 10,
           "scopedVars": {
             "node": {
@@ -3066,7 +3090,7 @@
         "h": 1,
         "w": 24,
         "x": 0,
-        "y": 34
+        "y": 26
       },
       "id": 30,
       "panels": [
@@ -3080,7 +3104,7 @@
             "h": 7,
             "w": 8,
             "x": 0,
-            "y": 35
+            "y": 27
           },
           "id": 22,
           "legend": {
@@ -3095,8 +3119,9 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
@@ -3112,7 +3137,7 @@
           },
           "seriesOverrides": [],
           "spaceLength": 10,
-          "stack": false,
+          "stack": true,
           "steppedLine": false,
           "targets": [
             {
@@ -3222,9 +3247,9 @@
             "h": 7,
             "w": 8,
             "x": 8,
-            "y": 35
+            "y": 27
           },
-          "id": 119,
+          "id": 139,
           "legend": {
             "avg": false,
             "current": true,
@@ -3237,15 +3262,16 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
           "repeat": null,
           "repeatDirection": "h",
-          "repeatIteration": 1549328091033,
+          "repeatIteration": 1562117043364,
           "repeatPanelId": 22,
           "scopedVars": {
             "node": {
@@ -3256,7 +3282,7 @@
           },
           "seriesOverrides": [],
           "spaceLength": 10,
-          "stack": false,
+          "stack": true,
           "steppedLine": false,
           "targets": [
             {
@@ -3366,9 +3392,9 @@
             "h": 7,
             "w": 8,
             "x": 16,
-            "y": 35
+            "y": 27
           },
-          "id": 120,
+          "id": 140,
           "legend": {
             "avg": false,
             "current": true,
@@ -3381,15 +3407,16 @@
           "lines": true,
           "linewidth": 1,
           "links": [],
-          "minSpan": 5,
+          "maxPerRow": 4,
           "nullPointMode": "connected",
+          "options": {},
           "percentage": false,
           "pointradius": 5,
           "points": false,
           "renderer": "flot",
           "repeat": null,
           "repeatDirection": "h",
-          "repeatIteration": 1549328091033,
+          "repeatIteration": 1562117043364,
           "repeatPanelId": 22,
           "scopedVars": {
             "node": {
@@ -3400,7 +3427,7 @@
           },
           "seriesOverrides": [],
           "spaceLength": 10,
-          "stack": false,
+          "stack": true,
           "steppedLine": false,
           "targets": [
             {
@@ -3506,7 +3533,7 @@
     }
   ],
   "refresh": "30s",
-  "schemaVersion": 16,
+  "schemaVersion": 18,
   "style": "dark",
   "tags": [
     "hardware"
@@ -3516,7 +3543,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
@@ -3673,8 +3699,11 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
-          "value": "$__all"
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": "compunaut_influxdb",
         "definition": "SHOW TAG VALUES FROM omreport_custom WITH KEY = \"memory_id\"",
@@ -3756,5 +3785,5 @@
   "timezone": "browser",
   "title": "Hardware",
   "uid": "xeU4F3_mz",
-  "version": 3
+  "version": 1
 }
