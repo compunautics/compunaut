@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1562113024793,
+  "iteration": 1562114140297,
   "links": [],
   "panels": [
     {
@@ -718,7 +718,7 @@
       "renderer": "flot",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1562113024793,
+      "repeatIteration": 1562114140297,
       "repeatPanelId": 2,
       "scopedVars": {
         "octoprint_node": {
@@ -1177,7 +1177,8 @@
           "defaults": {
             "decimals": 2,
             "max": 100,
-            "min": 0
+            "min": 0,
+            "unit": "percent"
           },
           "mappings": [],
           "override": {},
@@ -1294,7 +1295,8 @@
           "defaults": {
             "decimals": 2,
             "max": 100,
-            "min": 0
+            "min": 0,
+            "unit": "percent"
           },
           "mappings": [],
           "override": {},
@@ -1329,7 +1331,7 @@
       "pluginVersion": "6.2.5",
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1562113024793,
+      "repeatIteration": 1562114140297,
       "repeatPanelId": 20,
       "scopedVars": {
         "octoprint_node": {
@@ -1647,7 +1649,7 @@
       ],
       "repeat": null,
       "repeatDirection": "h",
-      "repeatIteration": 1562113024793,
+      "repeatIteration": 1562114140297,
       "repeatPanelId": 30,
       "scopedVars": {
         "octoprint_node": {
@@ -2043,5 +2045,5 @@
   "timezone": "browser",
   "title": "Printers",
   "uid": "DA_uBtumz",
-  "version": 3
+  "version": 4
 }
