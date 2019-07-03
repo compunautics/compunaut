@@ -673,6 +673,7 @@
     {
       "aliasColors": {
         "Bed Actual": "rgb(222, 121, 0)",
+        "Not Printing": "rgb(166, 12, 0)",
         "Octoprint": "rgb(53, 255, 0)",
         "Octoprint Critical": "rgb(255, 25, 0)",
         "Octoprint Healthy": "rgb(63, 255, 0)",
@@ -1933,7 +1934,6 @@
       {
         "allValue": null,
         "current": {
-          "tags": [],
           "text": "All",
           "value": [
             "$__all"
