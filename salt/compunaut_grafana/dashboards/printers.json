@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 1,
-  "iteration": 1561273130384,
+  "iteration": 1562110598823,
   "links": [],
   "panels": [
     {
@@ -246,6 +246,13 @@
       "renderer": "flot",
       "repeat": "octoprint_node",
       "repeatDirection": "h",
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p001.compunaut.prtr",
+          "value": "p001.compunaut.prtr"
+        }
+      },
       "seriesOverrides": [
         {
           "alias": "Bed Actual",
@@ -475,6 +482,527 @@
           ]
         },
         {
+          "alias": "Not Printing",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "not_printing"
+            }
+          ]
+        },
+        {
+          "alias": "Bed Actual",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "E",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "bed_actual"
+            }
+          ]
+        },
+        {
+          "alias": "Tool Actual",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "F",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "temp"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "tool_actual"
+            }
+          ]
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Printer Status - $octoprint_node",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": "3",
+          "min": "0",
+          "show": true
+        },
+        {
+          "format": "celsius",
+          "label": null,
+          "logBase": 1,
+          "max": "300",
+          "min": "0",
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Bed Actual": "rgb(222, 121, 0)",
+        "Octoprint": "rgb(53, 255, 0)",
+        "Octoprint Critical": "rgb(255, 25, 0)",
+        "Octoprint Healthy": "rgb(63, 255, 0)",
+        "Operational": "rgb(40, 174, 0)",
+        "Printing": "rgb(21, 102, 0)",
+        "Tool Actual": "rgb(0, 140, 255)",
+        "octoprint_custom.mean": "rgb(63, 255, 0)"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "fill": 8,
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 11
+      },
+      "hideTimeOverride": false,
+      "id": 36,
+      "legend": {
+        "alignAsTable": false,
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "total": false,
+        "values": false
+      },
+      "lines": true,
+      "linewidth": 1,
+      "links": [],
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "options": {},
+      "percentage": false,
+      "pointradius": 5,
+      "points": false,
+      "renderer": "flot",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1562110598823,
+      "repeatPanelId": 2,
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p002.compunaut.prtr",
+          "value": "p002.compunaut.prtr"
+        }
+      },
+      "seriesOverrides": [
+        {
+          "alias": "Bed Actual",
+          "fill": 0,
+          "linewidth": 3,
+          "stack": false,
+          "yaxis": 2
+        },
+        {
+          "alias": "Tool Actual",
+          "fill": 0,
+          "linewidth": 3,
+          "stack": false,
+          "yaxis": 2
+        }
+      ],
+      "spaceLength": 10,
+      "stack": true,
+      "steppedLine": false,
+      "targets": [
+        {
+          "alias": "Octoprint",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "C",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "passing"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-octoprint"
+            },
+            {
+              "condition": "AND",
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            }
+          ]
+        },
+        {
+          "alias": "Octoprint Critical",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "consul_health_checks",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "D",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "critical"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "service_name",
+              "operator": "=",
+              "value": "compunaut-octoprint"
+            },
+            {
+              "condition": "AND",
+              "key": "node",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            }
+          ]
+        },
+        {
+          "alias": "Operational",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "operational"
+            }
+          ]
+        },
+        {
+          "alias": "Printing",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "printing"
+            }
+          ]
+        },
+        {
+          "alias": "Not Printing",
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "G",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "mean"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "not_printing"
+            }
+          ]
+        },
+        {
           "alias": "Bed Actual",
           "groupBy": [
             {
@@ -679,9 +1207,135 @@
         "showThresholdLabels": false,
         "showThresholdMarkers": true
       },
-      "pluginVersion": "6.2.4",
+      "pluginVersion": "6.2.5",
       "repeat": "octoprint_node",
       "repeatDirection": "h",
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p001.compunaut.prtr",
+          "value": "p001.compunaut.prtr"
+        }
+      },
+      "targets": [
+        {
+          "groupBy": [
+            {
+              "params": [
+                "$__interval"
+              ],
+              "type": "time"
+            },
+            {
+              "params": [
+                "previous"
+              ],
+              "type": "fill"
+            }
+          ],
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "progress"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "last"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "job_progress"
+            }
+          ]
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Job Progress - $octoprint_node",
+      "type": "gauge"
+    },
+    {
+      "cacheTimeout": null,
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 17
+      },
+      "hideTimeOverride": false,
+      "id": 37,
+      "links": [],
+      "maxPerRow": 4,
+      "options": {
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "decimals": 2,
+            "max": 100,
+            "min": 0
+          },
+          "mappings": [],
+          "override": {},
+          "thresholds": [
+            {
+              "color": "dark-red",
+              "index": 0,
+              "value": null
+            },
+            {
+              "color": "dark-orange",
+              "index": 1,
+              "value": 25
+            },
+            {
+              "color": "#EAB839",
+              "index": 2,
+              "value": 50
+            },
+            {
+              "color": "dark-green",
+              "index": 3,
+              "value": 75
+            }
+          ],
+          "values": false
+        },
+        "orientation": "auto",
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "6.2.5",
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1562110598823,
+      "repeatPanelId": 20,
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p002.compunaut.prtr",
+          "value": "p002.compunaut.prtr"
+        }
+      },
       "targets": [
         {
           "groupBy": [
@@ -745,6 +1399,395 @@
         "x": 0,
         "y": 22
       },
+      "id": 35,
+      "panels": [],
+      "title": "Printer Efficiency",
+      "type": "row"
+    },
+    {
+      "cacheTimeout": null,
+      "circleBackground": false,
+      "colorBackground": false,
+      "colorValue": false,
+      "decimals": null,
+      "defaultColor": "rgb(117, 117, 117)",
+      "format": "percent",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 0,
+        "y": 23
+      },
+      "id": 30,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "math": "(printing/(printing+not_printing))*100",
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": "octoprint_node",
+      "repeatDirection": "h",
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p001.compunaut.prtr",
+          "value": "p001.compunaut.prtr"
+        }
+      },
+      "sortOrder": "asc",
+      "sortOrderOptions": [
+        {
+          "text": "Ascending",
+          "value": "asc"
+        },
+        {
+          "text": "Descending",
+          "value": "desc"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "sum",
+      "targets": [
+        {
+          "alias": "not_printing",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "cumulative_sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "not_printing"
+            }
+          ]
+        },
+        {
+          "alias": "printing",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "cumulative_sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "printing"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "color": "#C4162A",
+          "value": 15
+        },
+        {
+          "color": "#FADE2A",
+          "value": 30
+        },
+        {
+          "color": "#37872D",
+          "value": 100
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Printer Efficiency - $octoprint_node",
+      "tooltip": {
+        "show": true
+      },
+      "type": "blackmirror1-singlestat-math-panel",
+      "valueFontSize": "80%",
+      "valueMappingColorBackground": "#767171",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "No data",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "cacheTimeout": null,
+      "circleBackground": false,
+      "colorBackground": false,
+      "colorValue": false,
+      "decimals": null,
+      "defaultColor": "rgb(117, 117, 117)",
+      "format": "percent",
+      "gauge": {
+        "maxValue": 100,
+        "minValue": 0,
+        "show": true,
+        "thresholdLabels": false,
+        "thresholdMarkers": true
+      },
+      "gridPos": {
+        "h": 5,
+        "w": 12,
+        "x": 12,
+        "y": 23
+      },
+      "id": 38,
+      "interval": null,
+      "links": [],
+      "mappingType": 1,
+      "mappingTypes": [
+        {
+          "name": "value to text",
+          "value": 1
+        },
+        {
+          "name": "range to text",
+          "value": 2
+        }
+      ],
+      "math": "(printing/(printing+not_printing))*100",
+      "maxDataPoints": 100,
+      "maxPerRow": 4,
+      "nullPointMode": "connected",
+      "nullText": null,
+      "options": {},
+      "postfix": "",
+      "postfixFontSize": "50%",
+      "prefix": "",
+      "prefixFontSize": "50%",
+      "rangeMaps": [
+        {
+          "from": "null",
+          "text": "N/A",
+          "to": "null"
+        }
+      ],
+      "repeat": null,
+      "repeatDirection": "h",
+      "repeatIteration": 1562110598823,
+      "repeatPanelId": 30,
+      "scopedVars": {
+        "octoprint_node": {
+          "selected": false,
+          "text": "p002.compunaut.prtr",
+          "value": "p002.compunaut.prtr"
+        }
+      },
+      "sortOrder": "asc",
+      "sortOrderOptions": [
+        {
+          "text": "Ascending",
+          "value": "asc"
+        },
+        {
+          "text": "Descending",
+          "value": "desc"
+        }
+      ],
+      "sparkline": {
+        "fillColor": "rgba(31, 118, 189, 0.18)",
+        "full": false,
+        "lineColor": "rgb(31, 120, 193)",
+        "show": false
+      },
+      "tableColumn": "sum",
+      "targets": [
+        {
+          "alias": "not_printing",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "B",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "cumulative_sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "not_printing"
+            }
+          ]
+        },
+        {
+          "alias": "printing",
+          "groupBy": [],
+          "hide": false,
+          "measurement": "octoprint_custom",
+          "orderByTime": "ASC",
+          "policy": "compunaut_one_year",
+          "refId": "A",
+          "resultFormat": "time_series",
+          "select": [
+            [
+              {
+                "params": [
+                  "state"
+                ],
+                "type": "field"
+              },
+              {
+                "params": [],
+                "type": "cumulative_sum"
+              }
+            ]
+          ],
+          "tags": [
+            {
+              "key": "host",
+              "operator": "=~",
+              "value": "/^$octoprint_node$/"
+            },
+            {
+              "condition": "AND",
+              "key": "name",
+              "operator": "=",
+              "value": "printing"
+            }
+          ]
+        }
+      ],
+      "thresholds": [
+        {
+          "color": "#C4162A",
+          "value": 15
+        },
+        {
+          "color": "#FADE2A",
+          "value": 30
+        },
+        {
+          "color": "#37872D",
+          "value": 100
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Printer Efficiency - $octoprint_node",
+      "tooltip": {
+        "show": true
+      },
+      "type": "blackmirror1-singlestat-math-panel",
+      "valueFontSize": "80%",
+      "valueMappingColorBackground": "#767171",
+      "valueMaps": [
+        {
+          "op": "=",
+          "text": "No data",
+          "value": "null"
+        }
+      ],
+      "valueName": "current"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 28
+      },
       "id": 18,
       "panels": [],
       "title": "Filament Status",
@@ -757,7 +1800,7 @@
         "h": 6,
         "w": 24,
         "x": 0,
-        "y": 23
+        "y": 29
       },
       "hideTimeOverride": true,
       "id": 16,
@@ -767,6 +1810,13 @@
       "pageSize": null,
       "repeat": "filaments",
       "repeatDirection": "h",
+      "scopedVars": {
+        "filaments": {
+          "selected": false,
+          "text": "filament_anet_a8_green_pla",
+          "value": "filament_anet_a8_green_pla"
+        }
+      },
       "scroll": true,
       "showHeader": true,
       "sort": {
@@ -883,8 +1933,11 @@
       {
         "allValue": null,
         "current": {
+          "tags": [],
           "text": "All",
-          "value": "$__all"
+          "value": [
+            "$__all"
+          ]
         },
         "datasource": "compunaut_influxdb",
         "definition": "SHOW TAG VALUES FROM consul_health_checks WITH KEY = \"node\" WHERE \"service_name\" =~ /compunaut-octoprint/",
